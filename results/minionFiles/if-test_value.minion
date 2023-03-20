@@ -1,0 +1,32 @@
+MINION 3
+**VARIABLES**
+DISCRETE Sheet1_A1{0..50000}
+DISCRETE Sheet1_A2{0..50000}
+DISCRETE Sheet1_A3{0..50000}
+DISCRETE Sheet1_A4{0..50000}
+DISCRETE Sheet1_B1{0..50000}
+BOOL ab[1]
+BOOL tmp0
+BOOL tmp2
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+watched-or({element(ab,0,1), reifyimply(eq(Sheet1_B1,Sheet1_A3),tmp0)})
+watched-or({element(ab,0,1), reify(ineq(Sheet1_A2,Sheet1_A1,-1),tmp0)})
+watched-or({element(ab,0,1), reifyimply(eq(Sheet1_B1,Sheet1_A4),tmp2)})
+watched-or({element(ab,0,1), diseq(tmp0,tmp2)})
+
+# TEST CASE / Observations
+eq(Sheet1_A1,1)
+eq(Sheet1_A2,2)
+eq(Sheet1_A3,3)
+eq(Sheet1_A4,4)
+eq(Sheet1_B1,3)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,1)
+watchsumleq(ab,1)
+**EOF**

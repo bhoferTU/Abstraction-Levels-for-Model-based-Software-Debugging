@@ -1,0 +1,759 @@
+MINION 3
+# Modeling the domain = > <
+# Values: 0 < / 1 = / 2 >
+
+**VARIABLES**
+DISCRETE Sheet1_C10 {0..2}
+DISCRETE Sheet1_C11 {0..2}
+DISCRETE Sheet1_C12 {0..2}
+DISCRETE Sheet1_C13 {0..2}
+DISCRETE Sheet1_C14 {0..2}
+DISCRETE Sheet1_C15 {0..2}
+DISCRETE Sheet1_C16 {0..2}
+DISCRETE Sheet1_C17 {0..2}
+DISCRETE Sheet1_C18 {0..2}
+DISCRETE Sheet1_C4 {0..2}
+DISCRETE Sheet1_C5 {0..2}
+DISCRETE Sheet1_C6 {0..2}
+DISCRETE Sheet1_C7 {0..2}
+DISCRETE Sheet1_C8 {0..2}
+DISCRETE Sheet1_C9 {0..2}
+DISCRETE Sheet1_D10 {0..2}
+DISCRETE Sheet1_D11 {0..2}
+DISCRETE Sheet1_D12 {0..2}
+DISCRETE Sheet1_D13 {0..2}
+DISCRETE Sheet1_D14 {0..2}
+DISCRETE Sheet1_D15 {0..2}
+DISCRETE Sheet1_D16 {0..2}
+DISCRETE Sheet1_D17 {0..2}
+DISCRETE Sheet1_D18 {0..2}
+DISCRETE Sheet1_D4 {0..2}
+DISCRETE Sheet1_D5 {0..2}
+DISCRETE Sheet1_D6 {0..2}
+DISCRETE Sheet1_D7 {0..2}
+DISCRETE Sheet1_D8 {0..2}
+DISCRETE Sheet1_D9 {0..2}
+DISCRETE Sheet1_E10 {0..2}
+DISCRETE Sheet1_E11 {0..2}
+DISCRETE Sheet1_E12 {0..2}
+DISCRETE Sheet1_E13 {0..2}
+DISCRETE Sheet1_E14 {0..2}
+DISCRETE Sheet1_E15 {0..2}
+DISCRETE Sheet1_E16 {0..2}
+DISCRETE Sheet1_E17 {0..2}
+DISCRETE Sheet1_E18 {0..2}
+DISCRETE Sheet1_E4 {0..2}
+DISCRETE Sheet1_E5 {0..2}
+DISCRETE Sheet1_E6 {0..2}
+DISCRETE Sheet1_E7 {0..2}
+DISCRETE Sheet1_E8 {0..2}
+DISCRETE Sheet1_E9 {0..2}
+DISCRETE Sheet1_F10 {0..2}
+DISCRETE Sheet1_F11 {0..2}
+DISCRETE Sheet1_F12 {0..2}
+DISCRETE Sheet1_F13 {0..2}
+DISCRETE Sheet1_F14 {0..2}
+DISCRETE Sheet1_F15 {0..2}
+DISCRETE Sheet1_F16 {0..2}
+DISCRETE Sheet1_F17 {0..2}
+DISCRETE Sheet1_F18 {0..2}
+DISCRETE Sheet1_F19 {0..2}
+DISCRETE Sheet1_F4 {0..2}
+DISCRETE Sheet1_F5 {0..2}
+DISCRETE Sheet1_F6 {0..2}
+DISCRETE Sheet1_F7 {0..2}
+DISCRETE Sheet1_F8 {0..2}
+DISCRETE Sheet1_F9 {0..2}
+DISCRETE Sheet1_G10 {0..2}
+DISCRETE Sheet1_G11 {0..2}
+DISCRETE Sheet1_G12 {0..2}
+DISCRETE Sheet1_G13 {0..2}
+DISCRETE Sheet1_G14 {0..2}
+DISCRETE Sheet1_G15 {0..2}
+DISCRETE Sheet1_G16 {0..2}
+DISCRETE Sheet1_G17 {0..2}
+DISCRETE Sheet1_G18 {0..2}
+DISCRETE Sheet1_G19 {0..2}
+DISCRETE Sheet1_G4 {0..2}
+DISCRETE Sheet1_G5 {0..2}
+DISCRETE Sheet1_G6 {0..2}
+DISCRETE Sheet1_G7 {0..2}
+DISCRETE Sheet1_G8 {0..2}
+DISCRETE Sheet1_G9 {0..2}
+DISCRETE Sheet1_H10 {0..2}
+DISCRETE Sheet1_H11 {0..2}
+DISCRETE Sheet1_H12 {0..2}
+DISCRETE Sheet1_H13 {0..2}
+DISCRETE Sheet1_H14 {0..2}
+DISCRETE Sheet1_H15 {0..2}
+DISCRETE Sheet1_H16 {0..2}
+DISCRETE Sheet1_H17 {0..2}
+DISCRETE Sheet1_H18 {0..2}
+DISCRETE Sheet1_H19 {0..2}
+DISCRETE Sheet1_H4 {0..2}
+DISCRETE Sheet1_H5 {0..2}
+DISCRETE Sheet1_H6 {0..2}
+DISCRETE Sheet1_H7 {0..2}
+DISCRETE Sheet1_H8 {0..2}
+DISCRETE Sheet1_H9 {0..2}
+DISCRETE Sheet1_I10 {0..2}
+DISCRETE Sheet1_I11 {0..2}
+DISCRETE Sheet1_I12 {0..2}
+DISCRETE Sheet1_I13 {0..2}
+DISCRETE Sheet1_I14 {0..2}
+DISCRETE Sheet1_I15 {0..2}
+DISCRETE Sheet1_I16 {0..2}
+DISCRETE Sheet1_I17 {0..2}
+DISCRETE Sheet1_I18 {0..2}
+DISCRETE Sheet1_I19 {0..2}
+DISCRETE Sheet1_I4 {0..2}
+DISCRETE Sheet1_I5 {0..2}
+DISCRETE Sheet1_I6 {0..2}
+DISCRETE Sheet1_I7 {0..2}
+DISCRETE Sheet1_I8 {0..2}
+DISCRETE Sheet1_I9 {0..2}
+BOOL ab[64]
+DISCRETE tmp100 {0..2}
+DISCRETE tmp101 {0..2}
+DISCRETE tmp102 {0..2}
+DISCRETE tmp103 {0..2}
+DISCRETE tmp104 {0..2}
+DISCRETE tmp105 {0..2}
+DISCRETE tmp106 {0..2}
+DISCRETE tmp107 {0..2}
+DISCRETE tmp108 {0..2}
+DISCRETE tmp109 {0..2}
+DISCRETE tmp110 {0..2}
+DISCRETE tmp111 {0..2}
+BOOL tmp114
+BOOL tmp115
+DISCRETE tmp116 {0..2}
+BOOL tmp12
+BOOL tmp120
+BOOL tmp121
+DISCRETE tmp122 {0..2}
+BOOL tmp124
+BOOL tmp125
+DISCRETE tmp126 {0..2}
+BOOL tmp13
+BOOL tmp130
+BOOL tmp131
+DISCRETE tmp132 {0..2}
+BOOL tmp134
+BOOL tmp135
+DISCRETE tmp136 {0..2}
+BOOL tmp139
+DISCRETE tmp14 {0..2}
+BOOL tmp140
+DISCRETE tmp141 {0..2}
+BOOL tmp146
+BOOL tmp147
+DISCRETE tmp148 {0..2}
+BOOL tmp152
+BOOL tmp153
+DISCRETE tmp154 {0..2}
+BOOL tmp156
+BOOL tmp157
+DISCRETE tmp158 {0..2}
+BOOL tmp16
+BOOL tmp161
+BOOL tmp162
+DISCRETE tmp163 {0..2}
+BOOL tmp165
+BOOL tmp166
+DISCRETE tmp167 {0..2}
+BOOL tmp169
+BOOL tmp17
+BOOL tmp170
+DISCRETE tmp171 {0..2}
+DISCRETE tmp18 {0..2}
+BOOL tmp2
+BOOL tmp21
+BOOL tmp22
+DISCRETE tmp23 {0..2}
+BOOL tmp25
+DISCRETE tmp27 {0..2}
+DISCRETE tmp28 {0..2}
+DISCRETE tmp29 {0..2}
+BOOL tmp3
+DISCRETE tmp30 {0..2}
+DISCRETE tmp31 {0..2}
+DISCRETE tmp32 {0..2}
+DISCRETE tmp33 {0..2}
+DISCRETE tmp34 {0..2}
+DISCRETE tmp35 {0..2}
+DISCRETE tmp36 {0..2}
+DISCRETE tmp37 {0..2}
+DISCRETE tmp38 {0..2}
+DISCRETE tmp39 {0..2}
+DISCRETE tmp4 {0..2}
+BOOL tmp43
+BOOL tmp44
+DISCRETE tmp45 {0..2}
+BOOL tmp49
+BOOL tmp50
+DISCRETE tmp51 {0..2}
+BOOL tmp53
+BOOL tmp54
+DISCRETE tmp55 {0..2}
+BOOL tmp59
+BOOL tmp6
+BOOL tmp60
+DISCRETE tmp61 {0..2}
+BOOL tmp63
+BOOL tmp64
+DISCRETE tmp65 {0..2}
+BOOL tmp67
+BOOL tmp68
+DISCRETE tmp69 {0..2}
+BOOL tmp7
+BOOL tmp74
+BOOL tmp75
+DISCRETE tmp76 {0..2}
+DISCRETE tmp8 {0..2}
+BOOL tmp80
+BOOL tmp81
+DISCRETE tmp82 {0..2}
+BOOL tmp84
+BOOL tmp85
+DISCRETE tmp86 {0..2}
+BOOL tmp89
+BOOL tmp90
+DISCRETE tmp91 {0..2}
+BOOL tmp93
+BOOL tmp94
+DISCRETE tmp95 {0..2}
+BOOL tmp97
+DISCRETE tmp99 {0..2}
+
+**TUPLELIST**
+plusMultFunction 40 4
+0 1 1 1
+0 2 1 2
+0 1 2 2
+0 2 2 2
+0 0 1 0
+0 1 0 0
+0 0 0 0
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 2 0 0
+0 2 0 1
+0 2 0 2
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+minusDivFunction 40 4
+0 1 1 1
+0 2 1 2
+0 1 2 0
+0 2 2 0
+0 2 2 1
+0 2 2 2
+0 0 1 0
+0 1 0 2
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 2 0
+0 2 0 2
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+equalityFunction 12 3 
+0 0 0
+0 1 1
+0 2 2
+1 0 0
+1 0 1
+1 0 2
+1 1 0
+1 1 1
+1 1 2
+1 2 0
+1 2 1
+1 2 2
+
+relationalOPFunction  35 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+0 0 2 0 
+0 0 2 1 
+0 2 0 0 
+0 2 0 1 
+0 1 2 0 
+0 1 2 1 
+0 2 1 0 
+0 2 1 1 
+0 2 2 0 
+0 2 2 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+1 0 2 0 
+1 0 2 1 
+1 2 0 0 
+1 2 0 1 
+1 1 2 0 
+1 1 2 1 
+1 2 1 0 
+1 2 1 1 
+1 2 2 0 
+1 2 2 1 
+
+ifFunction  92 5 
+0 1 1 1 1 
+0 1 2 1 2 
+0 1 2 1 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 2 2 
+0 1 1 2 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 2 2 2 
+0 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 0 2 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 0 1 2 
+0 0 0 2 0 
+0 0 0 2 1 
+0 0 0 2 2 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 0 2 
+0 0 1 1 0 
+0 0 1 1 1 
+0 0 1 1 2 
+0 0 1 2 0 
+0 0 1 2 1 
+0 0 1 2 2 
+0 0 2 0 0 
+0 0 2 0 1 
+0 0 2 0 2 
+0 0 2 1 0 
+0 0 2 1 1 
+0 0 2 1 2 
+0 0 2 2 0 
+0 0 2 2 1 
+0 0 2 2 2 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 0 2 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 0 1 2 
+1 0 0 2 0 
+1 0 0 2 1 
+1 0 0 2 2 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 0 2 
+1 0 1 1 0 
+1 0 1 1 1 
+1 0 1 1 2 
+1 0 1 2 0 
+1 0 1 2 1 
+1 0 1 2 2 
+1 0 2 0 0 
+1 0 2 0 1 
+1 0 2 0 2 
+1 0 2 1 0 
+1 0 2 1 1 
+1 0 2 1 2 
+1 0 2 2 0 
+1 0 2 2 1 
+1 0 2 2 2 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 0 2 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 0 1 2 
+1 1 0 2 0 
+1 1 0 2 1 
+1 1 0 2 2 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 0 2 
+1 1 1 1 0 
+1 1 1 1 1 
+1 1 1 1 2 
+1 1 1 2 0 
+1 1 1 2 1 
+1 1 1 2 2 
+1 1 2 0 0 
+1 1 2 0 1 
+1 1 2 0 2 
+1 1 2 1 0 
+1 1 2 1 1 
+1 1 2 1 2 
+1 1 2 2 0 
+1 1 2 2 1 
+1 1 2 2 2 
+
+minMaxFunction 44 4
+0 1 1 1
+0 2 1 2
+0 2 1 1
+0 1 2 2
+0 1 2 1
+0 2 2 2
+0 0 1 1
+0 0 1 0
+0 1 0 1
+0 1 0 0
+0 0 0 0
+0 0 2 2
+0 0 2 0
+0 0 2 1
+0 2 0 2
+0 2 0 0
+0 2 0 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+table([ab[37],tmp100,Sheet1_G14,tmp101], plusMultFunction)
+table([ab[47],tmp134,tmp136,Sheet1_H7,Sheet1_H8], ifFunction)
+table([ab[54],Sheet1_E12,Sheet1_C12,Sheet1_G12], plusMultFunction)
+table([ab[37],tmp103,Sheet1_G15,tmp104], plusMultFunction)
+table([ab[17],Sheet1_C16,Sheet1_I15,tmp50], relationalOPFunction)
+table([ab[27],Sheet1_I18,Sheet1_I19], equalityFunction)
+table([ab[35],tmp94,Sheet1_C5,Sheet1_H4,tmp95], ifFunction)
+table([ab[42],Sheet1_C17,Sheet1_I16,tmp121], relationalOPFunction)
+table([ab[32],Sheet1_D10,1,tmp84], relationalOPFunction)
+table([ab[61],Sheet1_E5,1,tmp169], relationalOPFunction)
+table([ab[39],Sheet1_C18,Sheet1_H17,tmp115], relationalOPFunction)
+table([ab[6],Sheet1_E13,1,tmp12], relationalOPFunction)
+table([ab[36],Sheet1_E4,1,tmp97], relationalOPFunction)
+table([ab[3],Sheet1_D14,1,tmp6], relationalOPFunction)
+table([ab[55],Sheet1_D8,Sheet1_C8,Sheet1_F8], plusMultFunction)
+table([ab[37],tmp110,Sheet1_G18,tmp111], plusMultFunction)
+table([ab[21],tmp60,Sheet1_C11,Sheet1_I10,tmp61], ifFunction)
+table([ab[32],tmp84,tmp86,Sheet1_H9,Sheet1_H10], ifFunction)
+table([ab[46],Sheet1_C12,Sheet1_I11,tmp131], relationalOPFunction)
+table([ab[11],tmp34,Sheet1_F8,tmp35], plusMultFunction)
+table([ab[37],tmp109,Sheet1_G6,tmp110], plusMultFunction)
+table([ab[23],tmp67,tmp69,Sheet1_I5,Sheet1_I6], ifFunction)
+table([ab[33],Sheet1_E6,Sheet1_C6,Sheet1_G6], plusMultFunction)
+table([ab[53],tmp147,Sheet1_C16,Sheet1_H15,tmp148], ifFunction)
+table([ab[56],tmp153,Sheet1_C15,Sheet1_I14,tmp154], ifFunction)
+table([ab[57],tmp157,Sheet1_C11,Sheet1_H10,tmp158], ifFunction)
+table([ab[37],tmp106,Sheet1_G9,tmp107], plusMultFunction)
+table([ab[19],Sheet1_E8,Sheet1_C8,Sheet1_G8], plusMultFunction)
+table([ab[57],Sheet1_C11,Sheet1_H10,tmp157], relationalOPFunction)
+table([ab[3],tmp6,tmp8,Sheet1_H13,Sheet1_H14], ifFunction)
+table([ab[45],Sheet1_D5,Sheet1_C5,Sheet1_F5], plusMultFunction)
+table([ab[11],tmp30,Sheet1_F14,tmp31], plusMultFunction)
+table([ab[57],tmp156,tmp158,Sheet1_H10,Sheet1_H11], ifFunction)
+table([ab[7],tmp17,Sheet1_C9,Sheet1_H8,tmp18], ifFunction)
+table([ab[47],Sheet1_D8,1,tmp134], relationalOPFunction)
+table([ab[16],Sheet1_D9,Sheet1_C9,Sheet1_F9], plusMultFunction)
+table([ab[1],Sheet1_D11,Sheet1_C11,Sheet1_F11], plusMultFunction)
+table([ab[26],Sheet1_D12,Sheet1_C12,Sheet1_F12], plusMultFunction)
+table([ab[53],tmp146,tmp148,Sheet1_H15,Sheet1_H16], ifFunction)
+table([ab[37],tmp105,Sheet1_G4,tmp106], plusMultFunction)
+table([ab[20],Sheet1_D4,Sheet1_C4,Sheet1_F4], plusMultFunction)
+table([ab[46],tmp131,Sheet1_C12,Sheet1_I11,tmp132], ifFunction)
+table([ab[49],Sheet1_E7,1,tmp139], relationalOPFunction)
+table([ab[42],tmp121,Sheet1_C17,Sheet1_I16,tmp122], ifFunction)
+table([ab[43],tmp125,Sheet1_C13,Sheet1_H12,tmp126], ifFunction)
+table([ab[28],Sheet1_C15,Sheet1_H14,tmp75], relationalOPFunction)
+table([ab[6],tmp12,tmp14,Sheet1_I12,Sheet1_I13], ifFunction)
+table([ab[28],tmp74,tmp76,Sheet1_H14,Sheet1_H15], ifFunction)
+table([ab[61],Sheet1_C5,Sheet1_I4,tmp170], relationalOPFunction)
+table([ab[59],tmp161,tmp163,Sheet1_I9,Sheet1_I10], ifFunction)
+table([ab[7],Sheet1_C9,Sheet1_H8,tmp17], relationalOPFunction)
+table([ab[14],tmp44,Sheet1_C17,Sheet1_H16,tmp45], ifFunction)
+table([ab[30],Sheet1_D7,Sheet1_C7,Sheet1_F7], plusMultFunction)
+table([ab[23],Sheet1_C6,Sheet1_I5,tmp68], relationalOPFunction)
+table([ab[11],tmp28,Sheet1_F12,tmp29], plusMultFunction)
+table([ab[23],tmp68,Sheet1_C6,Sheet1_I5,tmp69], ifFunction)
+table([ab[49],Sheet1_C7,Sheet1_I6,tmp140], relationalOPFunction)
+table([ab[60],tmp165,tmp167,Sheet1_H5,Sheet1_H6], ifFunction)
+table([ab[37],tmp99,Sheet1_G11,tmp100], plusMultFunction)
+table([ab[39],Sheet1_D18,1,tmp114], relationalOPFunction)
+table([ab[47],Sheet1_C8,Sheet1_H7,tmp135], relationalOPFunction)
+table([ab[21],Sheet1_C11,Sheet1_I10,tmp60], relationalOPFunction)
+table([ab[10],tmp25,Sheet1_C4,1,Sheet1_H4], ifFunction)
+table([ab[58],Sheet1_E7,Sheet1_C7,Sheet1_G7], plusMultFunction)
+table([ab[38],Sheet1_D15,Sheet1_C15,Sheet1_F15], plusMultFunction)
+table([ab[40],Sheet1_E14,Sheet1_C14,Sheet1_G14], plusMultFunction)
+table([ab[39],tmp115,Sheet1_C18,Sheet1_H17,tmp116], ifFunction)
+table([ab[9],tmp22,Sheet1_C8,Sheet1_I7,tmp23], ifFunction)
+table([ab[17],tmp50,Sheet1_C16,Sheet1_I15,tmp51], ifFunction)
+table([ab[43],Sheet1_D13,1,tmp124], relationalOPFunction)
+table([ab[11],tmp37,Sheet1_F5,tmp38], plusMultFunction)
+table([ab[50],Sheet1_D18,Sheet1_C18,Sheet1_F18], plusMultFunction)
+table([ab[63],Sheet1_I18,Sheet1_H19], equalityFunction)
+table([ab[17],tmp49,tmp51,Sheet1_I15,Sheet1_I16], ifFunction)
+table([ab[51],Sheet1_E17,Sheet1_C17,Sheet1_G17], plusMultFunction)
+table([ab[37],tmp102,Sheet1_G16,tmp103], plusMultFunction)
+table([ab[18],tmp54,Sheet1_C12,Sheet1_H11,tmp55], ifFunction)
+table([ab[2],Sheet1_E18,1,tmp2], relationalOPFunction)
+table([ab[2],tmp2,tmp4,Sheet1_I17,Sheet1_I18], ifFunction)
+table([ab[18],Sheet1_C12,Sheet1_H11,tmp54], relationalOPFunction)
+table([ab[32],Sheet1_C10,Sheet1_H9,tmp85], relationalOPFunction)
+table([ab[0],Sheet1_E15,Sheet1_C15,Sheet1_G15], plusMultFunction)
+table([ab[25],Sheet1_E16,Sheet1_C16,Sheet1_G16], plusMultFunction)
+table([ab[6],tmp13,Sheet1_C13,Sheet1_I12,tmp14], ifFunction)
+table([ab[49],tmp140,Sheet1_C7,Sheet1_I6,tmp141], ifFunction)
+table([ab[34],Sheet1_E9,1,tmp89], relationalOPFunction)
+table([ab[62],Sheet1_D16,Sheet1_C16,Sheet1_F16], plusMultFunction)
+table([ab[9],Sheet1_E8,1,tmp21], relationalOPFunction)
+table([ab[24],Sheet1_D17,Sheet1_C17,Sheet1_F17], plusMultFunction)
+table([ab[7],Sheet1_D9,1,tmp16], relationalOPFunction)
+table([ab[34],tmp90,Sheet1_C9,Sheet1_I8,tmp91], ifFunction)
+table([ab[22],tmp63,tmp65,Sheet1_H6,Sheet1_H7], ifFunction)
+table([ab[37],tmp104,Sheet1_G5,tmp105], plusMultFunction)
+table([ab[3],tmp7,Sheet1_C14,Sheet1_H13,tmp8], ifFunction)
+table([ab[34],Sheet1_C9,Sheet1_I8,tmp90], relationalOPFunction)
+table([ab[46],tmp130,tmp132,Sheet1_I11,Sheet1_I12], ifFunction)
+table([ab[49],tmp139,tmp141,Sheet1_I6,Sheet1_I7], ifFunction)
+table([ab[22],Sheet1_C7,Sheet1_H6,tmp64], relationalOPFunction)
+table([ab[31],tmp80,tmp82,Sheet1_I13,Sheet1_I14], ifFunction)
+table([ab[11],tmp39,Sheet1_F18,Sheet1_F19], plusMultFunction)
+table([ab[11],tmp27,Sheet1_F13,tmp28], plusMultFunction)
+table([ab[11],tmp33,Sheet1_F4,tmp34], plusMultFunction)
+table([ab[34],tmp89,tmp91,Sheet1_I8,Sheet1_I9], ifFunction)
+table([ab[9],Sheet1_C8,Sheet1_I7,tmp22], relationalOPFunction)
+table([ab[42],Sheet1_E17,1,tmp120], relationalOPFunction)
+table([ab[6],Sheet1_C13,Sheet1_I12,tmp13], relationalOPFunction)
+table([ab[37],tmp101,Sheet1_G13,tmp102], plusMultFunction)
+table([ab[37],tmp108,Sheet1_G7,tmp109], plusMultFunction)
+table([ab[14],Sheet1_D17,1,tmp43], relationalOPFunction)
+table([ab[47],tmp135,Sheet1_C8,Sheet1_H7,tmp136], ifFunction)
+table([ab[3],Sheet1_C14,Sheet1_H13,tmp7], relationalOPFunction)
+table([ab[13],Sheet1_D14,Sheet1_C14,Sheet1_F14], plusMultFunction)
+table([ab[7],tmp16,tmp18,Sheet1_H8,Sheet1_H9], ifFunction)
+table([ab[42],tmp120,tmp122,Sheet1_I16,Sheet1_I17], ifFunction)
+table([ab[46],Sheet1_E12,1,tmp130], relationalOPFunction)
+table([ab[5],Sheet1_D6,Sheet1_C6,Sheet1_F6], plusMultFunction)
+table([ab[11],tmp36,Sheet1_F6,tmp37], plusMultFunction)
+table([ab[43],Sheet1_C13,Sheet1_H12,tmp125], relationalOPFunction)
+table([ab[57],Sheet1_D11,1,tmp156], relationalOPFunction)
+table([ab[35],tmp93,tmp95,Sheet1_H4,Sheet1_H5], ifFunction)
+table([ab[59],Sheet1_C10,Sheet1_I9,tmp162], relationalOPFunction)
+table([ab[61],tmp169,tmp171,Sheet1_I4,Sheet1_I5], ifFunction)
+table([ab[8],Sheet1_E5,Sheet1_C5,Sheet1_G5], plusMultFunction)
+table([ab[41],Sheet1_D10,Sheet1_C10,Sheet1_F10], plusMultFunction)
+table([ab[31],tmp81,Sheet1_C14,Sheet1_I13,tmp82], ifFunction)
+table([ab[32],tmp85,Sheet1_C10,Sheet1_H9,tmp86], ifFunction)
+table([ab[28],Sheet1_D15,1,tmp74], relationalOPFunction)
+table([ab[22],Sheet1_D7,1,tmp63], relationalOPFunction)
+table([ab[37],Sheet1_G10,Sheet1_G12,tmp99], plusMultFunction)
+table([ab[11],Sheet1_F11,Sheet1_F10,tmp27], plusMultFunction)
+table([ab[44],Sheet1_E9,Sheet1_C9,Sheet1_G9], plusMultFunction)
+table([ab[61],tmp170,Sheet1_C5,Sheet1_I4,tmp171], ifFunction)
+table([ab[9],tmp21,tmp23,Sheet1_I7,Sheet1_I8], ifFunction)
+table([ab[39],tmp114,tmp116,Sheet1_H17,Sheet1_H18], ifFunction)
+table([ab[21],Sheet1_E11,1,tmp59], relationalOPFunction)
+table([ab[53],Sheet1_D16,1,tmp146], relationalOPFunction)
+table([ab[37],tmp111,Sheet1_G17,Sheet1_G19], plusMultFunction)
+table([ab[23],Sheet1_E6,1,tmp67], relationalOPFunction)
+table([ab[35],Sheet1_C5,Sheet1_H4,tmp94], relationalOPFunction)
+table([ab[11],tmp35,Sheet1_F7,tmp36], plusMultFunction)
+table([ab[28],tmp75,Sheet1_C15,Sheet1_H14,tmp76], ifFunction)
+table([ab[31],Sheet1_C14,Sheet1_I13,tmp81], relationalOPFunction)
+table([ab[59],Sheet1_E10,1,tmp161], relationalOPFunction)
+table([ab[43],tmp124,tmp126,Sheet1_H12,Sheet1_H13], ifFunction)
+table([ab[48],Sheet1_E4,Sheet1_C4,Sheet1_G4], plusMultFunction)
+table([ab[52],Sheet1_D13,Sheet1_C13,Sheet1_F13], plusMultFunction)
+table([ab[56],tmp152,tmp154,Sheet1_I14,Sheet1_I15], ifFunction)
+table([ab[53],Sheet1_C16,Sheet1_H15,tmp147], relationalOPFunction)
+table([ab[11],tmp38,Sheet1_F9,tmp39], plusMultFunction)
+table([ab[31],Sheet1_E14,1,tmp80], relationalOPFunction)
+table([ab[56],Sheet1_E15,1,tmp152], relationalOPFunction)
+table([ab[11],tmp31,Sheet1_F17,tmp32], plusMultFunction)
+table([ab[59],tmp162,Sheet1_C10,Sheet1_I9,tmp163], ifFunction)
+table([ab[14],tmp43,tmp45,Sheet1_H16,Sheet1_H17], ifFunction)
+table([ab[15],Sheet1_E13,Sheet1_C13,Sheet1_G13], plusMultFunction)
+table([ab[2],tmp3,Sheet1_C18,Sheet1_I17,tmp4], ifFunction)
+table([ab[18],tmp53,tmp55,Sheet1_H11,Sheet1_H12], ifFunction)
+table([ab[60],Sheet1_D6,1,tmp165], relationalOPFunction)
+table([ab[36],tmp97,Sheet1_C4,1,Sheet1_I4], ifFunction)
+table([ab[17],Sheet1_E16,1,tmp49], relationalOPFunction)
+table([ab[2],Sheet1_C18,Sheet1_I17,tmp3], relationalOPFunction)
+table([ab[11],tmp32,Sheet1_F16,tmp33], plusMultFunction)
+table([ab[11],tmp29,Sheet1_F15,tmp30], plusMultFunction)
+table([ab[22],tmp64,Sheet1_C7,Sheet1_H6,tmp65], ifFunction)
+table([ab[60],tmp166,Sheet1_C6,Sheet1_H5,tmp167], ifFunction)
+table([ab[60],Sheet1_C6,Sheet1_H5,tmp166], relationalOPFunction)
+table([ab[35],Sheet1_D5,1,tmp93], relationalOPFunction)
+table([ab[29],Sheet1_E11,Sheet1_C11,Sheet1_G11], plusMultFunction)
+table([ab[21],tmp59,tmp61,Sheet1_I10,Sheet1_I11], ifFunction)
+table([ab[56],Sheet1_C15,Sheet1_I14,tmp153], relationalOPFunction)
+table([ab[14],Sheet1_C17,Sheet1_H16,tmp44], relationalOPFunction)
+table([ab[37],tmp107,Sheet1_G8,tmp108], plusMultFunction)
+table([ab[4],Sheet1_E10,Sheet1_C10,Sheet1_G10], plusMultFunction)
+table([ab[10],Sheet1_D4,1,tmp25], relationalOPFunction)
+table([ab[12],Sheet1_E18,Sheet1_C18,Sheet1_G18], plusMultFunction)
+table([ab[18],Sheet1_D12,1,tmp53], relationalOPFunction)
+
+# TEST CASE / Observations
+eq(Sheet1_C10,1)
+eq(Sheet1_C11,1)
+eq(Sheet1_C12,1)
+eq(Sheet1_C13,1)
+eq(Sheet1_C14,1)
+eq(Sheet1_C15,1)
+eq(Sheet1_C16,1)
+eq(Sheet1_C17,1)
+eq(Sheet1_C18,1)
+eq(Sheet1_C4,1)
+eq(Sheet1_C5,1)
+eq(Sheet1_C6,1)
+eq(Sheet1_C7,1)
+eq(Sheet1_C8,1)
+eq(Sheet1_C9,1)
+eq(Sheet1_D10,1)
+eq(Sheet1_D11,1)
+eq(Sheet1_D12,1)
+eq(Sheet1_D13,1)
+eq(Sheet1_D14,1)
+eq(Sheet1_D15,1)
+eq(Sheet1_D16,1)
+eq(Sheet1_D17,1)
+eq(Sheet1_D18,1)
+eq(Sheet1_D4,1)
+eq(Sheet1_D5,1)
+eq(Sheet1_D6,1)
+eq(Sheet1_D7,1)
+eq(Sheet1_D8,1)
+eq(Sheet1_D9,1)
+eq(Sheet1_E10,1)
+eq(Sheet1_E11,1)
+eq(Sheet1_E12,1)
+eq(Sheet1_E13,1)
+eq(Sheet1_E14,1)
+eq(Sheet1_E15,1)
+eq(Sheet1_E16,1)
+eq(Sheet1_E17,1)
+eq(Sheet1_E18,1)
+eq(Sheet1_E4,1)
+eq(Sheet1_E5,1)
+eq(Sheet1_E6,1)
+eq(Sheet1_E7,1)
+eq(Sheet1_E8,1)
+eq(Sheet1_E9,1)
+eq(Sheet1_F19,1)
+eq(Sheet1_G19,1)
+eq(Sheet1_H18,1)
+eq(Sheet1_H19,0)
+eq(Sheet1_I19,1)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+element(ab,63,0)
+watched-or({element(ab,27,0),element(ab,61,0)})
+watched-or({element(ab,27,0),element(ab,59,0)})
+watched-or({element(ab,27,0),element(ab,56,0)})
+watched-or({element(ab,27,0),element(ab,49,0)})
+watched-or({element(ab,27,0),element(ab,46,0)})
+watched-or({element(ab,27,0),element(ab,42,0)})
+watched-or({element(ab,27,0),element(ab,36,0)})
+watched-or({element(ab,27,0),element(ab,34,0)})
+watched-or({element(ab,27,0),element(ab,31,0)})
+watched-or({element(ab,23,0),element(ab,27,0)})
+watched-or({element(ab,21,0),element(ab,27,0)})
+watched-or({element(ab,17,0),element(ab,27,0)})
+watched-or({element(ab,9,0),element(ab,27,0)})
+watched-or({element(ab,6,0),element(ab,27,0)})
+watched-or({element(ab,2,0),element(ab,27,0)})
+**EOF**

@@ -1,0 +1,29 @@
+MINION 3
+**VARIABLES**
+BOOL Sheet1_A1
+BOOL Sheet1_A2
+BOOL Sheet1_A3
+BOOL Sheet1_A4
+BOOL Sheet1_B1
+BOOL ab[1]
+BOOL tmp0
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+watched-or({element(ab,0,1), min([Sheet1_A4,Sheet1_A3,Sheet1_A2,Sheet1_A1],tmp0)})
+watched-or({element(ab,0,1), reifyimply(eq(Sheet1_B1,1),tmp0)})
+
+# TEST CASE / Observations
+eq(Sheet1_A1,1)
+eq(Sheet1_A2,1)
+eq(Sheet1_A3,1)
+eq(Sheet1_A4,1)
+eq(Sheet1_B1,0)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,1)
+watchsumleq(ab,1)
+**EOF**
