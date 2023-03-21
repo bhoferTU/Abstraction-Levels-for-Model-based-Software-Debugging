@@ -30,7 +30,7 @@ indeterministic, but more performant statistical debugging techniques.
 ## Benchmark data
 
 We used two datasets in our experiments:
-+ a set of [artificially created spreadsheets](Benchmarks/Iulia/SEEDED/): The structure of these spreadsheets is described in the paper.
++ a set of [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets/): The structure of these spreadsheets is described in the paper.
 + the [Integer spreadsheet corpus](Benchmarks/INTEGER/): Details about this corpus can be found on the website [spreadsheets.ist.tugraz.at](https://spreadsheets.ist.tugraz.at/index.php/corpora-for-benchmarking/integer-corpus/) and in the  paper ["The Right Choice Matters! SMT Solving Substantially Improves Model-Based Debugging of Spreadsheets"](https://ieeexplore.ieee.org/document/6605919?arnumber=6605919)
 
 Each faulty spreadsheet comes with a .properties file listing the correct and erroneous output cells.
