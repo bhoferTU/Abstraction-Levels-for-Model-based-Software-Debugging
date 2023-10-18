@@ -49,6 +49,64 @@ In order to obtain the diagnoses of a certain cardinality the ```#SIZE OF SOLUTI
 + By default, only the minimal diagnoses are reported. If you are interested in all diagnoses, you have to remove all ```element(ab,n,0)``` and ```watched-or({element(ab,i,0),element(ab,j,0)})``` statements.
 
 
+## Rerun the experiments
+
+**Note:** We ran the experiments on Windows. If you want to rerun the experiments on another OS you might have to modify the code that calls the Minion solver and recompile the code.
+
+
+#### Settings Experiment 1
+* [Download](https://constraintmodelling.org/sdm_downloads/minion-1-8-windows-version/) the executable of the Minion constraint solver and place it in the project's main folder.
+* Adjust the experiment settings in the [config](config) file. The parameters are explained in the file. If you want to rerun the experiments, please copy the settings from below.
+  * NUM_RUNS = 10
+  * MAX_DIAGNOSIS_SIZE = 3
+  * TIMEOUT_MINUTES = 20
+  * ALL_DIAGNOSES = false
+  * PATH_TO_PROPERTIES_FILES = Benchmarks\\ArtifSpreadsheets\\SEEDED\\PropertiesFiles
+* Run the [jar file](ModelBasedDebuggerForSpreadsheets.jar): 
+````java -jar ModelBasedDebuggerForSpreadsheets.jar````
+
+
+
+Afterwards rerun the experiments with
+* PATH_TO_PROPERTIES_FILES = Benchmarks\\INTEGER\\configuration_files\\fromAFW
+
+#### Experiments 2 (Further analysis)
+
+Based on the raw results obtained from *Experiments 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.3. Evaluation Results*). 
+
+The [ExperimentsInfo](src/at/tugraz/ist/debugging/spreadsheets/datastructures/cells/ExperimentsInfo.java) class is the main class responsible for running the experimental analysis for both datasets. 
+The desired functionality can be changed in the code:
++ you can choose the file to put the new analysis results in:
+```String csvFile = "NewAnalysisIC.csv";```
++ you have to specify the spreadsheets to be analyzed:
+```files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));```
++ you have to specify the Excel file containing the results of *Experiments 1*:
+```FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsIC.xlsx"));```
+
+One can easily rerun also these experiments for the [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets) by executing [Experiments2AS.jar](Experiments2AS.jar). For the [Integer spreadsheet corpus](Benchmarks/INTEGER), the experiments can be reproduced by running [Experiments2IC.jar](Experiments2IC.jar). A detailed description of the experimental results can be found in *Further analysis data*.
+
+## Recompile the code
+
+*Required Libraries:*
+
+* ```commons-collections4-4.1.jar```
+* ```commons-lang3-3.3.2.jar``` 
+* ```javassist-3.18.0-GA.jar```
+* ```ooxml-lib.jar```
+* ```poi-3.15.jar```
+* ```slf4j-1.7.6.jar```
+* ```jung2-2_0_1.zip.jar```
+* ```choco-solver-2.1.5.jar```
+* ```choco-solver-cpviz-2.1.5.jar```
+* ```com.microsoft.z3.jar```
+* ```commons-io-1.4.jar```
+* ```guava-16.0.1.jar```
+* ```junit-4.10jar```
+* ```reflections-0.9.9-RC1.jar```
+* [lib/hittingSets.jar](lib/hittingSets.jar)
+* [lib/IstUtils.jar](lib/IstUtils.jar)
+
+
 ## Raw results data 
 
 The raw results data of our experiments can be found in the [results](results/) folder.

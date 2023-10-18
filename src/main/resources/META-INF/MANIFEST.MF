@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Created-By: hobi
+Main-Class: at.tugraz.ist.debugging.modelbased.main.MinionFileCreator
