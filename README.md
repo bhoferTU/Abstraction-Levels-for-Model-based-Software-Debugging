@@ -23,7 +23,7 @@ up to more than half of the cases while
 exhibiting an orders-of-magnitude faster computation time.
 
 Due to their capability of restricting the solution space in a proven sound way, the examined model-based techniques, rather than being used as standalone approaches,
-are expected to unfold their full potential in combination with iterative sequential diagnosis techniques, or with %less precise
+are expected to unfold their full potential in combination with iterative sequential diagnosis techniques, or with
 indeterministic, but more performant statistical debugging techniques.
 
 
