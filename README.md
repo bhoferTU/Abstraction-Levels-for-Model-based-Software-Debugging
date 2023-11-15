@@ -54,7 +54,7 @@ In order to obtain the diagnoses of a certain cardinality the ```#SIZE OF SOLUTI
 **Note:** We ran the experiments on Windows. If you want to rerun the experiments on another OS you might have to modify the code that calls the Minion solver and recompile the code.
 
 
-#### Settings Experiment 1
+#### Experiment 1
 * [Download](https://constraintmodelling.org/sdm_downloads/minion-1-8-windows-version/) the executable of the Minion constraint solver and place it in the project's main folder.
 * Adjust the experiment settings in the [config](config) file. The parameters are explained in the file. If you want to rerun the experiments, please copy the settings from below.
   * NUM_RUNS = 10
