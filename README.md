@@ -2,7 +2,7 @@
 
 This repository provides the evaluation data of the experiments 
 described in *"Choosing Abstraction Levels for Model-based Software Debugging: 
-A Theoretical and Empirical Analysis for Spreadsheet Programs"* written by Birgit Hofer, Dietmar Jannachc, Iulia Nica, Patrick Rodler, and Franz Wotawa.
+A Theoretical and Empirical Analysis for Spreadsheet Programs"* written by Birgit Hofer, Dietmar Jannach, Iulia Nica, Patrick Rodler, and Franz Wotawa.
 
 ## About the paper
 
