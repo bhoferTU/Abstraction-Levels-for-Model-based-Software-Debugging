@@ -1,0 +1,552 @@
+MINION 3
+**VARIABLES**
+BOOL Sheet1_C10
+BOOL Sheet1_C11
+BOOL Sheet1_C12
+BOOL Sheet1_C13
+BOOL Sheet1_C14
+BOOL Sheet1_C15
+BOOL Sheet1_C16
+BOOL Sheet1_C17
+BOOL Sheet1_C18
+BOOL Sheet1_C4
+BOOL Sheet1_C5
+BOOL Sheet1_C6
+BOOL Sheet1_C7
+BOOL Sheet1_C8
+BOOL Sheet1_C9
+BOOL Sheet1_D10
+BOOL Sheet1_D11
+BOOL Sheet1_D12
+BOOL Sheet1_D13
+BOOL Sheet1_D14
+BOOL Sheet1_D15
+BOOL Sheet1_D16
+BOOL Sheet1_D17
+BOOL Sheet1_D18
+BOOL Sheet1_D4
+BOOL Sheet1_D5
+BOOL Sheet1_D6
+BOOL Sheet1_D7
+BOOL Sheet1_D8
+BOOL Sheet1_D9
+BOOL Sheet1_E10
+BOOL Sheet1_E11
+BOOL Sheet1_E12
+BOOL Sheet1_E13
+BOOL Sheet1_E14
+BOOL Sheet1_E15
+BOOL Sheet1_E16
+BOOL Sheet1_E17
+BOOL Sheet1_E18
+BOOL Sheet1_E4
+BOOL Sheet1_E5
+BOOL Sheet1_E6
+BOOL Sheet1_E7
+BOOL Sheet1_E8
+BOOL Sheet1_E9
+BOOL Sheet1_F10
+BOOL Sheet1_F11
+BOOL Sheet1_F12
+BOOL Sheet1_F13
+BOOL Sheet1_F14
+BOOL Sheet1_F15
+BOOL Sheet1_F16
+BOOL Sheet1_F17
+BOOL Sheet1_F18
+BOOL Sheet1_F19
+BOOL Sheet1_F4
+BOOL Sheet1_F5
+BOOL Sheet1_F6
+BOOL Sheet1_F7
+BOOL Sheet1_F8
+BOOL Sheet1_F9
+BOOL Sheet1_G10
+BOOL Sheet1_G11
+BOOL Sheet1_G12
+BOOL Sheet1_G13
+BOOL Sheet1_G14
+BOOL Sheet1_G15
+BOOL Sheet1_G16
+BOOL Sheet1_G17
+BOOL Sheet1_G18
+BOOL Sheet1_G19
+BOOL Sheet1_G4
+BOOL Sheet1_G5
+BOOL Sheet1_G6
+BOOL Sheet1_G7
+BOOL Sheet1_G8
+BOOL Sheet1_G9
+BOOL Sheet1_H10
+BOOL Sheet1_H11
+BOOL Sheet1_H12
+BOOL Sheet1_H13
+BOOL Sheet1_H14
+BOOL Sheet1_H15
+BOOL Sheet1_H16
+BOOL Sheet1_H17
+BOOL Sheet1_H18
+BOOL Sheet1_H19
+BOOL Sheet1_H4
+BOOL Sheet1_H5
+BOOL Sheet1_H6
+BOOL Sheet1_H7
+BOOL Sheet1_H8
+BOOL Sheet1_H9
+BOOL Sheet1_I10
+BOOL Sheet1_I11
+BOOL Sheet1_I12
+BOOL Sheet1_I13
+BOOL Sheet1_I14
+BOOL Sheet1_I15
+BOOL Sheet1_I16
+BOOL Sheet1_I17
+BOOL Sheet1_I18
+BOOL Sheet1_I19
+BOOL Sheet1_I4
+BOOL Sheet1_I5
+BOOL Sheet1_I6
+BOOL Sheet1_I7
+BOOL Sheet1_I8
+BOOL Sheet1_I9
+BOOL ab[64]
+BOOL tmp100
+BOOL tmp101
+BOOL tmp102
+BOOL tmp103
+BOOL tmp104
+BOOL tmp105
+BOOL tmp106
+BOOL tmp107
+BOOL tmp108
+BOOL tmp109
+BOOL tmp110
+BOOL tmp113
+BOOL tmp114
+BOOL tmp115
+BOOL tmp119
+BOOL tmp12
+BOOL tmp120
+BOOL tmp121
+BOOL tmp123
+BOOL tmp124
+BOOL tmp125
+BOOL tmp129
+BOOL tmp13
+BOOL tmp130
+BOOL tmp131
+BOOL tmp133
+BOOL tmp134
+BOOL tmp135
+BOOL tmp138
+BOOL tmp139
+BOOL tmp14
+BOOL tmp140
+BOOL tmp145
+BOOL tmp146
+BOOL tmp147
+BOOL tmp151
+BOOL tmp152
+BOOL tmp153
+BOOL tmp155
+BOOL tmp156
+BOOL tmp157
+BOOL tmp16
+BOOL tmp160
+BOOL tmp161
+BOOL tmp162
+BOOL tmp164
+BOOL tmp165
+BOOL tmp166
+BOOL tmp168
+BOOL tmp169
+BOOL tmp17
+BOOL tmp170
+BOOL tmp18
+BOOL tmp2
+BOOL tmp21
+BOOL tmp22
+BOOL tmp23
+BOOL tmp25
+BOOL tmp27
+BOOL tmp28
+BOOL tmp29
+BOOL tmp3
+BOOL tmp30
+BOOL tmp31
+BOOL tmp32
+BOOL tmp33
+BOOL tmp34
+BOOL tmp35
+BOOL tmp36
+BOOL tmp37
+BOOL tmp38
+BOOL tmp4
+BOOL tmp42
+BOOL tmp43
+BOOL tmp44
+BOOL tmp48
+BOOL tmp49
+BOOL tmp50
+BOOL tmp52
+BOOL tmp53
+BOOL tmp54
+BOOL tmp58
+BOOL tmp59
+BOOL tmp6
+BOOL tmp60
+BOOL tmp62
+BOOL tmp63
+BOOL tmp64
+BOOL tmp66
+BOOL tmp67
+BOOL tmp68
+BOOL tmp7
+BOOL tmp73
+BOOL tmp74
+BOOL tmp75
+BOOL tmp79
+BOOL tmp8
+BOOL tmp80
+BOOL tmp81
+BOOL tmp83
+BOOL tmp84
+BOOL tmp85
+BOOL tmp88
+BOOL tmp89
+BOOL tmp90
+BOOL tmp92
+BOOL tmp93
+BOOL tmp94
+BOOL tmp96
+BOOL tmp98
+BOOL tmp99
+
+**TUPLELIST**
+
+multRelOpMinMaxFunction  15 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+plusMinusFunction  13 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 1 0 0 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+divFunction  14 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 1 0 0 
+0 1 0 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+ifFunctionD  30 5 
+0 1 1 1 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 1 0 
+0 0 1 1 1 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 1 0 
+1 0 1 1 1 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 1 0 
+1 1 1 1 1 
+
+equalityFunctionD 6 3 
+0 0 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+table([ab[36],Sheet1_E4,1,tmp96], multRelOpMinMaxFunction)
+table([ab[44],Sheet1_E9,Sheet1_C9,Sheet1_G9], multRelOpMinMaxFunction)
+table([ab[0],Sheet1_E15,Sheet1_C15,Sheet1_G15], multRelOpMinMaxFunction)
+table([ab[37],tmp109,Sheet1_G18,tmp110], plusMinusFunction)
+table([ab[47],tmp133,tmp135,Sheet1_H7,Sheet1_H8], ifFunctionD)
+table([ab[9],Sheet1_C8,Sheet1_I7,tmp22], multRelOpMinMaxFunction)
+table([ab[38],Sheet1_D15,Sheet1_C15,Sheet1_F15], multRelOpMinMaxFunction)
+table([ab[23],tmp66,tmp68,Sheet1_I5,Sheet1_I6], ifFunctionD)
+table([ab[46],tmp130,Sheet1_C12,Sheet1_I11,tmp131], ifFunctionD)
+table([ab[46],tmp129,tmp131,Sheet1_I11,Sheet1_I12], ifFunctionD)
+table([ab[60],tmp164,tmp166,Sheet1_H5,Sheet1_H6], ifFunctionD)
+table([ab[59],tmp161,Sheet1_C10,Sheet1_I9,tmp162], ifFunctionD)
+table([ab[43],tmp123,tmp125,Sheet1_H12,Sheet1_H13], ifFunctionD)
+table([ab[30],Sheet1_D7,Sheet1_C7,Sheet1_F7], multRelOpMinMaxFunction)
+table([ab[32],Sheet1_D10,1,tmp83], multRelOpMinMaxFunction)
+table([ab[37],tmp110,Sheet1_G17,Sheet1_G19], plusMinusFunction)
+table([ab[14],tmp43,Sheet1_C17,Sheet1_H16,tmp44], ifFunctionD)
+table([ab[29],Sheet1_E11,Sheet1_C11,Sheet1_G11], multRelOpMinMaxFunction)
+table([ab[56],tmp152,Sheet1_C15,Sheet1_I14,tmp153], ifFunctionD)
+table([ab[32],Sheet1_C10,Sheet1_H9,tmp84], multRelOpMinMaxFunction)
+table([ab[37],tmp106,Sheet1_G8,tmp107], plusMinusFunction)
+table([ab[6],Sheet1_C13,Sheet1_I12,tmp13], multRelOpMinMaxFunction)
+table([ab[40],Sheet1_E14,Sheet1_C14,Sheet1_G14], multRelOpMinMaxFunction)
+table([ab[43],Sheet1_C13,Sheet1_H12,tmp124], multRelOpMinMaxFunction)
+table([ab[3],tmp7,Sheet1_C14,Sheet1_H13,tmp8], ifFunctionD)
+table([ab[18],Sheet1_C12,Sheet1_H11,tmp53], multRelOpMinMaxFunction)
+table([ab[28],Sheet1_C15,Sheet1_H14,tmp74], multRelOpMinMaxFunction)
+table([ab[11],tmp32,Sheet1_F16,tmp33], plusMinusFunction)
+table([ab[34],Sheet1_C9,Sheet1_I8,tmp89], multRelOpMinMaxFunction)
+table([ab[53],Sheet1_C16,Sheet1_H15,tmp146], multRelOpMinMaxFunction)
+table([ab[1],Sheet1_D11,Sheet1_C11,Sheet1_F11], multRelOpMinMaxFunction)
+table([ab[21],Sheet1_C11,Sheet1_I10,tmp59], multRelOpMinMaxFunction)
+table([ab[17],tmp49,Sheet1_C16,Sheet1_I15,tmp50], ifFunctionD)
+table([ab[25],Sheet1_E16,Sheet1_C16,Sheet1_G16], multRelOpMinMaxFunction)
+table([ab[3],Sheet1_C14,Sheet1_H13,tmp7], multRelOpMinMaxFunction)
+table([ab[53],tmp145,tmp147,Sheet1_H15,Sheet1_H16], ifFunctionD)
+table([ab[42],Sheet1_C17,Sheet1_I16,tmp120], multRelOpMinMaxFunction)
+table([ab[35],Sheet1_C5,Sheet1_H4,tmp93], multRelOpMinMaxFunction)
+table([ab[37],tmp105,Sheet1_G9,tmp106], plusMinusFunction)
+table([ab[31],tmp80,Sheet1_C14,Sheet1_I13,tmp81], ifFunctionD)
+table([ab[6],Sheet1_E13,1,tmp12], multRelOpMinMaxFunction)
+table([ab[60],Sheet1_D6,1,tmp164], multRelOpMinMaxFunction)
+table([ab[21],Sheet1_E11,1,tmp58], multRelOpMinMaxFunction)
+table([ab[18],Sheet1_D12,1,tmp52], multRelOpMinMaxFunction)
+table([ab[26],Sheet1_D12,Sheet1_C12,Sheet1_F12], multRelOpMinMaxFunction)
+table([ab[11],tmp37,Sheet1_F9,tmp38], plusMinusFunction)
+table([ab[2],tmp2,tmp4,Sheet1_I17,Sheet1_I18], ifFunctionD)
+table([ab[51],Sheet1_E17,Sheet1_C17,Sheet1_G17], multRelOpMinMaxFunction)
+table([ab[37],tmp107,Sheet1_G7,tmp108], plusMinusFunction)
+table([ab[61],Sheet1_E5,1,tmp168], multRelOpMinMaxFunction)
+table([ab[41],Sheet1_D10,Sheet1_C10,Sheet1_F10], multRelOpMinMaxFunction)
+table([ab[42],tmp119,tmp121,Sheet1_I16,Sheet1_I17], ifFunctionD)
+table([ab[21],tmp59,Sheet1_C11,Sheet1_I10,tmp60], ifFunctionD)
+table([ab[3],tmp6,tmp8,Sheet1_H13,Sheet1_H14], ifFunctionD)
+table([ab[9],tmp21,tmp23,Sheet1_I7,Sheet1_I8], ifFunctionD)
+table([ab[11],tmp35,Sheet1_F6,tmp36], plusMinusFunction)
+table([ab[31],Sheet1_C14,Sheet1_I13,tmp80], multRelOpMinMaxFunction)
+table([ab[56],Sheet1_C15,Sheet1_I14,tmp152], multRelOpMinMaxFunction)
+table([ab[9],tmp22,Sheet1_C8,Sheet1_I7,tmp23], ifFunctionD)
+table([ab[11],tmp29,Sheet1_F15,tmp30], plusMinusFunction)
+table([ab[28],tmp74,Sheet1_C15,Sheet1_H14,tmp75], ifFunctionD)
+table([ab[18],tmp52,tmp54,Sheet1_H11,Sheet1_H12], ifFunctionD)
+table([ab[35],tmp92,tmp94,Sheet1_H4,Sheet1_H5], ifFunctionD)
+table([ab[37],tmp101,Sheet1_G16,tmp102], plusMinusFunction)
+table([ab[11],tmp28,Sheet1_F12,tmp29], plusMinusFunction)
+table([ab[39],Sheet1_C18,Sheet1_H17,tmp114], multRelOpMinMaxFunction)
+table([ab[50],Sheet1_D18,Sheet1_C18,Sheet1_F18], multRelOpMinMaxFunction)
+table([ab[60],Sheet1_C6,Sheet1_H5,tmp165], multRelOpMinMaxFunction)
+table([ab[11],tmp36,Sheet1_F5,tmp37], plusMinusFunction)
+table([ab[27],Sheet1_I18,Sheet1_I19], equalityFunctionD)
+table([ab[57],tmp155,tmp157,Sheet1_H10,Sheet1_H11], ifFunctionD)
+table([ab[2],tmp3,Sheet1_C18,Sheet1_I17,tmp4], ifFunctionD)
+table([ab[32],tmp84,Sheet1_C10,Sheet1_H9,tmp85], ifFunctionD)
+table([ab[49],tmp138,tmp140,Sheet1_I6,Sheet1_I7], ifFunctionD)
+table([ab[3],Sheet1_D14,1,tmp6], multRelOpMinMaxFunction)
+table([ab[11],tmp38,Sheet1_F18,Sheet1_F19], plusMinusFunction)
+table([ab[31],tmp79,tmp81,Sheet1_I13,Sheet1_I14], ifFunctionD)
+table([ab[49],Sheet1_E7,1,tmp138], multRelOpMinMaxFunction)
+table([ab[17],Sheet1_E16,1,tmp48], multRelOpMinMaxFunction)
+table([ab[59],Sheet1_E10,1,tmp160], multRelOpMinMaxFunction)
+table([ab[58],Sheet1_E7,Sheet1_C7,Sheet1_G7], multRelOpMinMaxFunction)
+table([ab[49],tmp139,Sheet1_C7,Sheet1_I6,tmp140], ifFunctionD)
+table([ab[22],tmp62,tmp64,Sheet1_H6,Sheet1_H7], ifFunctionD)
+table([ab[55],Sheet1_D8,Sheet1_C8,Sheet1_F8], multRelOpMinMaxFunction)
+table([ab[33],Sheet1_E6,Sheet1_C6,Sheet1_G6], multRelOpMinMaxFunction)
+table([ab[62],Sheet1_D16,Sheet1_C16,Sheet1_F16], multRelOpMinMaxFunction)
+table([ab[6],tmp13,Sheet1_C13,Sheet1_I12,tmp14], ifFunctionD)
+table([ab[23],Sheet1_C6,Sheet1_I5,tmp67], multRelOpMinMaxFunction)
+table([ab[2],Sheet1_C18,Sheet1_I17,tmp3], multRelOpMinMaxFunction)
+table([ab[17],tmp48,tmp50,Sheet1_I15,Sheet1_I16], ifFunctionD)
+table([ab[2],Sheet1_E18,1,tmp2], multRelOpMinMaxFunction)
+table([ab[7],tmp16,tmp18,Sheet1_H8,Sheet1_H9], ifFunctionD)
+table([ab[37],tmp98,Sheet1_G11,tmp99], plusMinusFunction)
+table([ab[39],tmp113,tmp115,Sheet1_H17,Sheet1_H18], ifFunctionD)
+table([ab[47],Sheet1_D8,1,tmp133], multRelOpMinMaxFunction)
+table([ab[37],tmp99,Sheet1_G14,tmp100], plusMinusFunction)
+table([ab[39],tmp114,Sheet1_C18,Sheet1_H17,tmp115], ifFunctionD)
+table([ab[37],tmp103,Sheet1_G5,tmp104], plusMinusFunction)
+table([ab[48],Sheet1_E4,Sheet1_C4,Sheet1_G4], multRelOpMinMaxFunction)
+table([ab[57],Sheet1_C11,Sheet1_H10,tmp156], multRelOpMinMaxFunction)
+table([ab[37],Sheet1_G10,Sheet1_G12,tmp98], plusMinusFunction)
+table([ab[19],1,Sheet1_C8,Sheet1_G8], multRelOpMinMaxFunction)
+table([ab[28],tmp73,tmp75,Sheet1_H14,Sheet1_H15], ifFunctionD)
+table([ab[5],Sheet1_D6,Sheet1_C6,Sheet1_F6], multRelOpMinMaxFunction)
+table([ab[61],tmp168,tmp170,Sheet1_I4,Sheet1_I5], ifFunctionD)
+table([ab[36],tmp96,Sheet1_C4,1,Sheet1_I4], ifFunctionD)
+table([ab[42],Sheet1_E17,1,tmp119], multRelOpMinMaxFunction)
+table([ab[61],tmp169,Sheet1_C5,Sheet1_I4,tmp170], ifFunctionD)
+table([ab[14],Sheet1_C17,Sheet1_H16,tmp43], multRelOpMinMaxFunction)
+table([ab[61],Sheet1_C5,Sheet1_I4,tmp169], multRelOpMinMaxFunction)
+table([ab[11],tmp27,Sheet1_F13,tmp28], plusMinusFunction)
+table([ab[14],tmp42,tmp44,Sheet1_H16,Sheet1_H17], ifFunctionD)
+table([ab[12],Sheet1_E18,Sheet1_C18,Sheet1_G18], multRelOpMinMaxFunction)
+table([ab[11],tmp33,Sheet1_F8,tmp34], plusMinusFunction)
+table([ab[23],tmp67,Sheet1_C6,Sheet1_I5,tmp68], ifFunctionD)
+table([ab[28],Sheet1_D15,1,tmp73], multRelOpMinMaxFunction)
+table([ab[46],Sheet1_C12,Sheet1_I11,tmp130], multRelOpMinMaxFunction)
+table([ab[57],Sheet1_D11,1,tmp155], multRelOpMinMaxFunction)
+table([ab[7],tmp17,Sheet1_C9,Sheet1_H8,tmp18], ifFunctionD)
+table([ab[39],Sheet1_D18,1,tmp113], multRelOpMinMaxFunction)
+table([ab[47],Sheet1_C8,Sheet1_H7,tmp134], multRelOpMinMaxFunction)
+table([ab[10],tmp25,Sheet1_C4,1,Sheet1_H4], ifFunctionD)
+table([ab[21],tmp58,tmp60,Sheet1_I10,Sheet1_I11], ifFunctionD)
+table([ab[53],tmp146,Sheet1_C16,Sheet1_H15,tmp147], ifFunctionD)
+table([ab[45],Sheet1_D5,Sheet1_C5,Sheet1_F5], multRelOpMinMaxFunction)
+table([ab[37],tmp104,Sheet1_G4,tmp105], plusMinusFunction)
+table([ab[15],Sheet1_E13,Sheet1_C13,Sheet1_G13], multRelOpMinMaxFunction)
+table([ab[53],Sheet1_D16,1,tmp145], multRelOpMinMaxFunction)
+table([ab[42],tmp120,Sheet1_C17,Sheet1_I16,tmp121], ifFunctionD)
+table([ab[16],Sheet1_D9,Sheet1_C9,Sheet1_F9], multRelOpMinMaxFunction)
+table([ab[59],tmp160,tmp162,Sheet1_I9,Sheet1_I10], ifFunctionD)
+table([ab[11],tmp34,Sheet1_F7,tmp35], plusMinusFunction)
+table([ab[17],Sheet1_C16,Sheet1_I15,tmp49], multRelOpMinMaxFunction)
+table([ab[13],Sheet1_D14,Sheet1_C14,Sheet1_F14], multRelOpMinMaxFunction)
+table([ab[22],Sheet1_D7,1,tmp62], multRelOpMinMaxFunction)
+table([ab[8],Sheet1_E5,Sheet1_C5,Sheet1_G5], multRelOpMinMaxFunction)
+table([ab[23],Sheet1_E6,1,tmp66], multRelOpMinMaxFunction)
+table([ab[43],tmp124,Sheet1_C13,Sheet1_H12,tmp125], ifFunctionD)
+table([ab[7],Sheet1_C9,Sheet1_H8,tmp17], multRelOpMinMaxFunction)
+table([ab[46],Sheet1_E12,1,tmp129], multRelOpMinMaxFunction)
+table([ab[59],Sheet1_C10,Sheet1_I9,tmp161], multRelOpMinMaxFunction)
+table([ab[35],Sheet1_D5,1,tmp92], multRelOpMinMaxFunction)
+table([ab[63],Sheet1_H18,Sheet1_H19], equalityFunctionD)
+table([ab[20],Sheet1_D4,Sheet1_C4,Sheet1_F4], multRelOpMinMaxFunction)
+table([ab[24],Sheet1_D17,Sheet1_C17,Sheet1_F17], multRelOpMinMaxFunction)
+table([ab[4],Sheet1_E10,Sheet1_C10,Sheet1_G10], multRelOpMinMaxFunction)
+table([ab[6],tmp12,tmp14,Sheet1_I12,Sheet1_I13], ifFunctionD)
+table([ab[34],tmp89,Sheet1_C9,Sheet1_I8,tmp90], ifFunctionD)
+table([ab[22],Sheet1_C7,Sheet1_H6,tmp63], multRelOpMinMaxFunction)
+table([ab[18],tmp53,Sheet1_C12,Sheet1_H11,tmp54], ifFunctionD)
+table([ab[49],Sheet1_C7,Sheet1_I6,tmp139], multRelOpMinMaxFunction)
+table([ab[47],tmp134,Sheet1_C8,Sheet1_H7,tmp135], ifFunctionD)
+table([ab[37],tmp102,Sheet1_G15,tmp103], plusMinusFunction)
+table([ab[56],Sheet1_E15,1,tmp151], multRelOpMinMaxFunction)
+table([ab[14],Sheet1_D17,1,tmp42], multRelOpMinMaxFunction)
+table([ab[7],Sheet1_D9,1,tmp16], multRelOpMinMaxFunction)
+table([ab[22],tmp63,Sheet1_C7,Sheet1_H6,tmp64], ifFunctionD)
+table([ab[32],tmp83,tmp85,Sheet1_H9,Sheet1_H10], ifFunctionD)
+table([ab[34],tmp88,tmp90,Sheet1_I8,Sheet1_I9], ifFunctionD)
+table([ab[56],tmp151,tmp153,Sheet1_I14,Sheet1_I15], ifFunctionD)
+table([ab[52],Sheet1_D13,Sheet1_C13,Sheet1_F13], multRelOpMinMaxFunction)
+table([ab[37],tmp108,Sheet1_G6,tmp109], plusMinusFunction)
+table([ab[43],Sheet1_D13,1,tmp123], multRelOpMinMaxFunction)
+table([ab[35],tmp93,Sheet1_C5,Sheet1_H4,tmp94], ifFunctionD)
+table([ab[11],tmp31,Sheet1_F17,tmp32], plusMinusFunction)
+table([ab[57],tmp156,Sheet1_C11,Sheet1_H10,tmp157], ifFunctionD)
+table([ab[31],Sheet1_E14,1,tmp79], multRelOpMinMaxFunction)
+table([ab[11],Sheet1_F11,Sheet1_F10,tmp27], plusMinusFunction)
+table([ab[10],Sheet1_D4,1,tmp25], multRelOpMinMaxFunction)
+table([ab[9],Sheet1_E8,1,tmp21], multRelOpMinMaxFunction)
+table([ab[60],tmp165,Sheet1_C6,Sheet1_H5,tmp166], ifFunctionD)
+table([ab[11],tmp30,Sheet1_F14,tmp31], plusMinusFunction)
+table([ab[54],Sheet1_E12,Sheet1_C12,Sheet1_G12], multRelOpMinMaxFunction)
+table([ab[37],tmp100,Sheet1_G13,tmp101], plusMinusFunction)
+table([ab[34],Sheet1_E9,1,tmp88], multRelOpMinMaxFunction)
+
+# TEST CASE / Observations
+eq(Sheet1_C10,1)
+eq(Sheet1_C11,1)
+eq(Sheet1_C12,1)
+eq(Sheet1_C13,1)
+eq(Sheet1_C14,1)
+eq(Sheet1_C15,1)
+eq(Sheet1_C16,1)
+eq(Sheet1_C17,1)
+eq(Sheet1_C18,1)
+eq(Sheet1_C4,1)
+eq(Sheet1_C5,1)
+eq(Sheet1_C6,1)
+eq(Sheet1_C7,1)
+eq(Sheet1_C8,1)
+eq(Sheet1_C9,1)
+eq(Sheet1_D10,1)
+eq(Sheet1_D11,1)
+eq(Sheet1_D12,1)
+eq(Sheet1_D13,1)
+eq(Sheet1_D14,1)
+eq(Sheet1_D15,1)
+eq(Sheet1_D16,1)
+eq(Sheet1_D17,1)
+eq(Sheet1_D18,1)
+eq(Sheet1_D4,1)
+eq(Sheet1_D5,1)
+eq(Sheet1_D6,1)
+eq(Sheet1_D7,1)
+eq(Sheet1_D8,1)
+eq(Sheet1_D9,1)
+eq(Sheet1_E10,1)
+eq(Sheet1_E11,1)
+eq(Sheet1_E12,1)
+eq(Sheet1_E13,1)
+eq(Sheet1_E14,1)
+eq(Sheet1_E15,1)
+eq(Sheet1_E16,1)
+eq(Sheet1_E17,1)
+eq(Sheet1_E18,1)
+eq(Sheet1_E4,1)
+eq(Sheet1_E5,1)
+eq(Sheet1_E6,1)
+eq(Sheet1_E7,1)
+eq(Sheet1_E8,1)
+eq(Sheet1_E9,1)
+eq(Sheet1_F19,1)
+eq(Sheet1_F4,1)
+eq(Sheet1_G19,0)
+eq(Sheet1_H19,1)
+eq(Sheet1_I19,1)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+**EOF**

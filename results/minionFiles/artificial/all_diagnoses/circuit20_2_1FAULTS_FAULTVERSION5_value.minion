@@ -1,0 +1,270 @@
+MINION 3
+**VARIABLES**
+DISCRETE Sheet1_B10 {-2000..50000}
+DISCRETE Sheet1_B11 {-2000..50000}
+DISCRETE Sheet1_B12 {-2000..50000}
+DISCRETE Sheet1_B13 {-2000..50000}
+DISCRETE Sheet1_B14 {-2000..50000}
+DISCRETE Sheet1_B15 {-2000..50000}
+DISCRETE Sheet1_B16 {-2000..50000}
+DISCRETE Sheet1_B17 {-2000..50000}
+DISCRETE Sheet1_B18 {-2000..50000}
+DISCRETE Sheet1_B19 {-2000..50000}
+DISCRETE Sheet1_B2 {-2000..50000}
+DISCRETE Sheet1_B20 {-2000..50000}
+DISCRETE Sheet1_B21 {-2000..50000}
+DISCRETE Sheet1_B22 {-2000..50000}
+DISCRETE Sheet1_B23 {-2000..50000}
+DISCRETE Sheet1_B24 {-2000..50000}
+DISCRETE Sheet1_B25 {-2000..50000}
+DISCRETE Sheet1_B26 {-2000..50000}
+DISCRETE Sheet1_B27 {-2000..50000}
+DISCRETE Sheet1_B28 {-2000..50000}
+DISCRETE Sheet1_B29 {-2000..50000}
+DISCRETE Sheet1_B3 {-2000..50000}
+DISCRETE Sheet1_B30 {-2000..50000}
+DISCRETE Sheet1_B31 {-2000..50000}
+DISCRETE Sheet1_B32 {-2000..50000}
+DISCRETE Sheet1_B33 {-2000..50000}
+DISCRETE Sheet1_B34 {-2000..50000}
+DISCRETE Sheet1_B35 {-2000..50000}
+DISCRETE Sheet1_B36 {-2000..50000}
+DISCRETE Sheet1_B37 {-2000..50000}
+DISCRETE Sheet1_B38 {-2000..50000}
+DISCRETE Sheet1_B39 {-2000..50000}
+DISCRETE Sheet1_B4 {-2000..50000}
+DISCRETE Sheet1_B40 {-2000..50000}
+DISCRETE Sheet1_B41 {-2000..50000}
+DISCRETE Sheet1_B42 {-2000..50000}
+DISCRETE Sheet1_B5 {-2000..50000}
+DISCRETE Sheet1_B6 {-2000..50000}
+DISCRETE Sheet1_B7 {-2000..50000}
+DISCRETE Sheet1_B8 {-2000..50000}
+DISCRETE Sheet1_B9 {-2000..50000}
+DISCRETE Sheet1_D10 {-2000..50000}
+DISCRETE Sheet1_D11 {-2000..50000}
+DISCRETE Sheet1_D12 {-2000..50000}
+DISCRETE Sheet1_D13 {-2000..50000}
+DISCRETE Sheet1_D14 {-2000..50000}
+DISCRETE Sheet1_D15 {-2000..50000}
+DISCRETE Sheet1_D16 {-2000..50000}
+DISCRETE Sheet1_D17 {-2000..50000}
+DISCRETE Sheet1_D18 {-2000..50000}
+DISCRETE Sheet1_D19 {-2000..50000}
+DISCRETE Sheet1_D2 {-2000..50000}
+DISCRETE Sheet1_D20 {-2000..50000}
+DISCRETE Sheet1_D21 {-2000..50000}
+DISCRETE Sheet1_D22 {-2000..50000}
+DISCRETE Sheet1_D23 {-2000..50000}
+DISCRETE Sheet1_D24 {-2000..50000}
+DISCRETE Sheet1_D3 {-2000..50000}
+DISCRETE Sheet1_D4 {-2000..50000}
+DISCRETE Sheet1_D5 {-2000..50000}
+DISCRETE Sheet1_D6 {-2000..50000}
+DISCRETE Sheet1_D7 {-2000..50000}
+DISCRETE Sheet1_D8 {-2000..50000}
+DISCRETE Sheet1_D9 {-2000..50000}
+DISCRETE Sheet1_F10 {-2000..50000}
+DISCRETE Sheet1_F11 {-2000..50000}
+DISCRETE Sheet1_F12 {-2000..50000}
+DISCRETE Sheet1_F13 {-2000..50000}
+DISCRETE Sheet1_F14 {-2000..50000}
+DISCRETE Sheet1_F15 {-2000..50000}
+DISCRETE Sheet1_F16 {-2000..50000}
+DISCRETE Sheet1_F17 {-2000..50000}
+DISCRETE Sheet1_F18 {-2000..50000}
+DISCRETE Sheet1_F19 {-2000..50000}
+DISCRETE Sheet1_F2 {-2000..50000}
+DISCRETE Sheet1_F20 {-2000..50000}
+DISCRETE Sheet1_F21 {-2000..50000}
+DISCRETE Sheet1_F3 {-2000..50000}
+DISCRETE Sheet1_F4 {-2000..50000}
+DISCRETE Sheet1_F5 {-2000..50000}
+DISCRETE Sheet1_F6 {-2000..50000}
+DISCRETE Sheet1_F7 {-2000..50000}
+DISCRETE Sheet1_F8 {-2000..50000}
+DISCRETE Sheet1_F9 {-2000..50000}
+DISCRETE Sheet1_H10 {-2000..50000}
+DISCRETE Sheet1_H11 {-2000..50000}
+DISCRETE Sheet1_H12 {-2000..50000}
+DISCRETE Sheet1_H13 {-2000..50000}
+DISCRETE Sheet1_H14 {-2000..50000}
+DISCRETE Sheet1_H15 {-2000..50000}
+DISCRETE Sheet1_H16 {-2000..50000}
+DISCRETE Sheet1_H17 {-2000..50000}
+DISCRETE Sheet1_H18 {-2000..50000}
+DISCRETE Sheet1_H19 {-2000..50000}
+DISCRETE Sheet1_H2 {-2000..50000}
+DISCRETE Sheet1_H20 {-2000..50000}
+DISCRETE Sheet1_H21 {-2000..50000}
+DISCRETE Sheet1_H3 {-2000..50000}
+DISCRETE Sheet1_H4 {-2000..50000}
+DISCRETE Sheet1_H5 {-2000..50000}
+DISCRETE Sheet1_H6 {-2000..50000}
+DISCRETE Sheet1_H7 {-2000..50000}
+DISCRETE Sheet1_H8 {-2000..50000}
+DISCRETE Sheet1_H9 {-2000..50000}
+BOOL ab[63]
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+watched-or({element(ab,10,1), sumleq([Sheet1_D10,Sheet1_F10],Sheet1_H10)})
+watched-or({element(ab,21,1), weightedsumleq([1,1],[Sheet1_B19,Sheet1_B20],Sheet1_D10)})
+watched-or({element(ab,12,1), weightedsumgeq([1,1],[Sheet1_B8,Sheet1_B7],Sheet1_D4)})
+watched-or({element(ab,33,1), sumleq([Sheet1_D12,Sheet1_F12],Sheet1_H12)})
+watched-or({element(ab,32,1), weightedsumgeq([1,1],[Sheet1_B22,Sheet1_B21],Sheet1_D11)})
+watched-or({element(ab,58,1), sumleq([Sheet1_D14,Sheet1_F14],Sheet1_H14)})
+watched-or({element(ab,15,1), weightedsumleq([1,1],[Sheet1_B39,Sheet1_B40],Sheet1_D20)})
+watched-or({element(ab,18,1), weightedsumgeq([1,1],[Sheet1_B29,Sheet1_B30],Sheet1_D15)})
+watched-or({element(ab,32,1), weightedsumleq([1,1],[Sheet1_B22,Sheet1_B21],Sheet1_D11)})
+watched-or({element(ab,47,1), weightedsumleq([1,1],[Sheet1_B14,Sheet1_B13],Sheet1_D7)})
+watched-or({element(ab,0,1), weightedsumgeq([1,1],[Sheet1_B6,Sheet1_B5],Sheet1_D3)})
+watched-or({element(ab,8,1), product(Sheet1_D12,Sheet1_B2,Sheet1_F12)})
+watched-or({element(ab,38,1), sumgeq([Sheet1_D2,Sheet1_F2],Sheet1_H2)})
+watched-or({element(ab,60,1), weightedsumleq([1,1],[Sheet1_B15,Sheet1_B16],Sheet1_D8)})
+watched-or({element(ab,10,1), sumgeq([Sheet1_D10,Sheet1_F10],Sheet1_H10)})
+watched-or({element(ab,50,1), weightedsumleq([1,1],[Sheet1_B4,Sheet1_B3],Sheet1_D2)})
+watched-or({element(ab,56,1), product(Sheet1_D16,Sheet1_B2,Sheet1_F16)})
+watched-or({element(ab,18,1), weightedsumleq([1,1],[Sheet1_B29,Sheet1_B30],Sheet1_D15)})
+watched-or({element(ab,48,1), sumleq([Sheet1_D8,Sheet1_F8],Sheet1_H8)})
+watched-or({element(ab,23,1), product(Sheet1_D8,Sheet1_B2,Sheet1_F8)})
+watched-or({element(ab,58,1), sumgeq([Sheet1_D14,Sheet1_F14],Sheet1_H14)})
+watched-or({element(ab,25,1), sumgeq([Sheet1_D6,Sheet1_F6],Sheet1_H6)})
+watched-or({element(ab,55,1), sumgeq([Sheet1_D19,Sheet1_F19],Sheet1_H19)})
+watched-or({element(ab,16,1), sumgeq([Sheet1_D21,Sheet1_H14],Sheet1_H21)})
+watched-or({element(ab,44,1), weightedsumleq([1,1],[Sheet1_B24,Sheet1_B23],Sheet1_D12)})
+watched-or({element(ab,17,1), product(Sheet1_D18,Sheet1_B2,Sheet1_F18)})
+watched-or({element(ab,3,1), weightedsumleq([1,1],[Sheet1_B37,Sheet1_B38],Sheet1_D19)})
+watched-or({element(ab,12,1), weightedsumleq([1,1],[Sheet1_B8,Sheet1_B7],Sheet1_D4)})
+watched-or({element(ab,19,1), sumleq([Sheet1_D16,Sheet1_F16],Sheet1_H16)})
+watched-or({element(ab,20,1), product(Sheet1_D13,Sheet1_B2,Sheet1_F13)})
+watched-or({element(ab,53,1), product(Sheet1_D21,Sheet1_B2,Sheet1_F21)})
+watched-or({element(ab,13,1), sumgeq([Sheet1_D5,Sheet1_F5],Sheet1_H5)})
+watched-or({element(ab,6,1), weightedsumgeq([1,1],[Sheet1_B28,Sheet1_B27],Sheet1_D14)})
+watched-or({element(ab,60,1), weightedsumgeq([1,1],[Sheet1_B15,Sheet1_B16],Sheet1_D8)})
+watched-or({element(ab,29,1), weightedsumleq([1,1],[Sheet1_B31,Sheet1_B32],Sheet1_D16)})
+watched-or({element(ab,39,1), weightedsumgeq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_H20,Sheet1_H11,Sheet1_H10,Sheet1_H21,Sheet1_H2,Sheet1_H13,Sheet1_H12,Sheet1_H15,Sheet1_H14,Sheet1_H6,Sheet1_H5,Sheet1_H4,Sheet1_H3,Sheet1_H9,Sheet1_H8,Sheet1_H7,Sheet1_H17,Sheet1_H16,Sheet1_H19,Sheet1_H18],Sheet1_D22)})
+watched-or({element(ab,39,1), weightedsumleq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_H20,Sheet1_H11,Sheet1_H10,Sheet1_H21,Sheet1_H2,Sheet1_H13,Sheet1_H12,Sheet1_H15,Sheet1_H14,Sheet1_H6,Sheet1_H5,Sheet1_H4,Sheet1_H3,Sheet1_H9,Sheet1_H8,Sheet1_H7,Sheet1_H17,Sheet1_H16,Sheet1_H19,Sheet1_H18],Sheet1_D22)})
+watched-or({element(ab,4,1), sumleq([Sheet1_D20,Sheet1_F20],Sheet1_H20)})
+watched-or({element(ab,14,1), product(Sheet1_D2,Sheet1_B2,Sheet1_F2)})
+watched-or({element(ab,27,1), weightedsumleq([1,1],[Sheet1_B42,Sheet1_B41],Sheet1_D21)})
+watched-or({element(ab,50,1), weightedsumgeq([1,1],[Sheet1_B4,Sheet1_B3],Sheet1_D2)})
+watched-or({element(ab,19,1), sumgeq([Sheet1_D16,Sheet1_F16],Sheet1_H16)})
+watched-or({element(ab,41,1), weightedsumleq([1,1],[Sheet1_B33,Sheet1_B34],Sheet1_D17)})
+watched-or({element(ab,11,1), product(Sheet1_D7,Sheet1_B2,Sheet1_F7)})
+watched-or({element(ab,16,1), sumleq([Sheet1_D21,Sheet1_H14],Sheet1_H21)})
+watched-or({element(ab,44,1), weightedsumgeq([1,1],[Sheet1_B24,Sheet1_B23],Sheet1_D12)})
+watched-or({element(ab,0,1), weightedsumleq([1,1],[Sheet1_B6,Sheet1_B5],Sheet1_D3)})
+watched-or({element(ab,55,1), sumleq([Sheet1_D19,Sheet1_F19],Sheet1_H19)})
+watched-or({element(ab,21,1), weightedsumgeq([1,1],[Sheet1_B19,Sheet1_B20],Sheet1_D10)})
+watched-or({element(ab,40,1), product(Sheet1_D20,Sheet1_B2,Sheet1_F20)})
+watched-or({element(ab,57,1), weightedsumgeq([1,1],[Sheet1_B26,Sheet1_B25],Sheet1_D13)})
+watched-or({element(ab,4,1), sumgeq([Sheet1_D20,Sheet1_F20],Sheet1_H20)})
+watched-or({element(ab,54,1), weightedsumgeq([1,1],[Sheet1_B36,Sheet1_B35],Sheet1_D18)})
+watched-or({element(ab,38,1), sumleq([Sheet1_D2,Sheet1_F2],Sheet1_H2)})
+watched-or({element(ab,27,1), weightedsumgeq([1,1],[Sheet1_B42,Sheet1_B41],Sheet1_D21)})
+watched-or({element(ab,31,1), product(Sheet1_D14,Sheet1_B2,Sheet1_F14)})
+watched-or({element(ab,24,1), weightedsumleq([1,1],[Sheet1_B9,Sheet1_B10],Sheet1_D5)})
+watched-or({element(ab,52,1), weightedsumgeq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_F11,Sheet1_F10,Sheet1_F21,Sheet1_F13,Sheet1_F12,Sheet1_F15,Sheet1_F14,Sheet1_F17,Sheet1_F16,Sheet1_F4,Sheet1_F3,Sheet1_F2,Sheet1_F8,Sheet1_F7,Sheet1_F6,Sheet1_F20,Sheet1_F5,Sheet1_F9,Sheet1_F19,Sheet1_F18],Sheet1_D23)})
+watched-or({element(ab,57,1), weightedsumleq([1,1],[Sheet1_B26,Sheet1_B25],Sheet1_D13)})
+watched-or({element(ab,48,1), sumgeq([Sheet1_D8,Sheet1_F8],Sheet1_H8)})
+watched-or({element(ab,46,1), product(Sheet1_D10,Sheet1_B2,Sheet1_F10)})
+watched-or({element(ab,42,1), sumleq([Sheet1_D18,Sheet1_F18],Sheet1_H18)})
+watched-or({element(ab,9,1), weightedsumgeq([1,1],[Sheet1_B17,Sheet1_B18],Sheet1_D9)})
+watched-or({element(ab,35,1), weightedsumleq([1,1],[Sheet1_B11,Sheet1_B12],Sheet1_D6)})
+watched-or({element(ab,6,1), weightedsumleq([1,1],[Sheet1_B28,Sheet1_B27],Sheet1_D14)})
+watched-or({element(ab,9,1), weightedsumleq([1,1],[Sheet1_B17,Sheet1_B18],Sheet1_D9)})
+watched-or({element(ab,7,1), sumgeq([Sheet1_D15,Sheet1_F15],Sheet1_H15)})
+watched-or({element(ab,61,1), sumleq([Sheet1_D9,Sheet1_F9],Sheet1_H9)})
+watched-or({element(ab,36,1), sumgeq([Sheet1_D7,Sheet1_F7],Sheet1_H7)})
+watched-or({element(ab,45,1), sumgeq([Sheet1_D13,Sheet1_F13],Sheet1_H13)})
+watched-or({element(ab,37,1), product(Sheet1_D4,Sheet1_B2,Sheet1_F4)})
+watched-or({element(ab,34,1), product(Sheet1_D9,Sheet1_B2,Sheet1_F9)})
+watched-or({element(ab,52,1), weightedsumleq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_F11,Sheet1_F10,Sheet1_F21,Sheet1_F13,Sheet1_F12,Sheet1_F15,Sheet1_F14,Sheet1_F17,Sheet1_F16,Sheet1_F4,Sheet1_F3,Sheet1_F2,Sheet1_F8,Sheet1_F7,Sheet1_F6,Sheet1_F20,Sheet1_F5,Sheet1_F9,Sheet1_F19,Sheet1_F18],Sheet1_D23)})
+watched-or({element(ab,28,1), product(Sheet1_D19,Sheet1_B2,Sheet1_F19)})
+watched-or({element(ab,43,1), product(Sheet1_D15,Sheet1_B2,Sheet1_F15)})
+watched-or({element(ab,42,1), sumgeq([Sheet1_D18,Sheet1_F18],Sheet1_H18)})
+watched-or({element(ab,51,1), sumgeq([Sheet1_D3,Sheet1_F3],Sheet1_H3)})
+watched-or({element(ab,26,1), product(Sheet1_D3,Sheet1_B2,Sheet1_F3)})
+watched-or({element(ab,45,1), sumleq([Sheet1_D13,Sheet1_F13],Sheet1_H13)})
+watched-or({element(ab,22,1), sumleq([Sheet1_D11,Sheet1_F11],Sheet1_H11)})
+watched-or({element(ab,47,1), weightedsumgeq([1,1],[Sheet1_B14,Sheet1_B13],Sheet1_D7)})
+watched-or({element(ab,5,1), product(Sheet1_D17,Sheet1_B2,Sheet1_F17)})
+watched-or({element(ab,41,1), weightedsumgeq([1,1],[Sheet1_B33,Sheet1_B34],Sheet1_D17)})
+watched-or({element(ab,2,1), weightedsumleq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_D13,Sheet1_D12,Sheet1_D15,Sheet1_D14,Sheet1_D17,Sheet1_D16,Sheet1_D19,Sheet1_D18,Sheet1_D2,Sheet1_D6,Sheet1_D20,Sheet1_D5,Sheet1_D4,Sheet1_D11,Sheet1_D3,Sheet1_D10,Sheet1_D21,Sheet1_D9,Sheet1_D8,Sheet1_D7],Sheet1_D24)})
+watched-or({element(ab,35,1), weightedsumgeq([1,1],[Sheet1_B11,Sheet1_B12],Sheet1_D6)})
+watched-or({element(ab,30,1), sumleq([Sheet1_D17,Sheet1_F17],Sheet1_H17)})
+watched-or({element(ab,1,1), sumgeq([Sheet1_D4,Sheet1_F4],Sheet1_H4)})
+watched-or({element(ab,54,1), weightedsumleq([1,1],[Sheet1_B36,Sheet1_B35],Sheet1_D18)})
+watched-or({element(ab,13,1), sumleq([Sheet1_D5,Sheet1_F5],Sheet1_H5)})
+watched-or({element(ab,2,1), weightedsumgeq([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[Sheet1_D13,Sheet1_D12,Sheet1_D15,Sheet1_D14,Sheet1_D17,Sheet1_D16,Sheet1_D19,Sheet1_D18,Sheet1_D2,Sheet1_D6,Sheet1_D20,Sheet1_D5,Sheet1_D4,Sheet1_D11,Sheet1_D3,Sheet1_D10,Sheet1_D21,Sheet1_D9,Sheet1_D8,Sheet1_D7],Sheet1_D24)})
+watched-or({element(ab,1,1), sumleq([Sheet1_D4,Sheet1_F4],Sheet1_H4)})
+watched-or({element(ab,3,1), weightedsumgeq([1,1],[Sheet1_B37,Sheet1_B38],Sheet1_D19)})
+watched-or({element(ab,33,1), sumgeq([Sheet1_D12,Sheet1_F12],Sheet1_H12)})
+watched-or({element(ab,61,1), sumgeq([Sheet1_D9,Sheet1_F9],Sheet1_H9)})
+watched-or({element(ab,22,1), sumgeq([Sheet1_D11,Sheet1_F11],Sheet1_H11)})
+watched-or({element(ab,25,1), sumleq([Sheet1_D6,Sheet1_F6],Sheet1_H6)})
+watched-or({element(ab,62,1), product(Sheet1_D6,Sheet1_B2,Sheet1_F6)})
+watched-or({element(ab,24,1), weightedsumgeq([1,1],[Sheet1_B9,Sheet1_B10],Sheet1_D5)})
+watched-or({element(ab,51,1), sumleq([Sheet1_D3,Sheet1_F3],Sheet1_H3)})
+watched-or({element(ab,15,1), weightedsumgeq([1,1],[Sheet1_B39,Sheet1_B40],Sheet1_D20)})
+watched-or({element(ab,29,1), weightedsumgeq([1,1],[Sheet1_B31,Sheet1_B32],Sheet1_D16)})
+watched-or({element(ab,30,1), sumgeq([Sheet1_D17,Sheet1_F17],Sheet1_H17)})
+watched-or({element(ab,49,1), product(Sheet1_D5,Sheet1_B2,Sheet1_F5)})
+watched-or({element(ab,59,1), product(Sheet1_D11,Sheet1_B2,Sheet1_F11)})
+watched-or({element(ab,7,1), sumleq([Sheet1_D15,Sheet1_F15],Sheet1_H15)})
+watched-or({element(ab,36,1), sumleq([Sheet1_D7,Sheet1_F7],Sheet1_H7)})
+
+# TEST CASE / Observations
+eq(Sheet1_B10,9)
+eq(Sheet1_B11,7)
+eq(Sheet1_B12,2)
+eq(Sheet1_B13,10)
+eq(Sheet1_B14,5)
+eq(Sheet1_B15,1)
+eq(Sheet1_B16,9)
+eq(Sheet1_B17,10)
+eq(Sheet1_B18,2)
+eq(Sheet1_B19,2)
+eq(Sheet1_B2,3)
+eq(Sheet1_B20,3)
+eq(Sheet1_B21,2)
+eq(Sheet1_B22,10)
+eq(Sheet1_B23,5)
+eq(Sheet1_B24,8)
+eq(Sheet1_B25,1)
+eq(Sheet1_B26,4)
+eq(Sheet1_B27,1)
+eq(Sheet1_B28,8)
+eq(Sheet1_B29,4)
+eq(Sheet1_B3,8)
+eq(Sheet1_B30,2)
+eq(Sheet1_B31,10)
+eq(Sheet1_B32,4)
+eq(Sheet1_B33,10)
+eq(Sheet1_B34,5)
+eq(Sheet1_B35,1)
+eq(Sheet1_B36,4)
+eq(Sheet1_B37,4)
+eq(Sheet1_B38,5)
+eq(Sheet1_B39,10)
+eq(Sheet1_B4,1)
+eq(Sheet1_B40,5)
+eq(Sheet1_B41,3)
+eq(Sheet1_B42,3)
+eq(Sheet1_B5,2)
+eq(Sheet1_B6,5)
+eq(Sheet1_B7,8)
+eq(Sheet1_B8,2)
+eq(Sheet1_B9,7)
+eq(Sheet1_D22,808)
+eq(Sheet1_D23,606)
+eq(Sheet1_D24,202)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+**EOF**

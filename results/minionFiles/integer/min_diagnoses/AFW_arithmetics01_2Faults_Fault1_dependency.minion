@@ -1,0 +1,155 @@
+MINION 3
+**VARIABLES**
+BOOL Sheet1_B3
+BOOL Sheet1_B4
+BOOL Sheet1_B5
+BOOL Sheet1_B6
+BOOL Sheet1_D3
+BOOL Sheet1_D4
+BOOL Sheet1_D5
+BOOL Sheet1_D6
+BOOL Sheet1_F3
+BOOL Sheet1_F4
+BOOL Sheet1_F5
+BOOL Sheet1_F6
+BOOL Sheet1_H3
+BOOL Sheet1_H4
+BOOL Sheet1_J3
+BOOL ab[11]
+BOOL tmp0
+BOOL tmp10
+BOOL tmp11
+
+**TUPLELIST**
+
+multRelOpMinMaxFunction  15 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+plusMinusFunction  13 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 1 0 0 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+divFunction  14 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 1 0 0 
+0 1 0 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+
+ifFunctionD  30 5 
+0 1 1 1 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 1 0 
+0 0 1 1 1 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 1 0 
+1 0 1 1 1 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 1 0 
+1 1 1 1 1 
+
+equalityFunctionD 6 3 
+0 0 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+table([ab[7],Sheet1_B4,Sheet1_B3,Sheet1_D4], plusMinusFunction)
+table([ab[2],Sheet1_D3,Sheet1_D6,Sheet1_F4], plusMinusFunction)
+table([ab[4],Sheet1_D6,1,Sheet1_F6], plusMinusFunction)
+table([ab[10],Sheet1_B3,Sheet1_B6,Sheet1_D6], plusMinusFunction)
+table([ab[3],Sheet1_D5,Sheet1_D4,Sheet1_F5], plusMinusFunction)
+table([ab[0],Sheet1_D3,Sheet1_D4,tmp0], plusMinusFunction)
+table([ab[9],Sheet1_B3,Sheet1_B4,tmp10], plusMinusFunction)
+table([ab[6],Sheet1_F3,Sheet1_F4,Sheet1_H3], plusMinusFunction)
+table([ab[5],Sheet1_B3,Sheet1_B4,Sheet1_D3], plusMinusFunction)
+table([ab[8],Sheet1_F5,Sheet1_F6,Sheet1_H4], plusMinusFunction)
+table([ab[1],Sheet1_H3,Sheet1_H4,Sheet1_J3], plusMinusFunction)
+table([ab[9],tmp10,Sheet1_B5,tmp11], plusMinusFunction)
+table([ab[9],tmp11,Sheet1_B6,Sheet1_D5], plusMinusFunction)
+table([ab[0],tmp0,Sheet1_D5,Sheet1_F3], plusMinusFunction)
+
+# TEST CASE / Observations
+eq(Sheet1_B3,1)
+eq(Sheet1_B4,1)
+eq(Sheet1_B5,1)
+eq(Sheet1_B6,1)
+eq(Sheet1_J3,0)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+element(ab,10,0)
+element(ab,9,0)
+element(ab,8,0)
+element(ab,7,0)
+element(ab,6,0)
+element(ab,5,0)
+element(ab,4,0)
+element(ab,3,0)
+element(ab,2,0)
+element(ab,1,0)
+element(ab,0,0)
+**EOF**
