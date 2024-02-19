@@ -189,13 +189,19 @@ class BinaryNumericOperation extends BinaryOperation {
 		if (info.getModelGranularity() == EModelGranularity.Comparison) {
 			switch(this.operator){
 			case Add:
+				newConstraint = MinionConstraints.getPLUSTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
+						resultVarName);
+				break;
 			case Multiply:
-				newConstraint = MinionConstraints.getPLUSMULTTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
+				newConstraint = MinionConstraints.getMULTTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
 						resultVarName);
 				break;
 			case Divide:
+				newConstraint = MinionConstraints.getDIVTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
+						resultVarName);
+				break;
 			case Subtract:
-				newConstraint = MinionConstraints.getMINUSDIVTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
+				newConstraint = MinionConstraints.getMINUSTableConstraints(info.getAbnormalIndex(),constraints1.getVarname(), constraints2.getVarname(),
 						resultVarName);
 				break;
 			default:

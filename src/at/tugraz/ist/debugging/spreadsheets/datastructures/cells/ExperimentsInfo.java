@@ -30,7 +30,7 @@ public class ExperimentsInfo {
 	public static void main(String[] args) {
 		
 		try {
-			File logFile = new File("NewTest.log");
+			File logFile = new File("NewQuickTest.log");
 			if (!logFile.exists())
 				logFile.createNewFile();
 			PrintStream log = new PrintStream(logFile);
@@ -41,8 +41,8 @@ public class ExperimentsInfo {
 		}
 		
 		// *1) the file to put the new analysis results in
-	    //String csvFile = "NewAnalysisIC.csv";
-	    String csvFile = "NewAnalysisAS.csv";
+	    String csvFile = "NewAnalysisIC.csv";
+	    //String csvFile = "NewAnalysisAS.csv";
 		File f = new File(csvFile);
 
 		if (f.exists()) {
@@ -62,8 +62,8 @@ public class ExperimentsInfo {
 		List<String> files = new ArrayList<String>();
 		
 		// *2) get the set of spreadsheets to be analyzed
-		//files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));
-		files.addAll(Directory.getFiles("Benchmarks\\ArtifSpreadsheets\\SEEDED\\ExcelFiles",".xlsx"));
+		files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));
+		//files.addAll(Directory.getFiles("Benchmarks\\ArtifSpreadsheets\\SEEDED\\ExcelFiles",".xlsx"));
 		
 		
 			/** NEW 2022: 
@@ -75,8 +75,8 @@ public class ExperimentsInfo {
 			try {
 		   
 				// *3) get the Excel file containing the results of Experiments1  
-				//FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsIC.xlsx"));
-		        FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsAS.xlsx"));
+				FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsIC.xlsx"));
+		        //FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsAS.xlsx"));
 				
 		        // Create Workbook instance holding reference to // .xlsx file
 				XSSFWorkbook workbook = new XSSFWorkbook(rfile);

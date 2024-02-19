@@ -144,18 +144,28 @@ public class MinionConstraints {
  * TABLES for the Comparison Model 
  */
  
-	public static MinionExpressionConstraints getPLUSMULTTableConstraints(int abnormalIndex, String op1, String op2, String result) {
+	public static MinionExpressionConstraints getPLUSTableConstraints(int abnormalIndex, String op1, String op2, String result) {
 		Set<String> constraints = new HashSet<String>();
-		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], plusMultFunction)");
+		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], plusFunction)");
 		return new MinionExpressionConstraints(constraints, result, Domain.INT3);
 	}
 
-	public static MinionExpressionConstraints getMINUSDIVTableConstraints(int abnormalIndex, String op1, String op2, String result) {
+	public static MinionExpressionConstraints getMULTTableConstraints(int abnormalIndex, String op1, String op2, String result) {
 		Set<String> constraints = new HashSet<String>();
-		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], minusDivFunction)");
+		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], multFunction)");
+		return new MinionExpressionConstraints(constraints, result, Domain.INT3);
+	}
+	public static MinionExpressionConstraints getMINUSTableConstraints(int abnormalIndex, String op1, String op2, String result) {
+		Set<String> constraints = new HashSet<String>();
+		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], minusFunction)");
 		return new MinionExpressionConstraints(constraints, result, Domain.INT3);
 	}
 	
+	public static MinionExpressionConstraints getDIVTableConstraints(int abnormalIndex, String op1, String op2, String result) {
+		Set<String> constraints = new HashSet<String>();
+		constraints.add("table([ab["+abnormalIndex+"]," + op1 + "," + op2 + "," + result + "], divFunction)");
+		return new MinionExpressionConstraints(constraints, result, Domain.INT3);
+	}
 	public static MinionExpressionConstraints getEQUALTableConstraints(int abnormalIndex, String op, String result){
 		Set<String> constraints = new HashSet<String>();
 		constraints.add("table([ab["+abnormalIndex+"]," + op + "," + result + "], equalityFunction)");
@@ -606,12 +616,98 @@ public class MinionConstraints {
 	
 
 	
-
+/**
+ * new tables for QDM - assumption: real values
+ * @return
+ */
 	public static String getComparisonModelTables() {
-		return ("\n**TUPLELIST**\nplusMultFunction 40 4\n0 1 1 1\n0 2 1 2\n0 1 2 2\n0 2 2 2\n0 0 1 0\n0 1 0 0\n0 0 0 0\n0 0 2 0\n0 0 2 1\n0 0 2 2\n0 2 0 0\n0 2 0 1\n0 2 0 2\n1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1\n"
+		return ("\n**TUPLELIST**\n"
+	             +"plusFunction  40 4\n"
+				 + "0 1 1 1\n"
+				 + "0 2 1 2\n"
+				 + "0 1 2 2\n"
+				 + "0 2 2 2\n"
+				 + "0 0 1 0\n"
+				 + "0 1 0 0\n"
+				 + "0 0 0 0\n"
+				 + "0 0 2 0\n"
+				 + "0 0 2 1\n"
+				 + "0 0 2 2\n"
+				 + "0 2 0 0\n"
+				 + "0 2 0 1\n"
+				 + "0 2 0 2\n"
+				 +"1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1\n"
+					+ "1 1 0 2\n1 2 0 0\n1 2 0 1\n1 2 0 2\n1 0 1 0\n1 0 1 1\n1 0 1 2\n1 0 2 0\n1 0 2 1\n1 0 2 2\n1 1 1 0\n1 1 1 1\n1 1 1 2\n1 2 1 0\n1 2 1 1\n1 2 1 2\n1 2 2 0\n1 2 2 1\n1 2 2 2\n1 1 2 0\n1 1 2 1\n1 1 2 2\n\n"
+				 +"multFunction 52 4\n"
+				 + "0 0 0 0\n"
+				 + "0 0 0 1\n"
+				 + "0 0 0 2\n"
+				 + "0 0 1 0\n"
+				 + "0 0 1 1\n"
+				 + "0 0 1 2\n"
+				 + "0 0 2 0\n"
+				 + "0 0 2 1\n"
+				 + "0 0 2 2\n"
+				 + "0 1 0 0\n"
+				 + "0 1 0 1\n"
+				 + "0 1 0 2\n"
+				 + "0 1 1 1\n"
+				 + "0 1 2 2\n"
+				 + "0 1 2 0\n"
+				 + "0 1 2 1\n"
+				 + "0 2 0 0\n"
+				 + "0 2 0 1\n"
+				 + "0 2 0 2\n"
+				 + "0 2 1 2\n"
+				 + "0 2 1 0\n"
+				 + "0 2 1 1\n"
+				 + "0 2 2 2\n"
+				 + "0 2 2 0\n"
+				 + "0 2 2 1\n"
+	            +"1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1\n"
 				+ "1 1 0 2\n1 2 0 0\n1 2 0 1\n1 2 0 2\n1 0 1 0\n1 0 1 1\n1 0 1 2\n1 0 2 0\n1 0 2 1\n1 0 2 2\n1 1 1 0\n1 1 1 1\n1 1 1 2\n1 2 1 0\n1 2 1 1\n1 2 1 2\n1 2 2 0\n1 2 2 1\n1 2 2 2\n1 1 2 0\n1 1 2 1\n1 1 2 2\n\n"
-				+ "minusDivFunction 40 4\n0 1 1 1\n0 2 1 2\n0 1 2 0\n0 2 2 0\n0 2 2 1\n0 2 2 2\n0 0 1 0\n0 1 0 2\n0 0 0 0\n0 0 0 1\n0 0 0 2\n0 0 2 0\n0 2 0 2\n1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1"
-				+ "\n1 1 0 2\n1 2 0 0\n1 2 0 1\n1 2 0 2\n1 0 1 0\n1 0 1 1\n1 0 1 2\n1 0 2 0\n1 0 2 1\n1 0 2 2\n1 1 1 0\n1 1 1 1\n1 1 1 2\n1 2 1 0\n1 2 1 1\n1 2 1 2\n1 2 2 0\n1 2 2 1\n1 2 2 2\n1 1 2 0\n1 1 2 1\n1 1 2 2\n\n"
+				+ "minusFunction 40 4\n"
+				 + "0 0 0 0\n"
+				 + "0 0 0 1\n"
+				 + "0 0 0 2\n"
+				 + "0 0 1 0\n"
+				 + "0 0 2 0\n"
+				 + "0 1 0 2\n"
+				 + "0 1 1 1\n"
+				 + "0 1 2 0\n"
+				 + "0 2 0 2\n"
+				 + "0 2 1 2\n"
+				 + "0 2 2 2\n"
+				 + "0 2 2 0\n"
+				 + "0 2 2 1\n"
+	            +"1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1\n"
+				+ "1 1 0 2\n1 2 0 0\n1 2 0 1\n1 2 0 2\n1 0 1 0\n1 0 1 1\n1 0 1 2\n1 0 2 0\n1 0 2 1\n1 0 2 2\n1 1 1 0\n1 1 1 1\n1 1 1 2\n1 2 1 0\n1 2 1 1\n1 2 1 2\n1 2 2 0\n1 2 2 1\n1 2 2 2\n1 1 2 0\n1 1 2 1\n1 1 2 2\n\n"
+				+ "divFunction 50 4\n"
+				 + "0 0 0 0\n"
+				 + "0 0 0 1\n"
+				 + "0 0 0 2\n"
+				 + "0 0 1 0\n"
+				 + "0 0 1 2\n"
+				 + "0 0 2 0\n"
+				 + "0 0 2 1\n"
+				 + "0 0 2 2\n"
+				 + "0 1 0 0\n"
+				 + "0 1 0 1\n"
+				 + "0 1 0 2\n"
+				 + "0 1 1 1\n"
+				 + "0 1 2 2\n"
+				 + "0 1 2 0\n"
+				 + "0 1 2 1\n"
+				 + "0 2 0 0\n"
+				 + "0 2 0 1\n"
+				 + "0 2 0 2\n"
+				 + "0 2 1 2\n"
+				 + "0 2 1 0\n"
+				 + "0 2 2 2\n"
+				 + "0 2 2 0\n"
+				 + "0 2 2 1\n"
+	            +"1 0 0 0\n1 0 0 1\n1 0 0 2\n1 1 0 0\n1 1 0 1\n"
+				+ "1 1 0 2\n1 2 0 0\n1 2 0 1\n1 2 0 2\n1 0 1 0\n1 0 1 1\n1 0 1 2\n1 0 2 0\n1 0 2 1\n1 0 2 2\n1 1 1 0\n1 1 1 1\n1 1 1 2\n1 2 1 0\n1 2 1 1\n1 2 1 2\n1 2 2 0\n1 2 2 1\n1 2 2 2\n1 1 2 0\n1 1 2 1\n1 1 2 2\n\n"
 				+ "equalityFunction 12 3 \n0 0 0\n0 1 1\n0 2 2\n1 0 0\n1 0 1\n1 0 2\n1 1 0\n1 1 1\n1 1 2\n1 2 0\n1 2 1\n1 2 2\n\n"
 				+ "relationalOPFunction  35 4 \n"
 				+ "0 1 1 1 \n"

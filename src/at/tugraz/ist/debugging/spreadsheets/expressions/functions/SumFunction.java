@@ -220,7 +220,7 @@ class SumFunction extends ShellFunction {
 		String oldResultVariable = cells2[0];
 		for(int i=1;i<cells.size();i++){
 			resultVariable = info.getNextAuxiliaryVariable(Domain.INT3);
-			constraints.addAll(MinionConstraints.getPLUSMULTTableConstraints(info.getAbnormalIndex(), oldResultVariable, cells2[i], resultVariable).getConstraints());
+			constraints.addAll(MinionConstraints.getPLUSTableConstraints(info.getAbnormalIndex(), oldResultVariable, cells2[i], resultVariable).getConstraints());
 			oldResultVariable = resultVariable;
 		}
 					

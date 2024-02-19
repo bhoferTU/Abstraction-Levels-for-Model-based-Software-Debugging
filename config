@@ -7,23 +7,22 @@ NUM_RUNS = 1
 MAX_DIAGNOSIS_SIZE = 3
 
 # ALL_DIAGNOSES = false computes only set-minimal diagnoses; ALL_DIAGNOSES = true computes also the supersets of the diagnoses
-ALL_DIAGNOSES = false
+ALL_DIAGNOSES = true
 
 # Timeout in minutes (when Minion solver process will be killed)
 TIMEOUT_MINUTES = 20
 
 # Please check the log-file for warnings and errors that occured during the experiment
-LOG_FILE = test.log
+LOG_FILE = experiments\\logFiles\\all_diagnoses_artificial.log
 
 # File where the number of diagnoses and the computation times are stored
-RESULT_FILE = results.csv
+RESULT_FILE = results\\all_diagnoses_artificial.csv
 
 # The properties file(s) used in the experiment
 # This can be either a directory (e.g. Benchmarks\\ArtifSpreadsheets\\SEEDED\\PropertiesFiles)
 # or a singe file (e.g. Benchmarks\\ArtifSpreadsheets\\SEEDED\\PropertiesFiles\\circuit2_2_1FAULTS_FAULTVERSION1.properties)
-PATH_TO_PROPERTIES_FILES = Benchmarks\\ArtifSpreadsheets\\SEEDED\\PropertiesFiles
 
-#PATH_TO_PROPERTIES_FILES = Benchmarks\\INTEGER\\configuration_files\\fromAFW
+PATH_TO_PROPERTIES_FILES = Benchmarks\\ArtifSpreadsheets\\SEEDED\\PropertiesFiles
 
 # If STORE_FINAL_MINION_FILES = true, a minion file  for each properties file / spreadsheet and model type
 # a file with the minion constraints will be saved.
@@ -35,7 +34,7 @@ STORE_FINAL_MINION_FILES = true
 STORE_INTERMEDIATE_MINION_FILES = false
 
 # directory where the minion files should be stored. If the directory does not exist, it will be created.
-MINION_FILES_DIR = results\\minionFiles
+MINION_FILES_DIR = results\\minionFiles\\artificial\\all_diagnoses
 
 
 

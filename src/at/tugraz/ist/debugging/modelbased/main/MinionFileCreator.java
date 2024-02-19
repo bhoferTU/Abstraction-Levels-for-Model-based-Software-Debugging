@@ -1,10 +1,12 @@
 package at.tugraz.ist.debugging.modelbased.main;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -54,8 +56,41 @@ public class MinionFileCreator {
 	public static boolean writeHeader = false;
 
 	public static void main(String[] args) {
+		// Save the original System.out
+        java.io.PrintStream originalOut = System.out;
+		// Check if the correct number of arguments is provided
+        if (args.length != 1) {
+            System.out.println("Usage: java MinionFileCreator <config_file>");
+            return;
+        }
+     // Get the file name from the command line argument
+        String fileName = args[0];
+     // Specify the folder path where the file is located
+        String folderPath = "experiments/";
+     // Construct the full path of the file
+        String fullPath = folderPath + fileName;
 		try {
-			setConfigurationFromFile("config");
+			System.out.println("..set configuration from file: "+ fullPath);
+			 // Create a File object representing the file
+	        File file = new File(fullPath);
+			 // Check if the file exists
+	        if (file.exists()) {
+	            // Read and print the content of the file
+	            try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+	                String line;
+	                while ((line = reader.readLine()) != null) {
+	                    System.out.println(line);
+	                }
+	                
+	                System.out.println("Running..");
+	            } catch (IOException e) {
+	                System.out.println("Error reading the file: " + e.getMessage());
+	            }
+	        } else {
+	            System.out.println("File not found: " + file.getAbsolutePath());
+	        }
+	        
+			setConfigurationFromFile(fullPath);
 			File logFile = new File(LOG_FILE);
 			if (!logFile.exists())
 				logFile.createNewFile();
@@ -77,6 +112,8 @@ public class MinionFileCreator {
 			files.add(PATH_TO_PROPERTIES_FILES);
 		}
 		runExperiments1(files, RESULT_FILE);
+		System.setOut(originalOut);
+		System.out.println("Experiment completed.");
 	}
 
 public static void setConfigurationFromFile(String configurationFileName) throws Exception{
@@ -87,7 +124,6 @@ public static void setConfigurationFromFile(String configurationFileName) throws
 		iS = new FileInputStream(file);
 		Properties configFile = new Properties();
 		configFile.load(iS);
-
 		RUNS = Integer.valueOf(configFile.getProperty("NUM_RUNS"));
 		MAX_DIAGNOSIS_SIZE = Integer.valueOf(configFile.getProperty("MAX_DIAGNOSIS_SIZE"));
 		TIMEOUT = Integer.valueOf(configFile.getProperty("TIMEOUT_MINUTES"))*60;
