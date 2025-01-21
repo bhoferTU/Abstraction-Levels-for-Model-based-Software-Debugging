@@ -1,0 +1,2201 @@
+MINION 3
+# Modeling the domain = > <
+# Values: 0 < / 1 = / 2 >
+
+**VARIABLES**
+DISCRETE Sheet1_B10 {0..2}
+DISCRETE Sheet1_B100 {0..2}
+DISCRETE Sheet1_B101 {0..2}
+DISCRETE Sheet1_B102 {0..2}
+DISCRETE Sheet1_B103 {0..2}
+DISCRETE Sheet1_B104 {0..2}
+DISCRETE Sheet1_B105 {0..2}
+DISCRETE Sheet1_B106 {0..2}
+DISCRETE Sheet1_B107 {0..2}
+DISCRETE Sheet1_B108 {0..2}
+DISCRETE Sheet1_B109 {0..2}
+DISCRETE Sheet1_B11 {0..2}
+DISCRETE Sheet1_B110 {0..2}
+DISCRETE Sheet1_B111 {0..2}
+DISCRETE Sheet1_B112 {0..2}
+DISCRETE Sheet1_B113 {0..2}
+DISCRETE Sheet1_B114 {0..2}
+DISCRETE Sheet1_B115 {0..2}
+DISCRETE Sheet1_B116 {0..2}
+DISCRETE Sheet1_B117 {0..2}
+DISCRETE Sheet1_B118 {0..2}
+DISCRETE Sheet1_B119 {0..2}
+DISCRETE Sheet1_B12 {0..2}
+DISCRETE Sheet1_B120 {0..2}
+DISCRETE Sheet1_B121 {0..2}
+DISCRETE Sheet1_B122 {0..2}
+DISCRETE Sheet1_B123 {0..2}
+DISCRETE Sheet1_B124 {0..2}
+DISCRETE Sheet1_B125 {0..2}
+DISCRETE Sheet1_B126 {0..2}
+DISCRETE Sheet1_B127 {0..2}
+DISCRETE Sheet1_B128 {0..2}
+DISCRETE Sheet1_B129 {0..2}
+DISCRETE Sheet1_B13 {0..2}
+DISCRETE Sheet1_B130 {0..2}
+DISCRETE Sheet1_B131 {0..2}
+DISCRETE Sheet1_B132 {0..2}
+DISCRETE Sheet1_B133 {0..2}
+DISCRETE Sheet1_B134 {0..2}
+DISCRETE Sheet1_B135 {0..2}
+DISCRETE Sheet1_B136 {0..2}
+DISCRETE Sheet1_B137 {0..2}
+DISCRETE Sheet1_B138 {0..2}
+DISCRETE Sheet1_B139 {0..2}
+DISCRETE Sheet1_B14 {0..2}
+DISCRETE Sheet1_B140 {0..2}
+DISCRETE Sheet1_B141 {0..2}
+DISCRETE Sheet1_B142 {0..2}
+DISCRETE Sheet1_B143 {0..2}
+DISCRETE Sheet1_B144 {0..2}
+DISCRETE Sheet1_B145 {0..2}
+DISCRETE Sheet1_B146 {0..2}
+DISCRETE Sheet1_B147 {0..2}
+DISCRETE Sheet1_B148 {0..2}
+DISCRETE Sheet1_B149 {0..2}
+DISCRETE Sheet1_B15 {0..2}
+DISCRETE Sheet1_B150 {0..2}
+DISCRETE Sheet1_B151 {0..2}
+DISCRETE Sheet1_B152 {0..2}
+DISCRETE Sheet1_B153 {0..2}
+DISCRETE Sheet1_B154 {0..2}
+DISCRETE Sheet1_B155 {0..2}
+DISCRETE Sheet1_B156 {0..2}
+DISCRETE Sheet1_B157 {0..2}
+DISCRETE Sheet1_B158 {0..2}
+DISCRETE Sheet1_B159 {0..2}
+DISCRETE Sheet1_B16 {0..2}
+DISCRETE Sheet1_B160 {0..2}
+DISCRETE Sheet1_B161 {0..2}
+DISCRETE Sheet1_B162 {0..2}
+DISCRETE Sheet1_B163 {0..2}
+DISCRETE Sheet1_B164 {0..2}
+DISCRETE Sheet1_B165 {0..2}
+DISCRETE Sheet1_B166 {0..2}
+DISCRETE Sheet1_B167 {0..2}
+DISCRETE Sheet1_B168 {0..2}
+DISCRETE Sheet1_B169 {0..2}
+DISCRETE Sheet1_B17 {0..2}
+DISCRETE Sheet1_B170 {0..2}
+DISCRETE Sheet1_B171 {0..2}
+DISCRETE Sheet1_B172 {0..2}
+DISCRETE Sheet1_B173 {0..2}
+DISCRETE Sheet1_B174 {0..2}
+DISCRETE Sheet1_B175 {0..2}
+DISCRETE Sheet1_B176 {0..2}
+DISCRETE Sheet1_B177 {0..2}
+DISCRETE Sheet1_B178 {0..2}
+DISCRETE Sheet1_B179 {0..2}
+DISCRETE Sheet1_B18 {0..2}
+DISCRETE Sheet1_B180 {0..2}
+DISCRETE Sheet1_B181 {0..2}
+DISCRETE Sheet1_B182 {0..2}
+DISCRETE Sheet1_B183 {0..2}
+DISCRETE Sheet1_B184 {0..2}
+DISCRETE Sheet1_B185 {0..2}
+DISCRETE Sheet1_B186 {0..2}
+DISCRETE Sheet1_B187 {0..2}
+DISCRETE Sheet1_B188 {0..2}
+DISCRETE Sheet1_B189 {0..2}
+DISCRETE Sheet1_B19 {0..2}
+DISCRETE Sheet1_B190 {0..2}
+DISCRETE Sheet1_B191 {0..2}
+DISCRETE Sheet1_B192 {0..2}
+DISCRETE Sheet1_B193 {0..2}
+DISCRETE Sheet1_B194 {0..2}
+DISCRETE Sheet1_B195 {0..2}
+DISCRETE Sheet1_B196 {0..2}
+DISCRETE Sheet1_B197 {0..2}
+DISCRETE Sheet1_B198 {0..2}
+DISCRETE Sheet1_B199 {0..2}
+DISCRETE Sheet1_B2 {0..2}
+DISCRETE Sheet1_B20 {0..2}
+DISCRETE Sheet1_B200 {0..2}
+DISCRETE Sheet1_B201 {0..2}
+DISCRETE Sheet1_B202 {0..2}
+DISCRETE Sheet1_B203 {0..2}
+DISCRETE Sheet1_B204 {0..2}
+DISCRETE Sheet1_B205 {0..2}
+DISCRETE Sheet1_B206 {0..2}
+DISCRETE Sheet1_B207 {0..2}
+DISCRETE Sheet1_B208 {0..2}
+DISCRETE Sheet1_B209 {0..2}
+DISCRETE Sheet1_B21 {0..2}
+DISCRETE Sheet1_B210 {0..2}
+DISCRETE Sheet1_B211 {0..2}
+DISCRETE Sheet1_B212 {0..2}
+DISCRETE Sheet1_B213 {0..2}
+DISCRETE Sheet1_B214 {0..2}
+DISCRETE Sheet1_B215 {0..2}
+DISCRETE Sheet1_B216 {0..2}
+DISCRETE Sheet1_B217 {0..2}
+DISCRETE Sheet1_B218 {0..2}
+DISCRETE Sheet1_B219 {0..2}
+DISCRETE Sheet1_B22 {0..2}
+DISCRETE Sheet1_B220 {0..2}
+DISCRETE Sheet1_B221 {0..2}
+DISCRETE Sheet1_B222 {0..2}
+DISCRETE Sheet1_B223 {0..2}
+DISCRETE Sheet1_B224 {0..2}
+DISCRETE Sheet1_B225 {0..2}
+DISCRETE Sheet1_B226 {0..2}
+DISCRETE Sheet1_B227 {0..2}
+DISCRETE Sheet1_B228 {0..2}
+DISCRETE Sheet1_B229 {0..2}
+DISCRETE Sheet1_B23 {0..2}
+DISCRETE Sheet1_B230 {0..2}
+DISCRETE Sheet1_B231 {0..2}
+DISCRETE Sheet1_B232 {0..2}
+DISCRETE Sheet1_B233 {0..2}
+DISCRETE Sheet1_B234 {0..2}
+DISCRETE Sheet1_B235 {0..2}
+DISCRETE Sheet1_B236 {0..2}
+DISCRETE Sheet1_B237 {0..2}
+DISCRETE Sheet1_B238 {0..2}
+DISCRETE Sheet1_B239 {0..2}
+DISCRETE Sheet1_B24 {0..2}
+DISCRETE Sheet1_B240 {0..2}
+DISCRETE Sheet1_B241 {0..2}
+DISCRETE Sheet1_B242 {0..2}
+DISCRETE Sheet1_B243 {0..2}
+DISCRETE Sheet1_B244 {0..2}
+DISCRETE Sheet1_B245 {0..2}
+DISCRETE Sheet1_B246 {0..2}
+DISCRETE Sheet1_B247 {0..2}
+DISCRETE Sheet1_B248 {0..2}
+DISCRETE Sheet1_B249 {0..2}
+DISCRETE Sheet1_B25 {0..2}
+DISCRETE Sheet1_B250 {0..2}
+DISCRETE Sheet1_B251 {0..2}
+DISCRETE Sheet1_B252 {0..2}
+DISCRETE Sheet1_B253 {0..2}
+DISCRETE Sheet1_B254 {0..2}
+DISCRETE Sheet1_B255 {0..2}
+DISCRETE Sheet1_B256 {0..2}
+DISCRETE Sheet1_B257 {0..2}
+DISCRETE Sheet1_B258 {0..2}
+DISCRETE Sheet1_B259 {0..2}
+DISCRETE Sheet1_B26 {0..2}
+DISCRETE Sheet1_B260 {0..2}
+DISCRETE Sheet1_B261 {0..2}
+DISCRETE Sheet1_B262 {0..2}
+DISCRETE Sheet1_B263 {0..2}
+DISCRETE Sheet1_B264 {0..2}
+DISCRETE Sheet1_B265 {0..2}
+DISCRETE Sheet1_B266 {0..2}
+DISCRETE Sheet1_B267 {0..2}
+DISCRETE Sheet1_B268 {0..2}
+DISCRETE Sheet1_B269 {0..2}
+DISCRETE Sheet1_B27 {0..2}
+DISCRETE Sheet1_B270 {0..2}
+DISCRETE Sheet1_B271 {0..2}
+DISCRETE Sheet1_B272 {0..2}
+DISCRETE Sheet1_B273 {0..2}
+DISCRETE Sheet1_B274 {0..2}
+DISCRETE Sheet1_B275 {0..2}
+DISCRETE Sheet1_B276 {0..2}
+DISCRETE Sheet1_B277 {0..2}
+DISCRETE Sheet1_B278 {0..2}
+DISCRETE Sheet1_B279 {0..2}
+DISCRETE Sheet1_B28 {0..2}
+DISCRETE Sheet1_B280 {0..2}
+DISCRETE Sheet1_B281 {0..2}
+DISCRETE Sheet1_B282 {0..2}
+DISCRETE Sheet1_B283 {0..2}
+DISCRETE Sheet1_B284 {0..2}
+DISCRETE Sheet1_B285 {0..2}
+DISCRETE Sheet1_B286 {0..2}
+DISCRETE Sheet1_B287 {0..2}
+DISCRETE Sheet1_B288 {0..2}
+DISCRETE Sheet1_B289 {0..2}
+DISCRETE Sheet1_B29 {0..2}
+DISCRETE Sheet1_B290 {0..2}
+DISCRETE Sheet1_B291 {0..2}
+DISCRETE Sheet1_B292 {0..2}
+DISCRETE Sheet1_B293 {0..2}
+DISCRETE Sheet1_B294 {0..2}
+DISCRETE Sheet1_B295 {0..2}
+DISCRETE Sheet1_B296 {0..2}
+DISCRETE Sheet1_B297 {0..2}
+DISCRETE Sheet1_B298 {0..2}
+DISCRETE Sheet1_B299 {0..2}
+DISCRETE Sheet1_B3 {0..2}
+DISCRETE Sheet1_B30 {0..2}
+DISCRETE Sheet1_B300 {0..2}
+DISCRETE Sheet1_B301 {0..2}
+DISCRETE Sheet1_B302 {0..2}
+DISCRETE Sheet1_B303 {0..2}
+DISCRETE Sheet1_B304 {0..2}
+DISCRETE Sheet1_B305 {0..2}
+DISCRETE Sheet1_B306 {0..2}
+DISCRETE Sheet1_B307 {0..2}
+DISCRETE Sheet1_B308 {0..2}
+DISCRETE Sheet1_B309 {0..2}
+DISCRETE Sheet1_B31 {0..2}
+DISCRETE Sheet1_B310 {0..2}
+DISCRETE Sheet1_B311 {0..2}
+DISCRETE Sheet1_B312 {0..2}
+DISCRETE Sheet1_B313 {0..2}
+DISCRETE Sheet1_B314 {0..2}
+DISCRETE Sheet1_B315 {0..2}
+DISCRETE Sheet1_B316 {0..2}
+DISCRETE Sheet1_B317 {0..2}
+DISCRETE Sheet1_B318 {0..2}
+DISCRETE Sheet1_B319 {0..2}
+DISCRETE Sheet1_B32 {0..2}
+DISCRETE Sheet1_B320 {0..2}
+DISCRETE Sheet1_B321 {0..2}
+DISCRETE Sheet1_B322 {0..2}
+DISCRETE Sheet1_B323 {0..2}
+DISCRETE Sheet1_B324 {0..2}
+DISCRETE Sheet1_B325 {0..2}
+DISCRETE Sheet1_B326 {0..2}
+DISCRETE Sheet1_B327 {0..2}
+DISCRETE Sheet1_B328 {0..2}
+DISCRETE Sheet1_B329 {0..2}
+DISCRETE Sheet1_B33 {0..2}
+DISCRETE Sheet1_B330 {0..2}
+DISCRETE Sheet1_B331 {0..2}
+DISCRETE Sheet1_B332 {0..2}
+DISCRETE Sheet1_B333 {0..2}
+DISCRETE Sheet1_B334 {0..2}
+DISCRETE Sheet1_B335 {0..2}
+DISCRETE Sheet1_B336 {0..2}
+DISCRETE Sheet1_B337 {0..2}
+DISCRETE Sheet1_B338 {0..2}
+DISCRETE Sheet1_B339 {0..2}
+DISCRETE Sheet1_B34 {0..2}
+DISCRETE Sheet1_B340 {0..2}
+DISCRETE Sheet1_B341 {0..2}
+DISCRETE Sheet1_B342 {0..2}
+DISCRETE Sheet1_B343 {0..2}
+DISCRETE Sheet1_B344 {0..2}
+DISCRETE Sheet1_B345 {0..2}
+DISCRETE Sheet1_B346 {0..2}
+DISCRETE Sheet1_B347 {0..2}
+DISCRETE Sheet1_B348 {0..2}
+DISCRETE Sheet1_B349 {0..2}
+DISCRETE Sheet1_B35 {0..2}
+DISCRETE Sheet1_B350 {0..2}
+DISCRETE Sheet1_B351 {0..2}
+DISCRETE Sheet1_B352 {0..2}
+DISCRETE Sheet1_B353 {0..2}
+DISCRETE Sheet1_B354 {0..2}
+DISCRETE Sheet1_B355 {0..2}
+DISCRETE Sheet1_B356 {0..2}
+DISCRETE Sheet1_B357 {0..2}
+DISCRETE Sheet1_B358 {0..2}
+DISCRETE Sheet1_B359 {0..2}
+DISCRETE Sheet1_B36 {0..2}
+DISCRETE Sheet1_B360 {0..2}
+DISCRETE Sheet1_B361 {0..2}
+DISCRETE Sheet1_B362 {0..2}
+DISCRETE Sheet1_B363 {0..2}
+DISCRETE Sheet1_B364 {0..2}
+DISCRETE Sheet1_B365 {0..2}
+DISCRETE Sheet1_B366 {0..2}
+DISCRETE Sheet1_B367 {0..2}
+DISCRETE Sheet1_B368 {0..2}
+DISCRETE Sheet1_B369 {0..2}
+DISCRETE Sheet1_B37 {0..2}
+DISCRETE Sheet1_B370 {0..2}
+DISCRETE Sheet1_B371 {0..2}
+DISCRETE Sheet1_B372 {0..2}
+DISCRETE Sheet1_B373 {0..2}
+DISCRETE Sheet1_B374 {0..2}
+DISCRETE Sheet1_B375 {0..2}
+DISCRETE Sheet1_B376 {0..2}
+DISCRETE Sheet1_B377 {0..2}
+DISCRETE Sheet1_B378 {0..2}
+DISCRETE Sheet1_B379 {0..2}
+DISCRETE Sheet1_B38 {0..2}
+DISCRETE Sheet1_B380 {0..2}
+DISCRETE Sheet1_B381 {0..2}
+DISCRETE Sheet1_B382 {0..2}
+DISCRETE Sheet1_B383 {0..2}
+DISCRETE Sheet1_B384 {0..2}
+DISCRETE Sheet1_B385 {0..2}
+DISCRETE Sheet1_B386 {0..2}
+DISCRETE Sheet1_B387 {0..2}
+DISCRETE Sheet1_B388 {0..2}
+DISCRETE Sheet1_B389 {0..2}
+DISCRETE Sheet1_B39 {0..2}
+DISCRETE Sheet1_B390 {0..2}
+DISCRETE Sheet1_B391 {0..2}
+DISCRETE Sheet1_B392 {0..2}
+DISCRETE Sheet1_B393 {0..2}
+DISCRETE Sheet1_B394 {0..2}
+DISCRETE Sheet1_B395 {0..2}
+DISCRETE Sheet1_B396 {0..2}
+DISCRETE Sheet1_B397 {0..2}
+DISCRETE Sheet1_B398 {0..2}
+DISCRETE Sheet1_B399 {0..2}
+DISCRETE Sheet1_B4 {0..2}
+DISCRETE Sheet1_B40 {0..2}
+DISCRETE Sheet1_B400 {0..2}
+DISCRETE Sheet1_B401 {0..2}
+DISCRETE Sheet1_B402 {0..2}
+DISCRETE Sheet1_B41 {0..2}
+DISCRETE Sheet1_B42 {0..2}
+DISCRETE Sheet1_B43 {0..2}
+DISCRETE Sheet1_B44 {0..2}
+DISCRETE Sheet1_B45 {0..2}
+DISCRETE Sheet1_B46 {0..2}
+DISCRETE Sheet1_B47 {0..2}
+DISCRETE Sheet1_B48 {0..2}
+DISCRETE Sheet1_B49 {0..2}
+DISCRETE Sheet1_B5 {0..2}
+DISCRETE Sheet1_B50 {0..2}
+DISCRETE Sheet1_B51 {0..2}
+DISCRETE Sheet1_B52 {0..2}
+DISCRETE Sheet1_B53 {0..2}
+DISCRETE Sheet1_B54 {0..2}
+DISCRETE Sheet1_B55 {0..2}
+DISCRETE Sheet1_B56 {0..2}
+DISCRETE Sheet1_B57 {0..2}
+DISCRETE Sheet1_B58 {0..2}
+DISCRETE Sheet1_B59 {0..2}
+DISCRETE Sheet1_B6 {0..2}
+DISCRETE Sheet1_B60 {0..2}
+DISCRETE Sheet1_B61 {0..2}
+DISCRETE Sheet1_B62 {0..2}
+DISCRETE Sheet1_B63 {0..2}
+DISCRETE Sheet1_B64 {0..2}
+DISCRETE Sheet1_B65 {0..2}
+DISCRETE Sheet1_B66 {0..2}
+DISCRETE Sheet1_B67 {0..2}
+DISCRETE Sheet1_B68 {0..2}
+DISCRETE Sheet1_B69 {0..2}
+DISCRETE Sheet1_B7 {0..2}
+DISCRETE Sheet1_B70 {0..2}
+DISCRETE Sheet1_B71 {0..2}
+DISCRETE Sheet1_B72 {0..2}
+DISCRETE Sheet1_B73 {0..2}
+DISCRETE Sheet1_B74 {0..2}
+DISCRETE Sheet1_B75 {0..2}
+DISCRETE Sheet1_B76 {0..2}
+DISCRETE Sheet1_B77 {0..2}
+DISCRETE Sheet1_B78 {0..2}
+DISCRETE Sheet1_B79 {0..2}
+DISCRETE Sheet1_B8 {0..2}
+DISCRETE Sheet1_B80 {0..2}
+DISCRETE Sheet1_B81 {0..2}
+DISCRETE Sheet1_B82 {0..2}
+DISCRETE Sheet1_B83 {0..2}
+DISCRETE Sheet1_B84 {0..2}
+DISCRETE Sheet1_B85 {0..2}
+DISCRETE Sheet1_B86 {0..2}
+DISCRETE Sheet1_B87 {0..2}
+DISCRETE Sheet1_B88 {0..2}
+DISCRETE Sheet1_B89 {0..2}
+DISCRETE Sheet1_B9 {0..2}
+DISCRETE Sheet1_B90 {0..2}
+DISCRETE Sheet1_B91 {0..2}
+DISCRETE Sheet1_B92 {0..2}
+DISCRETE Sheet1_B93 {0..2}
+DISCRETE Sheet1_B94 {0..2}
+DISCRETE Sheet1_B95 {0..2}
+DISCRETE Sheet1_B96 {0..2}
+DISCRETE Sheet1_B97 {0..2}
+DISCRETE Sheet1_B98 {0..2}
+DISCRETE Sheet1_B99 {0..2}
+DISCRETE Sheet1_D10 {0..2}
+DISCRETE Sheet1_D11 {0..2}
+DISCRETE Sheet1_D12 {0..2}
+DISCRETE Sheet1_D13 {0..2}
+DISCRETE Sheet1_D14 {0..2}
+DISCRETE Sheet1_D15 {0..2}
+DISCRETE Sheet1_D16 {0..2}
+DISCRETE Sheet1_D17 {0..2}
+DISCRETE Sheet1_D18 {0..2}
+DISCRETE Sheet1_D19 {0..2}
+DISCRETE Sheet1_D2 {0..2}
+DISCRETE Sheet1_D20 {0..2}
+DISCRETE Sheet1_D21 {0..2}
+DISCRETE Sheet1_D22 {0..2}
+DISCRETE Sheet1_D23 {0..2}
+DISCRETE Sheet1_D24 {0..2}
+DISCRETE Sheet1_D3 {0..2}
+DISCRETE Sheet1_D4 {0..2}
+DISCRETE Sheet1_D5 {0..2}
+DISCRETE Sheet1_D6 {0..2}
+DISCRETE Sheet1_D7 {0..2}
+DISCRETE Sheet1_D8 {0..2}
+DISCRETE Sheet1_D9 {0..2}
+DISCRETE Sheet1_F10 {0..2}
+DISCRETE Sheet1_F11 {0..2}
+DISCRETE Sheet1_F12 {0..2}
+DISCRETE Sheet1_F13 {0..2}
+DISCRETE Sheet1_F14 {0..2}
+DISCRETE Sheet1_F15 {0..2}
+DISCRETE Sheet1_F16 {0..2}
+DISCRETE Sheet1_F17 {0..2}
+DISCRETE Sheet1_F18 {0..2}
+DISCRETE Sheet1_F19 {0..2}
+DISCRETE Sheet1_F2 {0..2}
+DISCRETE Sheet1_F20 {0..2}
+DISCRETE Sheet1_F21 {0..2}
+DISCRETE Sheet1_F3 {0..2}
+DISCRETE Sheet1_F4 {0..2}
+DISCRETE Sheet1_F5 {0..2}
+DISCRETE Sheet1_F6 {0..2}
+DISCRETE Sheet1_F7 {0..2}
+DISCRETE Sheet1_F8 {0..2}
+DISCRETE Sheet1_F9 {0..2}
+DISCRETE Sheet1_H10 {0..2}
+DISCRETE Sheet1_H11 {0..2}
+DISCRETE Sheet1_H12 {0..2}
+DISCRETE Sheet1_H13 {0..2}
+DISCRETE Sheet1_H14 {0..2}
+DISCRETE Sheet1_H15 {0..2}
+DISCRETE Sheet1_H16 {0..2}
+DISCRETE Sheet1_H17 {0..2}
+DISCRETE Sheet1_H18 {0..2}
+DISCRETE Sheet1_H19 {0..2}
+DISCRETE Sheet1_H2 {0..2}
+DISCRETE Sheet1_H20 {0..2}
+DISCRETE Sheet1_H21 {0..2}
+DISCRETE Sheet1_H3 {0..2}
+DISCRETE Sheet1_H4 {0..2}
+DISCRETE Sheet1_H5 {0..2}
+DISCRETE Sheet1_H6 {0..2}
+DISCRETE Sheet1_H7 {0..2}
+DISCRETE Sheet1_H8 {0..2}
+DISCRETE Sheet1_H9 {0..2}
+BOOL ab[63]
+DISCRETE tmp0 {0..2}
+DISCRETE tmp1 {0..2}
+DISCRETE tmp10 {0..2}
+DISCRETE tmp103 {0..2}
+DISCRETE tmp104 {0..2}
+DISCRETE tmp105 {0..2}
+DISCRETE tmp106 {0..2}
+DISCRETE tmp107 {0..2}
+DISCRETE tmp108 {0..2}
+DISCRETE tmp109 {0..2}
+DISCRETE tmp11 {0..2}
+DISCRETE tmp110 {0..2}
+DISCRETE tmp111 {0..2}
+DISCRETE tmp112 {0..2}
+DISCRETE tmp113 {0..2}
+DISCRETE tmp114 {0..2}
+DISCRETE tmp115 {0..2}
+DISCRETE tmp116 {0..2}
+DISCRETE tmp117 {0..2}
+DISCRETE tmp118 {0..2}
+DISCRETE tmp119 {0..2}
+DISCRETE tmp12 {0..2}
+DISCRETE tmp120 {0..2}
+DISCRETE tmp124 {0..2}
+DISCRETE tmp125 {0..2}
+DISCRETE tmp126 {0..2}
+DISCRETE tmp127 {0..2}
+DISCRETE tmp128 {0..2}
+DISCRETE tmp129 {0..2}
+DISCRETE tmp13 {0..2}
+DISCRETE tmp130 {0..2}
+DISCRETE tmp131 {0..2}
+DISCRETE tmp132 {0..2}
+DISCRETE tmp133 {0..2}
+DISCRETE tmp134 {0..2}
+DISCRETE tmp135 {0..2}
+DISCRETE tmp136 {0..2}
+DISCRETE tmp137 {0..2}
+DISCRETE tmp138 {0..2}
+DISCRETE tmp139 {0..2}
+DISCRETE tmp14 {0..2}
+DISCRETE tmp140 {0..2}
+DISCRETE tmp141 {0..2}
+DISCRETE tmp145 {0..2}
+DISCRETE tmp146 {0..2}
+DISCRETE tmp147 {0..2}
+DISCRETE tmp148 {0..2}
+DISCRETE tmp149 {0..2}
+DISCRETE tmp15 {0..2}
+DISCRETE tmp150 {0..2}
+DISCRETE tmp151 {0..2}
+DISCRETE tmp152 {0..2}
+DISCRETE tmp153 {0..2}
+DISCRETE tmp154 {0..2}
+DISCRETE tmp155 {0..2}
+DISCRETE tmp156 {0..2}
+DISCRETE tmp157 {0..2}
+DISCRETE tmp158 {0..2}
+DISCRETE tmp159 {0..2}
+DISCRETE tmp16 {0..2}
+DISCRETE tmp160 {0..2}
+DISCRETE tmp161 {0..2}
+DISCRETE tmp162 {0..2}
+DISCRETE tmp166 {0..2}
+DISCRETE tmp167 {0..2}
+DISCRETE tmp168 {0..2}
+DISCRETE tmp169 {0..2}
+DISCRETE tmp17 {0..2}
+DISCRETE tmp170 {0..2}
+DISCRETE tmp171 {0..2}
+DISCRETE tmp172 {0..2}
+DISCRETE tmp173 {0..2}
+DISCRETE tmp174 {0..2}
+DISCRETE tmp175 {0..2}
+DISCRETE tmp176 {0..2}
+DISCRETE tmp177 {0..2}
+DISCRETE tmp178 {0..2}
+DISCRETE tmp179 {0..2}
+DISCRETE tmp180 {0..2}
+DISCRETE tmp181 {0..2}
+DISCRETE tmp182 {0..2}
+DISCRETE tmp183 {0..2}
+DISCRETE tmp187 {0..2}
+DISCRETE tmp188 {0..2}
+DISCRETE tmp189 {0..2}
+DISCRETE tmp190 {0..2}
+DISCRETE tmp191 {0..2}
+DISCRETE tmp192 {0..2}
+DISCRETE tmp193 {0..2}
+DISCRETE tmp194 {0..2}
+DISCRETE tmp195 {0..2}
+DISCRETE tmp196 {0..2}
+DISCRETE tmp197 {0..2}
+DISCRETE tmp198 {0..2}
+DISCRETE tmp199 {0..2}
+DISCRETE tmp2 {0..2}
+DISCRETE tmp20 {0..2}
+DISCRETE tmp200 {0..2}
+DISCRETE tmp201 {0..2}
+DISCRETE tmp202 {0..2}
+DISCRETE tmp203 {0..2}
+DISCRETE tmp204 {0..2}
+DISCRETE tmp208 {0..2}
+DISCRETE tmp209 {0..2}
+DISCRETE tmp21 {0..2}
+DISCRETE tmp210 {0..2}
+DISCRETE tmp211 {0..2}
+DISCRETE tmp212 {0..2}
+DISCRETE tmp213 {0..2}
+DISCRETE tmp214 {0..2}
+DISCRETE tmp215 {0..2}
+DISCRETE tmp216 {0..2}
+DISCRETE tmp217 {0..2}
+DISCRETE tmp218 {0..2}
+DISCRETE tmp219 {0..2}
+DISCRETE tmp22 {0..2}
+DISCRETE tmp220 {0..2}
+DISCRETE tmp221 {0..2}
+DISCRETE tmp222 {0..2}
+DISCRETE tmp223 {0..2}
+DISCRETE tmp224 {0..2}
+DISCRETE tmp225 {0..2}
+DISCRETE tmp229 {0..2}
+DISCRETE tmp23 {0..2}
+DISCRETE tmp230 {0..2}
+DISCRETE tmp231 {0..2}
+DISCRETE tmp232 {0..2}
+DISCRETE tmp233 {0..2}
+DISCRETE tmp234 {0..2}
+DISCRETE tmp235 {0..2}
+DISCRETE tmp236 {0..2}
+DISCRETE tmp237 {0..2}
+DISCRETE tmp238 {0..2}
+DISCRETE tmp239 {0..2}
+DISCRETE tmp24 {0..2}
+DISCRETE tmp240 {0..2}
+DISCRETE tmp241 {0..2}
+DISCRETE tmp242 {0..2}
+DISCRETE tmp243 {0..2}
+DISCRETE tmp244 {0..2}
+DISCRETE tmp245 {0..2}
+DISCRETE tmp246 {0..2}
+DISCRETE tmp25 {0..2}
+DISCRETE tmp250 {0..2}
+DISCRETE tmp251 {0..2}
+DISCRETE tmp252 {0..2}
+DISCRETE tmp253 {0..2}
+DISCRETE tmp254 {0..2}
+DISCRETE tmp255 {0..2}
+DISCRETE tmp256 {0..2}
+DISCRETE tmp257 {0..2}
+DISCRETE tmp258 {0..2}
+DISCRETE tmp259 {0..2}
+DISCRETE tmp26 {0..2}
+DISCRETE tmp260 {0..2}
+DISCRETE tmp261 {0..2}
+DISCRETE tmp262 {0..2}
+DISCRETE tmp263 {0..2}
+DISCRETE tmp264 {0..2}
+DISCRETE tmp265 {0..2}
+DISCRETE tmp266 {0..2}
+DISCRETE tmp267 {0..2}
+DISCRETE tmp27 {0..2}
+DISCRETE tmp271 {0..2}
+DISCRETE tmp272 {0..2}
+DISCRETE tmp273 {0..2}
+DISCRETE tmp274 {0..2}
+DISCRETE tmp275 {0..2}
+DISCRETE tmp276 {0..2}
+DISCRETE tmp277 {0..2}
+DISCRETE tmp278 {0..2}
+DISCRETE tmp279 {0..2}
+DISCRETE tmp28 {0..2}
+DISCRETE tmp280 {0..2}
+DISCRETE tmp281 {0..2}
+DISCRETE tmp282 {0..2}
+DISCRETE tmp283 {0..2}
+DISCRETE tmp284 {0..2}
+DISCRETE tmp285 {0..2}
+DISCRETE tmp286 {0..2}
+DISCRETE tmp287 {0..2}
+DISCRETE tmp288 {0..2}
+DISCRETE tmp29 {0..2}
+DISCRETE tmp292 {0..2}
+DISCRETE tmp293 {0..2}
+DISCRETE tmp294 {0..2}
+DISCRETE tmp295 {0..2}
+DISCRETE tmp296 {0..2}
+DISCRETE tmp297 {0..2}
+DISCRETE tmp298 {0..2}
+DISCRETE tmp299 {0..2}
+DISCRETE tmp3 {0..2}
+DISCRETE tmp30 {0..2}
+DISCRETE tmp300 {0..2}
+DISCRETE tmp301 {0..2}
+DISCRETE tmp302 {0..2}
+DISCRETE tmp303 {0..2}
+DISCRETE tmp304 {0..2}
+DISCRETE tmp305 {0..2}
+DISCRETE tmp306 {0..2}
+DISCRETE tmp307 {0..2}
+DISCRETE tmp308 {0..2}
+DISCRETE tmp309 {0..2}
+DISCRETE tmp31 {0..2}
+DISCRETE tmp313 {0..2}
+DISCRETE tmp314 {0..2}
+DISCRETE tmp315 {0..2}
+DISCRETE tmp316 {0..2}
+DISCRETE tmp317 {0..2}
+DISCRETE tmp318 {0..2}
+DISCRETE tmp319 {0..2}
+DISCRETE tmp32 {0..2}
+DISCRETE tmp320 {0..2}
+DISCRETE tmp321 {0..2}
+DISCRETE tmp322 {0..2}
+DISCRETE tmp323 {0..2}
+DISCRETE tmp324 {0..2}
+DISCRETE tmp325 {0..2}
+DISCRETE tmp326 {0..2}
+DISCRETE tmp327 {0..2}
+DISCRETE tmp328 {0..2}
+DISCRETE tmp329 {0..2}
+DISCRETE tmp33 {0..2}
+DISCRETE tmp330 {0..2}
+DISCRETE tmp334 {0..2}
+DISCRETE tmp335 {0..2}
+DISCRETE tmp336 {0..2}
+DISCRETE tmp337 {0..2}
+DISCRETE tmp338 {0..2}
+DISCRETE tmp339 {0..2}
+DISCRETE tmp34 {0..2}
+DISCRETE tmp340 {0..2}
+DISCRETE tmp341 {0..2}
+DISCRETE tmp342 {0..2}
+DISCRETE tmp343 {0..2}
+DISCRETE tmp344 {0..2}
+DISCRETE tmp345 {0..2}
+DISCRETE tmp346 {0..2}
+DISCRETE tmp347 {0..2}
+DISCRETE tmp348 {0..2}
+DISCRETE tmp349 {0..2}
+DISCRETE tmp35 {0..2}
+DISCRETE tmp350 {0..2}
+DISCRETE tmp351 {0..2}
+DISCRETE tmp355 {0..2}
+DISCRETE tmp356 {0..2}
+DISCRETE tmp357 {0..2}
+DISCRETE tmp358 {0..2}
+DISCRETE tmp359 {0..2}
+DISCRETE tmp36 {0..2}
+DISCRETE tmp360 {0..2}
+DISCRETE tmp361 {0..2}
+DISCRETE tmp362 {0..2}
+DISCRETE tmp363 {0..2}
+DISCRETE tmp364 {0..2}
+DISCRETE tmp365 {0..2}
+DISCRETE tmp366 {0..2}
+DISCRETE tmp367 {0..2}
+DISCRETE tmp368 {0..2}
+DISCRETE tmp369 {0..2}
+DISCRETE tmp37 {0..2}
+DISCRETE tmp370 {0..2}
+DISCRETE tmp371 {0..2}
+DISCRETE tmp372 {0..2}
+DISCRETE tmp376 {0..2}
+DISCRETE tmp377 {0..2}
+DISCRETE tmp378 {0..2}
+DISCRETE tmp379 {0..2}
+DISCRETE tmp380 {0..2}
+DISCRETE tmp381 {0..2}
+DISCRETE tmp382 {0..2}
+DISCRETE tmp383 {0..2}
+DISCRETE tmp384 {0..2}
+DISCRETE tmp385 {0..2}
+DISCRETE tmp386 {0..2}
+DISCRETE tmp387 {0..2}
+DISCRETE tmp388 {0..2}
+DISCRETE tmp389 {0..2}
+DISCRETE tmp390 {0..2}
+DISCRETE tmp391 {0..2}
+DISCRETE tmp392 {0..2}
+DISCRETE tmp393 {0..2}
+DISCRETE tmp397 {0..2}
+DISCRETE tmp398 {0..2}
+DISCRETE tmp399 {0..2}
+DISCRETE tmp4 {0..2}
+DISCRETE tmp400 {0..2}
+DISCRETE tmp401 {0..2}
+DISCRETE tmp402 {0..2}
+DISCRETE tmp403 {0..2}
+DISCRETE tmp404 {0..2}
+DISCRETE tmp405 {0..2}
+DISCRETE tmp406 {0..2}
+DISCRETE tmp407 {0..2}
+DISCRETE tmp408 {0..2}
+DISCRETE tmp409 {0..2}
+DISCRETE tmp41 {0..2}
+DISCRETE tmp410 {0..2}
+DISCRETE tmp411 {0..2}
+DISCRETE tmp412 {0..2}
+DISCRETE tmp413 {0..2}
+DISCRETE tmp414 {0..2}
+DISCRETE tmp417 {0..2}
+DISCRETE tmp418 {0..2}
+DISCRETE tmp419 {0..2}
+DISCRETE tmp42 {0..2}
+DISCRETE tmp420 {0..2}
+DISCRETE tmp421 {0..2}
+DISCRETE tmp422 {0..2}
+DISCRETE tmp423 {0..2}
+DISCRETE tmp424 {0..2}
+DISCRETE tmp425 {0..2}
+DISCRETE tmp426 {0..2}
+DISCRETE tmp427 {0..2}
+DISCRETE tmp428 {0..2}
+DISCRETE tmp429 {0..2}
+DISCRETE tmp43 {0..2}
+DISCRETE tmp430 {0..2}
+DISCRETE tmp431 {0..2}
+DISCRETE tmp432 {0..2}
+DISCRETE tmp433 {0..2}
+DISCRETE tmp434 {0..2}
+DISCRETE tmp437 {0..2}
+DISCRETE tmp438 {0..2}
+DISCRETE tmp439 {0..2}
+DISCRETE tmp44 {0..2}
+DISCRETE tmp440 {0..2}
+DISCRETE tmp441 {0..2}
+DISCRETE tmp442 {0..2}
+DISCRETE tmp443 {0..2}
+DISCRETE tmp444 {0..2}
+DISCRETE tmp445 {0..2}
+DISCRETE tmp446 {0..2}
+DISCRETE tmp447 {0..2}
+DISCRETE tmp448 {0..2}
+DISCRETE tmp449 {0..2}
+DISCRETE tmp45 {0..2}
+DISCRETE tmp450 {0..2}
+DISCRETE tmp451 {0..2}
+DISCRETE tmp452 {0..2}
+DISCRETE tmp453 {0..2}
+DISCRETE tmp454 {0..2}
+DISCRETE tmp457 {0..2}
+DISCRETE tmp458 {0..2}
+DISCRETE tmp459 {0..2}
+DISCRETE tmp46 {0..2}
+DISCRETE tmp460 {0..2}
+DISCRETE tmp461 {0..2}
+DISCRETE tmp462 {0..2}
+DISCRETE tmp463 {0..2}
+DISCRETE tmp464 {0..2}
+DISCRETE tmp465 {0..2}
+DISCRETE tmp466 {0..2}
+DISCRETE tmp467 {0..2}
+DISCRETE tmp468 {0..2}
+DISCRETE tmp469 {0..2}
+DISCRETE tmp47 {0..2}
+DISCRETE tmp470 {0..2}
+DISCRETE tmp471 {0..2}
+DISCRETE tmp472 {0..2}
+DISCRETE tmp473 {0..2}
+DISCRETE tmp474 {0..2}
+DISCRETE tmp48 {0..2}
+DISCRETE tmp49 {0..2}
+DISCRETE tmp5 {0..2}
+DISCRETE tmp50 {0..2}
+DISCRETE tmp51 {0..2}
+DISCRETE tmp52 {0..2}
+DISCRETE tmp53 {0..2}
+DISCRETE tmp54 {0..2}
+DISCRETE tmp55 {0..2}
+DISCRETE tmp56 {0..2}
+DISCRETE tmp57 {0..2}
+DISCRETE tmp58 {0..2}
+DISCRETE tmp6 {0..2}
+DISCRETE tmp62 {0..2}
+DISCRETE tmp63 {0..2}
+DISCRETE tmp64 {0..2}
+DISCRETE tmp65 {0..2}
+DISCRETE tmp66 {0..2}
+DISCRETE tmp67 {0..2}
+DISCRETE tmp68 {0..2}
+DISCRETE tmp69 {0..2}
+DISCRETE tmp7 {0..2}
+DISCRETE tmp70 {0..2}
+DISCRETE tmp71 {0..2}
+DISCRETE tmp72 {0..2}
+DISCRETE tmp73 {0..2}
+DISCRETE tmp74 {0..2}
+DISCRETE tmp75 {0..2}
+DISCRETE tmp76 {0..2}
+DISCRETE tmp77 {0..2}
+DISCRETE tmp78 {0..2}
+DISCRETE tmp79 {0..2}
+DISCRETE tmp8 {0..2}
+DISCRETE tmp82 {0..2}
+DISCRETE tmp83 {0..2}
+DISCRETE tmp84 {0..2}
+DISCRETE tmp85 {0..2}
+DISCRETE tmp86 {0..2}
+DISCRETE tmp87 {0..2}
+DISCRETE tmp88 {0..2}
+DISCRETE tmp89 {0..2}
+DISCRETE tmp9 {0..2}
+DISCRETE tmp90 {0..2}
+DISCRETE tmp91 {0..2}
+DISCRETE tmp92 {0..2}
+DISCRETE tmp93 {0..2}
+DISCRETE tmp94 {0..2}
+DISCRETE tmp95 {0..2}
+DISCRETE tmp96 {0..2}
+DISCRETE tmp97 {0..2}
+DISCRETE tmp98 {0..2}
+DISCRETE tmp99 {0..2}
+
+**TUPLELIST**
+plusFunction  40 4
+0 1 1 1
+0 2 1 2
+0 1 2 2
+0 2 2 2
+0 0 1 0
+0 1 0 0
+0 0 0 0
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 2 0 0
+0 2 0 1
+0 2 0 2
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+multFunction 52 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 1 1
+0 0 1 2
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 1 0 0
+0 1 0 1
+0 1 0 2
+0 1 1 1
+0 1 2 2
+0 1 2 0
+0 1 2 1
+0 2 0 0
+0 2 0 1
+0 2 0 2
+0 2 1 2
+0 2 1 0
+0 2 1 1
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+minusFunction 40 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 2 0
+0 1 0 2
+0 1 1 1
+0 1 2 0
+0 2 0 2
+0 2 1 2
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+divFunction 50 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 1 2
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 1 0 0
+0 1 0 1
+0 1 0 2
+0 1 1 1
+0 1 2 2
+0 1 2 0
+0 1 2 1
+0 2 0 0
+0 2 0 1
+0 2 0 2
+0 2 1 2
+0 2 1 0
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+equalityFunction 12 3 
+0 0 0
+0 1 1
+0 2 2
+1 0 0
+1 0 1
+1 0 2
+1 1 0
+1 1 1
+1 1 2
+1 2 0
+1 2 1
+1 2 2
+
+relationalOPFunction  35 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+0 0 2 0 
+0 0 2 1 
+0 2 0 0 
+0 2 0 1 
+0 1 2 0 
+0 1 2 1 
+0 2 1 0 
+0 2 1 1 
+0 2 2 0 
+0 2 2 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+1 0 2 0 
+1 0 2 1 
+1 2 0 0 
+1 2 0 1 
+1 1 2 0 
+1 1 2 1 
+1 2 1 0 
+1 2 1 1 
+1 2 2 0 
+1 2 2 1 
+
+ifFunction  92 5 
+0 1 1 1 1 
+0 1 2 1 2 
+0 1 2 1 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 2 2 
+0 1 1 2 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 2 2 2 
+0 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 0 2 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 0 1 2 
+0 0 0 2 0 
+0 0 0 2 1 
+0 0 0 2 2 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 0 2 
+0 0 1 1 0 
+0 0 1 1 1 
+0 0 1 1 2 
+0 0 1 2 0 
+0 0 1 2 1 
+0 0 1 2 2 
+0 0 2 0 0 
+0 0 2 0 1 
+0 0 2 0 2 
+0 0 2 1 0 
+0 0 2 1 1 
+0 0 2 1 2 
+0 0 2 2 0 
+0 0 2 2 1 
+0 0 2 2 2 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 0 2 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 0 1 2 
+1 0 0 2 0 
+1 0 0 2 1 
+1 0 0 2 2 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 0 2 
+1 0 1 1 0 
+1 0 1 1 1 
+1 0 1 1 2 
+1 0 1 2 0 
+1 0 1 2 1 
+1 0 1 2 2 
+1 0 2 0 0 
+1 0 2 0 1 
+1 0 2 0 2 
+1 0 2 1 0 
+1 0 2 1 1 
+1 0 2 1 2 
+1 0 2 2 0 
+1 0 2 2 1 
+1 0 2 2 2 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 0 2 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 0 1 2 
+1 1 0 2 0 
+1 1 0 2 1 
+1 1 0 2 2 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 0 2 
+1 1 1 1 0 
+1 1 1 1 1 
+1 1 1 1 2 
+1 1 1 2 0 
+1 1 1 2 1 
+1 1 1 2 2 
+1 1 2 0 0 
+1 1 2 0 1 
+1 1 2 0 2 
+1 1 2 1 0 
+1 1 2 1 1 
+1 1 2 1 2 
+1 1 2 2 0 
+1 1 2 2 1 
+1 1 2 2 2 
+
+minMaxFunction 44 4
+0 1 1 1
+0 2 1 2
+0 2 1 1
+0 1 2 2
+0 1 2 1
+0 2 2 2
+0 0 1 1
+0 0 1 0
+0 1 0 1
+0 1 0 0
+0 0 0 0
+0 0 2 2
+0 0 2 0
+0 0 2 1
+0 2 0 2
+0 2 0 0
+0 2 0 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+table([ab[33],Sheet1_D4,Sheet1_F4,Sheet1_H4], plusFunction)
+table([ab[61],tmp469,Sheet1_B33,tmp470], plusFunction)
+table([ab[5],tmp54,Sheet1_B80,tmp55], plusFunction)
+table([ab[28],tmp212,Sheet1_B240,tmp213], plusFunction)
+table([ab[43],tmp320,Sheet1_B328,tmp321], plusFunction)
+table([ab[8],tmp77,Sheet1_B90,tmp78], plusFunction)
+table([ab[46],tmp337,Sheet1_B345,tmp338], plusFunction)
+table([ab[28],tmp211,Sheet1_B235,tmp212], plusFunction)
+table([ab[23],Sheet1_D21,Sheet1_F21,Sheet1_H21], plusFunction)
+table([ab[8],tmp70,Sheet1_B96,tmp71], plusFunction)
+table([ab[19],tmp149,Sheet1_B169,tmp150], plusFunction)
+table([ab[31],tmp236,Sheet1_B261,tmp237], plusFunction)
+table([ab[8],tmp75,Sheet1_B89,tmp76], plusFunction)
+table([ab[34],tmp259,Sheet1_B274,tmp260], plusFunction)
+table([ab[19],tmp155,Sheet1_B165,tmp156], plusFunction)
+table([ab[49],tmp364,Sheet1_B373,tmp365], plusFunction)
+table([ab[57],tmp420,Sheet1_B18,tmp421], plusFunction)
+table([ab[19],tmp159,Sheet1_B181,tmp160], plusFunction)
+table([ab[16],Sheet1_B144,Sheet1_B155,tmp124], plusFunction)
+table([ab[2],Sheet1_B48,Sheet1_B59,tmp20], plusFunction)
+table([ab[0],tmp6,Sheet1_D2,tmp7], plusFunction)
+table([ab[34],tmp266,Sheet1_B282,tmp267], plusFunction)
+table([ab[8],tmp64,Sheet1_B95,tmp65], plusFunction)
+table([ab[52],tmp381,Sheet1_B400,tmp382], plusFunction)
+table([ab[31],tmp233,Sheet1_B246,tmp234], plusFunction)
+table([ab[0],tmp17,Sheet1_D7,Sheet1_D24], plusFunction)
+table([ab[57],tmp433,Sheet1_B5,tmp434], plusFunction)
+table([ab[25],tmp200,Sheet1_B215,tmp201], plusFunction)
+table([ab[46],tmp348,Sheet1_B358,tmp349], plusFunction)
+table([ab[19],tmp145,Sheet1_B167,tmp146], plusFunction)
+table([ab[37],tmp272,Sheet1_B299,tmp273], plusFunction)
+table([ab[16],tmp133,Sheet1_B153,tmp134], plusFunction)
+table([ab[49],tmp372,Sheet1_B369,Sheet1_D20], plusFunction)
+table([ab[5],tmp51,Sheet1_B79,tmp52], plusFunction)
+table([ab[10],tmp90,Sheet1_B119,tmp91], plusFunction)
+table([ab[22],tmp173,Sheet1_B196,tmp174], plusFunction)
+table([ab[52],tmp386,Sheet1_B395,tmp387], plusFunction)
+table([ab[28],tmp209,Sheet1_B234,tmp210], plusFunction)
+table([ab[52],tmp387,Sheet1_B385,tmp388], plusFunction)
+table([ab[34],tmp255,Sheet1_B279,tmp256], plusFunction)
+table([ab[0],tmp5,Sheet1_D18,tmp6], plusFunction)
+table([ab[40],tmp295,Sheet1_B312,tmp296], plusFunction)
+table([ab[52],tmp377,Sheet1_B398,tmp378], plusFunction)
+table([ab[25],tmp195,Sheet1_B219,tmp196], plusFunction)
+table([ab[49],tmp358,Sheet1_B377,tmp359], plusFunction)
+table([ab[13],tmp111,Sheet1_B131,tmp112], plusFunction)
+table([ab[12],Sheet1_D2,Sheet1_B2,Sheet1_F2], multFunction)
+table([ab[2],tmp21,Sheet1_B58,tmp22], plusFunction)
+table([ab[59],tmp445,Sheet1_F3,tmp446], plusFunction)
+table([ab[52],tmp382,Sheet1_B393,tmp383], plusFunction)
+table([ab[43],tmp318,Sheet1_B330,tmp319], plusFunction)
+table([ab[40],tmp299,Sheet1_B318,tmp300], plusFunction)
+table([ab[16],tmp127,Sheet1_B157,tmp128], plusFunction)
+table([ab[16],tmp132,Sheet1_B152,tmp133], plusFunction)
+table([ab[25],tmp190,Sheet1_B220,tmp191], plusFunction)
+table([ab[61],tmp459,Sheet1_B28,tmp460], plusFunction)
+table([ab[3],Sheet1_D14,Sheet1_F14,Sheet1_H14], plusFunction)
+table([ab[55],tmp406,Sheet1_H4,tmp407], plusFunction)
+table([ab[57],tmp428,Sheet1_B13,tmp429], plusFunction)
+table([ab[13],Sheet1_B133,Sheet1_B123,tmp103], plusFunction)
+table([ab[40],tmp294,Sheet1_B322,tmp295], plusFunction)
+table([ab[22],tmp174,Sheet1_B186,tmp175], plusFunction)
+table([ab[28],tmp222,Sheet1_B227,tmp223], plusFunction)
+table([ab[5],tmp58,Sheet1_B81,Sheet1_D5], plusFunction)
+table([ab[19],tmp162,Sheet1_B172,Sheet1_D10], plusFunction)
+table([ab[42],Sheet1_D7,Sheet1_F7,Sheet1_H7], plusFunction)
+table([ab[28],tmp217,Sheet1_B229,tmp218], plusFunction)
+table([ab[56],Sheet1_D17,Sheet1_B2,Sheet1_F17], multFunction)
+table([ab[5],tmp48,Sheet1_B65,tmp49], plusFunction)
+table([ab[43],tmp327,Sheet1_B326,tmp328], plusFunction)
+table([ab[51],Sheet1_D10,Sheet1_F10,Sheet1_H10], plusFunction)
+table([ab[50],Sheet1_D15,Sheet1_B2,Sheet1_F15], multFunction)
+table([ab[37],tmp276,Sheet1_B283,tmp277], plusFunction)
+table([ab[8],tmp74,Sheet1_B98,tmp75], plusFunction)
+table([ab[1],Sheet1_D19,Sheet1_B2,Sheet1_F19], multFunction)
+table([ab[13],tmp116,Sheet1_B127,tmp117], plusFunction)
+table([ab[28],tmp225,Sheet1_B239,Sheet1_D13], plusFunction)
+table([ab[19],tmp150,Sheet1_B173,tmp151], plusFunction)
+table([ab[34],tmp250,Sheet1_B266,tmp251], plusFunction)
+table([ab[22],tmp177,Sheet1_B198,tmp178], plusFunction)
+table([ab[26],Sheet1_D7,Sheet1_B2,Sheet1_F7], multFunction)
+table([ab[34],tmp261,Sheet1_B275,tmp262], plusFunction)
+table([ab[37],tmp273,Sheet1_B289,tmp274], plusFunction)
+table([ab[10],tmp86,Sheet1_B120,tmp87], plusFunction)
+table([ab[0],Sheet1_D13,Sheet1_D12,tmp0], plusFunction)
+table([ab[13],tmp106,Sheet1_B125,tmp107], plusFunction)
+table([ab[59],tmp443,Sheet1_F16,tmp444], plusFunction)
+table([ab[37],tmp282,Sheet1_B286,tmp283], plusFunction)
+table([ab[37],tmp277,Sheet1_B294,tmp278], plusFunction)
+table([ab[49],tmp359,Sheet1_B367,tmp360], plusFunction)
+table([ab[13],tmp105,Sheet1_B135,tmp106], plusFunction)
+table([ab[8],Sheet1_B100,Sheet1_B101,tmp62], plusFunction)
+table([ab[46],tmp350,Sheet1_B359,tmp351], plusFunction)
+table([ab[49],tmp360,Sheet1_B378,tmp361], plusFunction)
+table([ab[43],tmp326,Sheet1_B336,tmp327], plusFunction)
+table([ab[2],tmp35,Sheet1_B45,tmp36], plusFunction)
+table([ab[2],tmp23,Sheet1_B51,tmp24], plusFunction)
+table([ab[19],tmp151,Sheet1_B163,tmp152], plusFunction)
+table([ab[43],tmp330,Sheet1_B338,Sheet1_D18], plusFunction)
+table([ab[57],tmp429,Sheet1_B12,tmp430], plusFunction)
+table([ab[19],tmp160,Sheet1_B171,tmp161], plusFunction)
+table([ab[34],tmp267,Sheet1_B269,Sheet1_D15], plusFunction)
+table([ab[31],tmp244,Sheet1_B248,tmp245], plusFunction)
+table([ab[46],tmp347,Sheet1_B347,tmp348], plusFunction)
+table([ab[34],tmp262,Sheet1_B280,tmp263], plusFunction)
+table([ab[40],tmp305,Sheet1_B314,tmp306], plusFunction)
+table([ab[40],tmp300,Sheet1_B308,tmp301], plusFunction)
+table([ab[10],tmp91,Sheet1_B109,tmp92], plusFunction)
+table([ab[31],tmp243,Sheet1_B258,tmp244], plusFunction)
+table([ab[2],tmp34,Sheet1_B57,tmp35], plusFunction)
+table([ab[28],tmp213,Sheet1_B230,tmp214], plusFunction)
+table([ab[24],Sheet1_D6,Sheet1_B2,Sheet1_F6], multFunction)
+table([ab[8],tmp67,Sheet1_B86,tmp68], plusFunction)
+table([ab[52],tmp378,Sheet1_B388,tmp379], plusFunction)
+table([ab[55],tmp410,Sheet1_H7,tmp411], plusFunction)
+table([ab[0],tmp8,Sheet1_D20,tmp9], plusFunction)
+table([ab[31],Sheet1_B243,Sheet1_B254,tmp229], plusFunction)
+table([ab[55],tmp404,Sheet1_H6,tmp405], plusFunction)
+table([ab[10],tmp89,Sheet1_B108,tmp90], plusFunction)
+table([ab[15],Sheet1_D3,Sheet1_B2,Sheet1_F3], multFunction)
+table([ab[2],tmp22,Sheet1_B49,tmp23], plusFunction)
+table([ab[61],tmp466,Sheet1_B42,tmp467], plusFunction)
+table([ab[19],tmp156,Sheet1_B176,tmp157], plusFunction)
+table([ab[28],tmp223,Sheet1_B238,tmp224], plusFunction)
+table([ab[25],tmp196,Sheet1_B209,tmp197], plusFunction)
+table([ab[32],Sheet1_D9,Sheet1_B2,Sheet1_F9], multFunction)
+table([ab[10],tmp88,Sheet1_B121,tmp89], plusFunction)
+table([ab[31],tmp241,Sheet1_B260,tmp242], plusFunction)
+table([ab[13],tmp115,Sheet1_B137,tmp116], plusFunction)
+table([ab[8],tmp73,Sheet1_B87,tmp74], plusFunction)
+table([ab[59],tmp450,Sheet1_F20,tmp451], plusFunction)
+table([ab[36],Sheet1_D5,Sheet1_F5,Sheet1_H5], plusFunction)
+table([ab[43],tmp321,Sheet1_B339,tmp322], plusFunction)
+table([ab[55],Sheet1_H20,Sheet1_H11,tmp397], plusFunction)
+table([ab[34],tmp254,Sheet1_B268,tmp255], plusFunction)
+table([ab[61],tmp464,Sheet1_B40,tmp465], plusFunction)
+table([ab[8],tmp79,Sheet1_B92,Sheet1_D6], plusFunction)
+table([ab[13],tmp110,Sheet1_B141,tmp111], plusFunction)
+table([ab[49],tmp370,Sheet1_B368,tmp371], plusFunction)
+table([ab[16],tmp134,Sheet1_B143,tmp135], plusFunction)
+table([ab[55],tmp408,Sheet1_H9,tmp409], plusFunction)
+table([ab[16],tmp124,Sheet1_B145,tmp125], plusFunction)
+table([ab[2],tmp25,Sheet1_B50,tmp26], plusFunction)
+table([ab[34],tmp251,Sheet1_B277,tmp252], plusFunction)
+table([ab[46],tmp341,Sheet1_B361,tmp342], plusFunction)
+table([ab[19],Sheet1_B166,Sheet1_B177,tmp145], plusFunction)
+table([ab[61],Sheet1_B26,Sheet1_B37,tmp457], plusFunction)
+table([ab[61],tmp460,Sheet1_B39,tmp461], plusFunction)
+table([ab[19],tmp158,Sheet1_B170,tmp159], plusFunction)
+table([ab[31],tmp246,Sheet1_B249,Sheet1_D14], plusFunction)
+table([ab[10],tmp93,Sheet1_B115,tmp94], plusFunction)
+table([ab[40],tmp301,Sheet1_B319,tmp302], plusFunction)
+table([ab[2],tmp31,Sheet1_B43,tmp32], plusFunction)
+table([ab[25],tmp187,Sheet1_B211,tmp188], plusFunction)
+table([ab[57],tmp417,Sheet1_B17,tmp418], plusFunction)
+table([ab[57],tmp423,Sheet1_B11,tmp424], plusFunction)
+table([ab[37],tmp274,Sheet1_B300,tmp275], plusFunction)
+table([ab[25],tmp201,Sheet1_B205,tmp202], plusFunction)
+table([ab[7],Sheet1_D21,Sheet1_B2,Sheet1_F21], multFunction)
+table([ab[31],tmp234,Sheet1_B257,tmp235], plusFunction)
+table([ab[40],tmp307,Sheet1_B315,tmp308], plusFunction)
+table([ab[55],tmp407,Sheet1_H3,tmp408], plusFunction)
+table([ab[4],Sheet1_D20,Sheet1_B2,Sheet1_F20], multFunction)
+table([ab[5],tmp46,Sheet1_B66,tmp47], plusFunction)
+table([ab[37],tmp286,Sheet1_B292,tmp287], plusFunction)
+table([ab[16],tmp141,Sheet1_B149,Sheet1_D9], plusFunction)
+table([ab[46],tmp349,Sheet1_B348,tmp350], plusFunction)
+table([ab[5],tmp55,Sheet1_B71,tmp56], plusFunction)
+table([ab[22],tmp178,Sheet1_B191,tmp179], plusFunction)
+table([ab[28],tmp210,Sheet1_B224,tmp211], plusFunction)
+table([ab[19],tmp148,Sheet1_B179,tmp149], plusFunction)
+table([ab[5],tmp45,Sheet1_B74,tmp46], plusFunction)
+table([ab[52],tmp393,Sheet1_B402,Sheet1_D21], plusFunction)
+table([ab[43],tmp316,Sheet1_B334,tmp317], plusFunction)
+table([ab[49],tmp365,Sheet1_B363,tmp366], plusFunction)
+table([ab[43],tmp317,Sheet1_B340,tmp318], plusFunction)
+table([ab[28],tmp215,Sheet1_B231,tmp216], plusFunction)
+table([ab[49],tmp363,Sheet1_B372,tmp364], plusFunction)
+table([ab[59],tmp438,Sheet1_F13,tmp439], plusFunction)
+table([ab[10],tmp85,Sheet1_B114,tmp86], plusFunction)
+table([ab[43],tmp315,Sheet1_B323,tmp316], plusFunction)
+table([ab[46],tmp334,Sheet1_B354,tmp335], plusFunction)
+table([ab[22],tmp183,Sheet1_B190,Sheet1_D11], plusFunction)
+table([ab[37],Sheet1_B287,Sheet1_B298,tmp271], plusFunction)
+table([ab[8],tmp66,Sheet1_B94,tmp67], plusFunction)
+table([ab[43],tmp313,Sheet1_B332,tmp314], plusFunction)
+table([ab[52],Sheet1_B386,Sheet1_B397,tmp376], plusFunction)
+table([ab[55],tmp401,Sheet1_H12,tmp402], plusFunction)
+table([ab[22],tmp175,Sheet1_B197,tmp176], plusFunction)
+table([ab[11],Sheet1_D17,Sheet1_F17,Sheet1_H17], plusFunction)
+table([ab[13],tmp119,Sheet1_B139,tmp120], plusFunction)
+table([ab[13],tmp113,Sheet1_B132,tmp114], plusFunction)
+table([ab[37],tmp279,Sheet1_B295,tmp280], plusFunction)
+table([ab[61],tmp457,Sheet1_B25,tmp458], plusFunction)
+table([ab[13],tmp118,Sheet1_B128,tmp119], plusFunction)
+table([ab[57],tmp430,Sheet1_B8,tmp431], plusFunction)
+table([ab[31],tmp237,Sheet1_B251,tmp238], plusFunction)
+table([ab[25],tmp189,Sheet1_B213,tmp190], plusFunction)
+table([ab[28],tmp216,Sheet1_B242,tmp217], plusFunction)
+table([ab[43],tmp325,Sheet1_B325,tmp326], plusFunction)
+table([ab[60],Sheet1_D18,Sheet1_B2,Sheet1_F18], multFunction)
+table([ab[25],tmp193,Sheet1_B218,tmp194], plusFunction)
+table([ab[34],Sheet1_B265,Sheet1_B276,tmp250], plusFunction)
+table([ab[5],tmp53,Sheet1_B78,tmp54], plusFunction)
+table([ab[19],tmp152,Sheet1_B174,tmp153], plusFunction)
+table([ab[8],tmp71,Sheet1_B88,tmp72], plusFunction)
+table([ab[40],tmp304,Sheet1_B303,tmp305], plusFunction)
+table([ab[49],tmp367,Sheet1_B380,tmp368], plusFunction)
+table([ab[25],tmp199,Sheet1_B204,tmp200], plusFunction)
+table([ab[61],tmp468,Sheet1_B41,tmp469], plusFunction)
+table([ab[40],Sheet1_B320,Sheet1_B310,tmp292], plusFunction)
+table([ab[10],Sheet1_B111,Sheet1_B122,tmp82], plusFunction)
+table([ab[8],tmp69,Sheet1_B85,tmp70], plusFunction)
+table([ab[25],tmp204,Sheet1_B217,Sheet1_D12], plusFunction)
+table([ab[55],tmp403,Sheet1_H14,tmp404], plusFunction)
+table([ab[57],tmp425,Sheet1_B3,tmp426], plusFunction)
+table([ab[0],tmp10,Sheet1_D4,tmp11], plusFunction)
+table([ab[5],tmp57,Sheet1_B70,tmp58], plusFunction)
+table([ab[59],tmp448,Sheet1_F7,tmp449], plusFunction)
+table([ab[49],tmp355,Sheet1_B365,tmp356], plusFunction)
+table([ab[61],tmp473,Sheet1_B23,tmp474], plusFunction)
+table([ab[52],tmp391,Sheet1_B392,tmp392], plusFunction)
+table([ab[57],tmp421,Sheet1_B20,tmp422], plusFunction)
+table([ab[5],tmp43,Sheet1_B75,tmp44], plusFunction)
+table([ab[22],tmp181,Sheet1_B183,tmp182], plusFunction)
+table([ab[25],tmp191,Sheet1_F4,tmp192], plusFunction)
+table([ab[16],tmp136,Sheet1_B160,tmp137], plusFunction)
+table([ab[55],tmp412,Sheet1_H16,tmp413], plusFunction)
+table([ab[37],tmp283,Sheet1_B297,tmp284], plusFunction)
+table([ab[13],tmp109,Sheet1_B130,tmp110], plusFunction)
+table([ab[59],tmp451,Sheet1_F5,tmp452], plusFunction)
+table([ab[52],tmp385,Sheet1_B384,tmp386], plusFunction)
+table([ab[46],tmp344,Sheet1_B352,tmp345], plusFunction)
+table([ab[0],tmp15,Sheet1_D9,tmp16], plusFunction)
+table([ab[28],tmp219,Sheet1_B236,tmp220], plusFunction)
+table([ab[25],Sheet1_B210,Sheet1_B221,tmp187], plusFunction)
+table([ab[22],tmp171,Sheet1_B195,tmp172], plusFunction)
+table([ab[48],Sheet1_D9,Sheet1_F9,Sheet1_H9], plusFunction)
+table([ab[40],tmp302,Sheet1_B309,tmp303], plusFunction)
+table([ab[49],tmp356,Sheet1_B376,tmp357], plusFunction)
+table([ab[16],tmp135,Sheet1_B154,tmp136], plusFunction)
+table([ab[28],tmp220,Sheet1_B226,tmp221], plusFunction)
+table([ab[59],tmp449,Sheet1_F6,tmp450], plusFunction)
+table([ab[49],tmp371,Sheet1_B379,tmp372], plusFunction)
+table([ab[43],tmp324,Sheet1_B335,tmp325], plusFunction)
+table([ab[34],tmp257,Sheet1_B273,tmp258], plusFunction)
+table([ab[57],tmp422,Sheet1_B4,tmp423], plusFunction)
+table([ab[2],tmp24,Sheet1_B62,tmp25], plusFunction)
+table([ab[25],tmp202,Sheet1_B216,tmp203], plusFunction)
+table([ab[31],tmp229,Sheet1_B244,tmp230], plusFunction)
+table([ab[0],tmp11,Sheet1_D11,tmp12], plusFunction)
+table([ab[52],tmp384,Sheet1_B394,tmp385], plusFunction)
+table([ab[19],tmp147,Sheet1_B168,tmp148], plusFunction)
+table([ab[2],tmp20,Sheet1_B47,tmp21], plusFunction)
+table([ab[55],tmp399,Sheet1_H2,tmp400], plusFunction)
+table([ab[19],tmp157,Sheet1_B180,tmp158], plusFunction)
+table([ab[19],tmp153,Sheet1_B164,tmp154], plusFunction)
+table([ab[37],tmp280,Sheet1_B285,tmp281], plusFunction)
+table([ab[52],tmp389,Sheet1_B390,tmp390], plusFunction)
+table([ab[0],tmp14,Sheet1_D21,tmp15], plusFunction)
+table([ab[14],Sheet1_D18,Sheet1_F18,Sheet1_H18], plusFunction)
+table([ab[13],tmp103,Sheet1_B134,tmp104], plusFunction)
+table([ab[22],tmp182,Sheet1_B194,tmp183], plusFunction)
+table([ab[34],tmp256,Sheet1_B272,tmp257], plusFunction)
+table([ab[40],tmp298,Sheet1_B307,tmp299], plusFunction)
+table([ab[43],tmp322,Sheet1_B329,tmp323], plusFunction)
+table([ab[13],tmp114,Sheet1_B126,tmp115], plusFunction)
+table([ab[31],tmp230,Sheet1_B255,tmp231], plusFunction)
+table([ab[31],tmp238,Sheet1_B262,tmp239], plusFunction)
+table([ab[39],Sheet1_D6,Sheet1_F6,Sheet1_H6], plusFunction)
+table([ab[57],tmp419,Sheet1_B19,tmp420], plusFunction)
+table([ab[28],tmp214,Sheet1_B241,tmp215], plusFunction)
+table([ab[10],tmp97,Sheet1_B117,tmp98], plusFunction)
+table([ab[34],tmp264,Sheet1_B281,tmp265], plusFunction)
+table([ab[57],tmp432,Sheet1_B6,tmp433], plusFunction)
+table([ab[10],tmp95,Sheet1_B116,tmp96], plusFunction)
+table([ab[43],tmp328,Sheet1_B337,tmp329], plusFunction)
+table([ab[0],tmp7,Sheet1_D6,tmp8], plusFunction)
+table([ab[22],Sheet1_B188,Sheet1_B199,tmp166], plusFunction)
+table([ab[9],Sheet1_D16,Sheet1_F16,Sheet1_H16], plusFunction)
+table([ab[40],tmp297,Sheet1_B317,tmp298], plusFunction)
+table([ab[61],tmp471,Sheet1_B24,tmp472], plusFunction)
+table([ab[59],tmp444,Sheet1_F4,tmp445], plusFunction)
+table([ab[8],tmp72,Sheet1_B99,tmp73], plusFunction)
+table([ab[29],Sheet1_D8,Sheet1_B2,Sheet1_F8], multFunction)
+table([ab[31],tmp245,Sheet1_B259,tmp246], plusFunction)
+table([ab[55],tmp405,Sheet1_H5,tmp406], plusFunction)
+table([ab[59],tmp452,Sheet1_F9,tmp453], plusFunction)
+table([ab[8],tmp63,Sheet1_B84,tmp64], plusFunction)
+table([ab[46],tmp346,Sheet1_B357,tmp347], plusFunction)
+table([ab[16],tmp140,Sheet1_B159,tmp141], plusFunction)
+table([ab[10],tmp92,Sheet1_B104,tmp93], plusFunction)
+table([ab[40],tmp306,Sheet1_B304,tmp307], plusFunction)
+table([ab[40],tmp293,Sheet1_B311,tmp294], plusFunction)
+table([ab[0],tmp16,Sheet1_D8,tmp17], plusFunction)
+table([ab[8],tmp78,Sheet1_B93,tmp79], plusFunction)
+table([ab[37],tmp271,Sheet1_B288,tmp272], plusFunction)
+table([ab[43],tmp329,Sheet1_B327,tmp330], plusFunction)
+table([ab[53],Sheet1_D16,Sheet1_B2,Sheet1_F16], multFunction)
+table([ab[5],tmp50,Sheet1_B68,tmp51], plusFunction)
+table([ab[37],tmp285,Sheet1_B291,tmp286], plusFunction)
+table([ab[61],tmp462,Sheet1_B38,tmp463], plusFunction)
+table([ab[61],tmp470,Sheet1_B32,tmp471], plusFunction)
+table([ab[49],Sheet1_B364,Sheet1_B375,tmp355], plusFunction)
+table([ab[0],tmp0,Sheet1_D15,tmp1], plusFunction)
+table([ab[2],tmp36,Sheet1_B56,tmp37], plusFunction)
+table([ab[28],tmp218,Sheet1_B225,tmp219], plusFunction)
+table([ab[13],tmp107,Sheet1_B136,tmp108], plusFunction)
+table([ab[49],tmp357,Sheet1_B366,tmp358], plusFunction)
+table([ab[37],tmp278,Sheet1_B284,tmp279], plusFunction)
+table([ab[49],tmp366,Sheet1_B374,tmp367], plusFunction)
+table([ab[34],tmp252,Sheet1_B267,tmp253], plusFunction)
+table([ab[31],tmp240,Sheet1_B253,tmp241], plusFunction)
+table([ab[57],tmp426,Sheet1_B10,tmp427], plusFunction)
+table([ab[31],tmp231,Sheet1_B245,tmp232], plusFunction)
+table([ab[52],tmp388,Sheet1_B396,tmp389], plusFunction)
+table([ab[2],tmp33,Sheet1_B46,tmp34], plusFunction)
+table([ab[21],Sheet1_D5,Sheet1_B2,Sheet1_F5], multFunction)
+table([ab[52],tmp392,Sheet1_B401,tmp393], plusFunction)
+table([ab[37],tmp284,Sheet1_B290,tmp285], plusFunction)
+table([ab[8],tmp62,Sheet1_B102,tmp63], plusFunction)
+table([ab[10],tmp84,Sheet1_B103,tmp85], plusFunction)
+table([ab[10],tmp87,Sheet1_B110,tmp88], plusFunction)
+table([ab[25],tmp192,Sheet1_B207,tmp193], plusFunction)
+table([ab[22],tmp168,Sheet1_B201,tmp169], plusFunction)
+table([ab[52],tmp379,Sheet1_B399,tmp380], plusFunction)
+table([ab[25],tmp198,Sheet1_B214,tmp199], plusFunction)
+table([ab[59],tmp442,Sheet1_F17,tmp443], plusFunction)
+table([ab[28],tmp208,Sheet1_B223,tmp209], plusFunction)
+table([ab[10],tmp96,Sheet1_B106,tmp97], plusFunction)
+table([ab[16],tmp125,Sheet1_B156,tmp126], plusFunction)
+table([ab[59],tmp441,Sheet1_F14,tmp442], plusFunction)
+table([ab[19],tmp146,Sheet1_B178,tmp147], plusFunction)
+table([ab[46],tmp340,Sheet1_B350,tmp341], plusFunction)
+table([ab[40],tmp292,Sheet1_B321,tmp293], plusFunction)
+table([ab[22],tmp172,Sheet1_B185,tmp173], plusFunction)
+table([ab[5],tmp49,Sheet1_B76,tmp50], plusFunction)
+table([ab[55],tmp397,Sheet1_H10,tmp398], plusFunction)
+table([ab[59],tmp454,Sheet1_F18,Sheet1_D23], plusFunction)
+table([ab[22],tmp169,Sheet1_B202,tmp170], plusFunction)
+table([ab[5],Sheet1_B69,Sheet1_B73,tmp41], plusFunction)
+table([ab[10],tmp94,Sheet1_B105,tmp95], plusFunction)
+table([ab[57],tmp434,Sheet1_B9,Sheet1_D2], plusFunction)
+table([ab[18],Sheet1_D4,Sheet1_B2,Sheet1_F4], multFunction)
+table([ab[34],tmp263,Sheet1_B270,tmp264], plusFunction)
+table([ab[10],tmp98,Sheet1_B107,tmp99], plusFunction)
+table([ab[34],tmp258,Sheet1_B263,tmp259], plusFunction)
+table([ab[5],tmp44,Sheet1_B63,tmp45], plusFunction)
+table([ab[13],tmp112,Sheet1_B142,tmp113], plusFunction)
+table([ab[59],tmp440,Sheet1_F15,tmp441], plusFunction)
+table([ab[31],tmp242,Sheet1_B247,tmp243], plusFunction)
+table([ab[0],tmp3,Sheet1_D16,tmp4], plusFunction)
+table([ab[22],tmp167,Sheet1_B200,tmp168], plusFunction)
+table([ab[2],tmp32,Sheet1_B54,tmp33], plusFunction)
+table([ab[37],tmp281,Sheet1_B296,tmp282], plusFunction)
+table([ab[40],tmp303,Sheet1_B313,tmp304], plusFunction)
+table([ab[16],tmp126,Sheet1_B146,tmp127], plusFunction)
+table([ab[37],tmp275,Sheet1_B301,tmp276], plusFunction)
+table([ab[5],tmp47,Sheet1_B77,tmp48], plusFunction)
+table([ab[46],tmp338,Sheet1_B356,tmp339], plusFunction)
+table([ab[59],tmp453,Sheet1_F19,tmp454], plusFunction)
+table([ab[49],tmp368,Sheet1_B370,tmp369], plusFunction)
+table([ab[2],tmp27,Sheet1_B53,tmp28], plusFunction)
+table([ab[43],tmp323,Sheet1_B324,tmp324], plusFunction)
+table([ab[59],tmp447,Sheet1_F8,tmp448], plusFunction)
+table([ab[5],tmp56,Sheet1_B82,tmp57], plusFunction)
+table([ab[17],Sheet1_D19,Sheet1_F19,Sheet1_H19], plusFunction)
+table([ab[47],Sheet1_D14,Sheet1_B2,Sheet1_F14], multFunction)
+table([ab[25],tmp194,Sheet1_B208,tmp195], plusFunction)
+table([ab[44],Sheet1_D13,Sheet1_B2,Sheet1_F13], multFunction)
+table([ab[0],tmp12,Sheet1_D3,tmp13], plusFunction)
+table([ab[25],tmp197,Sheet1_B203,tmp198], plusFunction)
+table([ab[31],tmp235,Sheet1_B250,tmp236], plusFunction)
+table([ab[28],Sheet1_B232,Sheet1_B233,tmp208], plusFunction)
+table([ab[61],tmp465,Sheet1_B31,tmp466], plusFunction)
+table([ab[0],tmp4,Sheet1_D19,tmp5], plusFunction)
+table([ab[37],tmp287,Sheet1_B293,tmp288], plusFunction)
+table([ab[57],tmp424,Sheet1_B22,tmp425], plusFunction)
+table([ab[61],tmp467,Sheet1_B30,tmp468], plusFunction)
+table([ab[52],tmp383,Sheet1_B383,tmp384], plusFunction)
+table([ab[41],Sheet1_D12,Sheet1_B2,Sheet1_F12], multFunction)
+table([ab[28],tmp221,Sheet1_B237,tmp222], plusFunction)
+table([ab[19],tmp154,Sheet1_B175,tmp155], plusFunction)
+table([ab[34],tmp260,Sheet1_B264,tmp261], plusFunction)
+table([ab[34],tmp265,Sheet1_B271,tmp266], plusFunction)
+table([ab[40],tmp308,Sheet1_B305,tmp309], plusFunction)
+table([ab[57],tmp431,Sheet1_B7,tmp432], plusFunction)
+table([ab[16],tmp131,Sheet1_B162,tmp132], plusFunction)
+table([ab[20],Sheet1_D20,Sheet1_F20,Sheet1_H20], plusFunction)
+table([ab[8],tmp76,Sheet1_B91,tmp77], plusFunction)
+table([ab[16],tmp139,Sheet1_B148,tmp140], plusFunction)
+table([ab[46],tmp336,Sheet1_B355,tmp337], plusFunction)
+table([ab[46],tmp345,Sheet1_B346,tmp346], plusFunction)
+table([ab[22],tmp179,Sheet1_B192,tmp180], plusFunction)
+table([ab[59],tmp446,Sheet1_F2,tmp447], plusFunction)
+table([ab[57],tmp427,Sheet1_B21,tmp428], plusFunction)
+table([ab[22],tmp170,Sheet1_B184,tmp171], plusFunction)
+table([ab[49],tmp362,Sheet1_B382,tmp363], plusFunction)
+table([ab[45],Sheet1_D8,Sheet1_F8,Sheet1_H8], plusFunction)
+table([ab[8],tmp65,Sheet1_B83,tmp66], plusFunction)
+table([ab[40],tmp309,Sheet1_B316,Sheet1_D17], plusFunction)
+table([ab[10],tmp83,Sheet1_B113,tmp84], plusFunction)
+table([ab[16],tmp128,Sheet1_B147,tmp129], plusFunction)
+table([ab[6],Sheet1_D15,Sheet1_F15,Sheet1_H15], plusFunction)
+table([ab[2],tmp30,Sheet1_B55,tmp31], plusFunction)
+table([ab[46],tmp342,Sheet1_B351,tmp343], plusFunction)
+table([ab[5],tmp52,Sheet1_B67,tmp53], plusFunction)
+table([ab[16],tmp138,Sheet1_B161,tmp139], plusFunction)
+table([ab[25],tmp188,Sheet1_B212,tmp189], plusFunction)
+table([ab[2],tmp37,Sheet1_B60,Sheet1_D4], plusFunction)
+table([ab[43],Sheet1_B331,Sheet1_B342,tmp313], plusFunction)
+table([ab[55],tmp400,Sheet1_H13,tmp401], plusFunction)
+table([ab[61],tmp461,Sheet1_B27,tmp462], plusFunction)
+table([ab[61],tmp458,Sheet1_B36,tmp459], plusFunction)
+table([ab[61],tmp472,Sheet1_B35,tmp473], plusFunction)
+table([ab[0],tmp9,Sheet1_D5,tmp10], plusFunction)
+table([ab[46],Sheet1_B353,Sheet1_B343,tmp334], plusFunction)
+table([ab[55],tmp411,Sheet1_H17,tmp412], plusFunction)
+table([ab[2],tmp26,Sheet1_B61,tmp27], plusFunction)
+table([ab[31],tmp239,Sheet1_B252,tmp240], plusFunction)
+table([ab[16],tmp137,Sheet1_B150,tmp138], plusFunction)
+table([ab[43],tmp319,Sheet1_B341,tmp320], plusFunction)
+table([ab[52],tmp380,Sheet1_B389,tmp381], plusFunction)
+table([ab[46],tmp343,Sheet1_B362,tmp344], plusFunction)
+table([ab[31],tmp232,Sheet1_B256,tmp233], plusFunction)
+table([ab[34],tmp253,Sheet1_B278,tmp254], plusFunction)
+table([ab[5],tmp42,Sheet1_B64,tmp43], plusFunction)
+table([ab[2],tmp28,Sheet1_B52,tmp29], plusFunction)
+table([ab[61],tmp474,Sheet1_B34,Sheet1_D3], plusFunction)
+table([ab[22],tmp166,Sheet1_B189,tmp167], plusFunction)
+table([ab[13],tmp108,Sheet1_B140,tmp109], plusFunction)
+table([ab[59],tmp437,Sheet1_F21,tmp438], plusFunction)
+table([ab[57],Sheet1_B15,Sheet1_B14,tmp417], plusFunction)
+table([ab[62],Sheet1_D13,Sheet1_F13,Sheet1_H13], plusFunction)
+table([ab[13],tmp104,Sheet1_B124,tmp105], plusFunction)
+table([ab[59],Sheet1_F11,Sheet1_F10,tmp437], plusFunction)
+table([ab[13],tmp117,Sheet1_B138,tmp118], plusFunction)
+table([ab[55],tmp409,Sheet1_H8,tmp410], plusFunction)
+table([ab[40],tmp296,Sheet1_B306,tmp297], plusFunction)
+table([ab[55],tmp402,Sheet1_H15,tmp403], plusFunction)
+table([ab[10],tmp82,Sheet1_B112,tmp83], plusFunction)
+table([ab[55],tmp398,Sheet1_H21,tmp399], plusFunction)
+table([ab[57],tmp418,Sheet1_B16,tmp419], plusFunction)
+table([ab[49],tmp369,Sheet1_B381,tmp370], plusFunction)
+table([ab[19],tmp161,Sheet1_B182,tmp162], plusFunction)
+table([ab[27],Sheet1_D2,Sheet1_F2,Sheet1_H2], plusFunction)
+table([ab[55],tmp414,Sheet1_H18,Sheet1_D22], plusFunction)
+table([ab[49],tmp361,Sheet1_B371,tmp362], plusFunction)
+table([ab[22],tmp176,Sheet1_B187,tmp177], plusFunction)
+table([ab[10],tmp99,Sheet1_B118,Sheet1_D7], plusFunction)
+table([ab[22],tmp180,Sheet1_B193,tmp181], plusFunction)
+table([ab[61],tmp463,Sheet1_B29,tmp464], plusFunction)
+table([ab[8],tmp68,Sheet1_B97,tmp69], plusFunction)
+table([ab[54],Sheet1_D11,Sheet1_F11,Sheet1_H11], plusFunction)
+table([ab[58],Sheet1_D12,Sheet1_F12,Sheet1_H12], plusFunction)
+table([ab[37],tmp288,Sheet1_B302,Sheet1_D16], plusFunction)
+table([ab[55],tmp413,Sheet1_H19,tmp414], plusFunction)
+table([ab[38],Sheet1_D11,Sheet1_B2,Sheet1_F11], multFunction)
+table([ab[2],tmp29,Sheet1_B44,tmp30], plusFunction)
+table([ab[46],tmp339,Sheet1_B360,tmp340], plusFunction)
+table([ab[30],Sheet1_D3,Sheet1_F3,Sheet1_H3], plusFunction)
+table([ab[35],Sheet1_D10,Sheet1_B2,Sheet1_F10], multFunction)
+table([ab[28],tmp224,Sheet1_B228,tmp225], plusFunction)
+table([ab[52],tmp390,Sheet1_B391,tmp391], plusFunction)
+table([ab[59],tmp439,Sheet1_F12,tmp440], plusFunction)
+table([ab[43],tmp314,Sheet1_B333,tmp315], plusFunction)
+table([ab[16],tmp130,Sheet1_B151,tmp131], plusFunction)
+table([ab[0],tmp2,Sheet1_D17,tmp3], plusFunction)
+table([ab[16],tmp129,Sheet1_B158,tmp130], plusFunction)
+table([ab[0],tmp1,Sheet1_D14,tmp2], plusFunction)
+table([ab[5],tmp41,Sheet1_B72,tmp42], plusFunction)
+table([ab[25],tmp203,Sheet1_B206,tmp204], plusFunction)
+table([ab[46],tmp335,Sheet1_B344,tmp336], plusFunction)
+table([ab[46],tmp351,Sheet1_B349,Sheet1_D19], plusFunction)
+table([ab[52],tmp376,Sheet1_B387,tmp377], plusFunction)
+table([ab[0],tmp13,Sheet1_D10,tmp14], plusFunction)
+table([ab[13],tmp120,Sheet1_B129,Sheet1_D8], plusFunction)
+
+# TEST CASE / Observations
+eq(Sheet1_B10,1)
+eq(Sheet1_B100,1)
+eq(Sheet1_B101,1)
+eq(Sheet1_B102,1)
+eq(Sheet1_B103,1)
+eq(Sheet1_B104,1)
+eq(Sheet1_B105,1)
+eq(Sheet1_B106,1)
+eq(Sheet1_B107,1)
+eq(Sheet1_B108,1)
+eq(Sheet1_B109,1)
+eq(Sheet1_B11,1)
+eq(Sheet1_B110,1)
+eq(Sheet1_B111,1)
+eq(Sheet1_B112,1)
+eq(Sheet1_B113,1)
+eq(Sheet1_B114,1)
+eq(Sheet1_B115,1)
+eq(Sheet1_B116,1)
+eq(Sheet1_B117,1)
+eq(Sheet1_B118,1)
+eq(Sheet1_B119,1)
+eq(Sheet1_B12,1)
+eq(Sheet1_B120,1)
+eq(Sheet1_B121,1)
+eq(Sheet1_B122,1)
+eq(Sheet1_B123,1)
+eq(Sheet1_B124,1)
+eq(Sheet1_B125,1)
+eq(Sheet1_B126,1)
+eq(Sheet1_B127,1)
+eq(Sheet1_B128,1)
+eq(Sheet1_B129,1)
+eq(Sheet1_B13,1)
+eq(Sheet1_B130,1)
+eq(Sheet1_B131,1)
+eq(Sheet1_B132,1)
+eq(Sheet1_B133,1)
+eq(Sheet1_B134,1)
+eq(Sheet1_B135,1)
+eq(Sheet1_B136,1)
+eq(Sheet1_B137,1)
+eq(Sheet1_B138,1)
+eq(Sheet1_B139,1)
+eq(Sheet1_B14,1)
+eq(Sheet1_B140,1)
+eq(Sheet1_B141,1)
+eq(Sheet1_B142,1)
+eq(Sheet1_B143,1)
+eq(Sheet1_B144,1)
+eq(Sheet1_B145,1)
+eq(Sheet1_B146,1)
+eq(Sheet1_B147,1)
+eq(Sheet1_B148,1)
+eq(Sheet1_B149,1)
+eq(Sheet1_B15,1)
+eq(Sheet1_B150,1)
+eq(Sheet1_B151,1)
+eq(Sheet1_B152,1)
+eq(Sheet1_B153,1)
+eq(Sheet1_B154,1)
+eq(Sheet1_B155,1)
+eq(Sheet1_B156,1)
+eq(Sheet1_B157,1)
+eq(Sheet1_B158,1)
+eq(Sheet1_B159,1)
+eq(Sheet1_B16,1)
+eq(Sheet1_B160,1)
+eq(Sheet1_B161,1)
+eq(Sheet1_B162,1)
+eq(Sheet1_B163,1)
+eq(Sheet1_B164,1)
+eq(Sheet1_B165,1)
+eq(Sheet1_B166,1)
+eq(Sheet1_B167,1)
+eq(Sheet1_B168,1)
+eq(Sheet1_B169,1)
+eq(Sheet1_B17,1)
+eq(Sheet1_B170,1)
+eq(Sheet1_B171,1)
+eq(Sheet1_B172,1)
+eq(Sheet1_B173,1)
+eq(Sheet1_B174,1)
+eq(Sheet1_B175,1)
+eq(Sheet1_B176,1)
+eq(Sheet1_B177,1)
+eq(Sheet1_B178,1)
+eq(Sheet1_B179,1)
+eq(Sheet1_B18,1)
+eq(Sheet1_B180,1)
+eq(Sheet1_B181,1)
+eq(Sheet1_B182,1)
+eq(Sheet1_B183,1)
+eq(Sheet1_B184,1)
+eq(Sheet1_B185,1)
+eq(Sheet1_B186,1)
+eq(Sheet1_B187,1)
+eq(Sheet1_B188,1)
+eq(Sheet1_B189,1)
+eq(Sheet1_B19,1)
+eq(Sheet1_B190,1)
+eq(Sheet1_B191,1)
+eq(Sheet1_B192,1)
+eq(Sheet1_B193,1)
+eq(Sheet1_B194,1)
+eq(Sheet1_B195,1)
+eq(Sheet1_B196,1)
+eq(Sheet1_B197,1)
+eq(Sheet1_B198,1)
+eq(Sheet1_B199,1)
+eq(Sheet1_B2,1)
+eq(Sheet1_B20,1)
+eq(Sheet1_B200,1)
+eq(Sheet1_B201,1)
+eq(Sheet1_B202,1)
+eq(Sheet1_B203,1)
+eq(Sheet1_B204,1)
+eq(Sheet1_B205,1)
+eq(Sheet1_B206,1)
+eq(Sheet1_B207,1)
+eq(Sheet1_B208,1)
+eq(Sheet1_B209,1)
+eq(Sheet1_B21,1)
+eq(Sheet1_B210,1)
+eq(Sheet1_B211,1)
+eq(Sheet1_B212,1)
+eq(Sheet1_B213,1)
+eq(Sheet1_B214,1)
+eq(Sheet1_B215,1)
+eq(Sheet1_B216,1)
+eq(Sheet1_B217,1)
+eq(Sheet1_B218,1)
+eq(Sheet1_B219,1)
+eq(Sheet1_B22,1)
+eq(Sheet1_B220,1)
+eq(Sheet1_B221,1)
+eq(Sheet1_B222,1)
+eq(Sheet1_B223,1)
+eq(Sheet1_B224,1)
+eq(Sheet1_B225,1)
+eq(Sheet1_B226,1)
+eq(Sheet1_B227,1)
+eq(Sheet1_B228,1)
+eq(Sheet1_B229,1)
+eq(Sheet1_B23,1)
+eq(Sheet1_B230,1)
+eq(Sheet1_B231,1)
+eq(Sheet1_B232,1)
+eq(Sheet1_B233,1)
+eq(Sheet1_B234,1)
+eq(Sheet1_B235,1)
+eq(Sheet1_B236,1)
+eq(Sheet1_B237,1)
+eq(Sheet1_B238,1)
+eq(Sheet1_B239,1)
+eq(Sheet1_B24,1)
+eq(Sheet1_B240,1)
+eq(Sheet1_B241,1)
+eq(Sheet1_B242,1)
+eq(Sheet1_B243,1)
+eq(Sheet1_B244,1)
+eq(Sheet1_B245,1)
+eq(Sheet1_B246,1)
+eq(Sheet1_B247,1)
+eq(Sheet1_B248,1)
+eq(Sheet1_B249,1)
+eq(Sheet1_B25,1)
+eq(Sheet1_B250,1)
+eq(Sheet1_B251,1)
+eq(Sheet1_B252,1)
+eq(Sheet1_B253,1)
+eq(Sheet1_B254,1)
+eq(Sheet1_B255,1)
+eq(Sheet1_B256,1)
+eq(Sheet1_B257,1)
+eq(Sheet1_B258,1)
+eq(Sheet1_B259,1)
+eq(Sheet1_B26,1)
+eq(Sheet1_B260,1)
+eq(Sheet1_B261,1)
+eq(Sheet1_B262,1)
+eq(Sheet1_B263,1)
+eq(Sheet1_B264,1)
+eq(Sheet1_B265,1)
+eq(Sheet1_B266,1)
+eq(Sheet1_B267,1)
+eq(Sheet1_B268,1)
+eq(Sheet1_B269,1)
+eq(Sheet1_B27,1)
+eq(Sheet1_B270,1)
+eq(Sheet1_B271,1)
+eq(Sheet1_B272,1)
+eq(Sheet1_B273,1)
+eq(Sheet1_B274,1)
+eq(Sheet1_B275,1)
+eq(Sheet1_B276,1)
+eq(Sheet1_B277,1)
+eq(Sheet1_B278,1)
+eq(Sheet1_B279,1)
+eq(Sheet1_B28,1)
+eq(Sheet1_B280,1)
+eq(Sheet1_B281,1)
+eq(Sheet1_B282,1)
+eq(Sheet1_B283,1)
+eq(Sheet1_B284,1)
+eq(Sheet1_B285,1)
+eq(Sheet1_B286,1)
+eq(Sheet1_B287,1)
+eq(Sheet1_B288,1)
+eq(Sheet1_B289,1)
+eq(Sheet1_B29,1)
+eq(Sheet1_B290,1)
+eq(Sheet1_B291,1)
+eq(Sheet1_B292,1)
+eq(Sheet1_B293,1)
+eq(Sheet1_B294,1)
+eq(Sheet1_B295,1)
+eq(Sheet1_B296,1)
+eq(Sheet1_B297,1)
+eq(Sheet1_B298,1)
+eq(Sheet1_B299,1)
+eq(Sheet1_B3,1)
+eq(Sheet1_B30,1)
+eq(Sheet1_B300,1)
+eq(Sheet1_B301,1)
+eq(Sheet1_B302,1)
+eq(Sheet1_B303,1)
+eq(Sheet1_B304,1)
+eq(Sheet1_B305,1)
+eq(Sheet1_B306,1)
+eq(Sheet1_B307,1)
+eq(Sheet1_B308,1)
+eq(Sheet1_B309,1)
+eq(Sheet1_B31,1)
+eq(Sheet1_B310,1)
+eq(Sheet1_B311,1)
+eq(Sheet1_B312,1)
+eq(Sheet1_B313,1)
+eq(Sheet1_B314,1)
+eq(Sheet1_B315,1)
+eq(Sheet1_B316,1)
+eq(Sheet1_B317,1)
+eq(Sheet1_B318,1)
+eq(Sheet1_B319,1)
+eq(Sheet1_B32,1)
+eq(Sheet1_B320,1)
+eq(Sheet1_B321,1)
+eq(Sheet1_B322,1)
+eq(Sheet1_B323,1)
+eq(Sheet1_B324,1)
+eq(Sheet1_B325,1)
+eq(Sheet1_B326,1)
+eq(Sheet1_B327,1)
+eq(Sheet1_B328,1)
+eq(Sheet1_B329,1)
+eq(Sheet1_B33,1)
+eq(Sheet1_B330,1)
+eq(Sheet1_B331,1)
+eq(Sheet1_B332,1)
+eq(Sheet1_B333,1)
+eq(Sheet1_B334,1)
+eq(Sheet1_B335,1)
+eq(Sheet1_B336,1)
+eq(Sheet1_B337,1)
+eq(Sheet1_B338,1)
+eq(Sheet1_B339,1)
+eq(Sheet1_B34,1)
+eq(Sheet1_B340,1)
+eq(Sheet1_B341,1)
+eq(Sheet1_B342,1)
+eq(Sheet1_B343,1)
+eq(Sheet1_B344,1)
+eq(Sheet1_B345,1)
+eq(Sheet1_B346,1)
+eq(Sheet1_B347,1)
+eq(Sheet1_B348,1)
+eq(Sheet1_B349,1)
+eq(Sheet1_B35,1)
+eq(Sheet1_B350,1)
+eq(Sheet1_B351,1)
+eq(Sheet1_B352,1)
+eq(Sheet1_B353,1)
+eq(Sheet1_B354,1)
+eq(Sheet1_B355,1)
+eq(Sheet1_B356,1)
+eq(Sheet1_B357,1)
+eq(Sheet1_B358,1)
+eq(Sheet1_B359,1)
+eq(Sheet1_B36,1)
+eq(Sheet1_B360,1)
+eq(Sheet1_B361,1)
+eq(Sheet1_B362,1)
+eq(Sheet1_B363,1)
+eq(Sheet1_B364,1)
+eq(Sheet1_B365,1)
+eq(Sheet1_B366,1)
+eq(Sheet1_B367,1)
+eq(Sheet1_B368,1)
+eq(Sheet1_B369,1)
+eq(Sheet1_B37,1)
+eq(Sheet1_B370,1)
+eq(Sheet1_B371,1)
+eq(Sheet1_B372,1)
+eq(Sheet1_B373,1)
+eq(Sheet1_B374,1)
+eq(Sheet1_B375,1)
+eq(Sheet1_B376,1)
+eq(Sheet1_B377,1)
+eq(Sheet1_B378,1)
+eq(Sheet1_B379,1)
+eq(Sheet1_B38,1)
+eq(Sheet1_B380,1)
+eq(Sheet1_B381,1)
+eq(Sheet1_B382,1)
+eq(Sheet1_B383,1)
+eq(Sheet1_B384,1)
+eq(Sheet1_B385,1)
+eq(Sheet1_B386,1)
+eq(Sheet1_B387,1)
+eq(Sheet1_B388,1)
+eq(Sheet1_B389,1)
+eq(Sheet1_B39,1)
+eq(Sheet1_B390,1)
+eq(Sheet1_B391,1)
+eq(Sheet1_B392,1)
+eq(Sheet1_B393,1)
+eq(Sheet1_B394,1)
+eq(Sheet1_B395,1)
+eq(Sheet1_B396,1)
+eq(Sheet1_B397,1)
+eq(Sheet1_B398,1)
+eq(Sheet1_B399,1)
+eq(Sheet1_B4,1)
+eq(Sheet1_B40,1)
+eq(Sheet1_B400,1)
+eq(Sheet1_B401,1)
+eq(Sheet1_B402,1)
+eq(Sheet1_B41,1)
+eq(Sheet1_B42,1)
+eq(Sheet1_B43,1)
+eq(Sheet1_B44,1)
+eq(Sheet1_B45,1)
+eq(Sheet1_B46,1)
+eq(Sheet1_B47,1)
+eq(Sheet1_B48,1)
+eq(Sheet1_B49,1)
+eq(Sheet1_B5,1)
+eq(Sheet1_B50,1)
+eq(Sheet1_B51,1)
+eq(Sheet1_B52,1)
+eq(Sheet1_B53,1)
+eq(Sheet1_B54,1)
+eq(Sheet1_B55,1)
+eq(Sheet1_B56,1)
+eq(Sheet1_B57,1)
+eq(Sheet1_B58,1)
+eq(Sheet1_B59,1)
+eq(Sheet1_B6,1)
+eq(Sheet1_B60,1)
+eq(Sheet1_B61,1)
+eq(Sheet1_B62,1)
+eq(Sheet1_B63,1)
+eq(Sheet1_B64,1)
+eq(Sheet1_B65,1)
+eq(Sheet1_B66,1)
+eq(Sheet1_B67,1)
+eq(Sheet1_B68,1)
+eq(Sheet1_B69,1)
+eq(Sheet1_B7,1)
+eq(Sheet1_B70,1)
+eq(Sheet1_B71,1)
+eq(Sheet1_B72,1)
+eq(Sheet1_B73,1)
+eq(Sheet1_B74,1)
+eq(Sheet1_B75,1)
+eq(Sheet1_B76,1)
+eq(Sheet1_B77,1)
+eq(Sheet1_B78,1)
+eq(Sheet1_B79,1)
+eq(Sheet1_B8,1)
+eq(Sheet1_B80,1)
+eq(Sheet1_B81,1)
+eq(Sheet1_B82,1)
+eq(Sheet1_B83,1)
+eq(Sheet1_B84,1)
+eq(Sheet1_B85,1)
+eq(Sheet1_B86,1)
+eq(Sheet1_B87,1)
+eq(Sheet1_B88,1)
+eq(Sheet1_B89,1)
+eq(Sheet1_B9,1)
+eq(Sheet1_B90,1)
+eq(Sheet1_B91,1)
+eq(Sheet1_B92,1)
+eq(Sheet1_B93,1)
+eq(Sheet1_B94,1)
+eq(Sheet1_B95,1)
+eq(Sheet1_B96,1)
+eq(Sheet1_B97,1)
+eq(Sheet1_B98,1)
+eq(Sheet1_B99,1)
+eq(Sheet1_D22,2)
+eq(Sheet1_D23,2)
+eq(Sheet1_D24,2)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+element(ab,61,0)
+element(ab,57,0)
+element(ab,52,0)
+element(ab,49,0)
+element(ab,46,0)
+element(ab,43,0)
+element(ab,40,0)
+element(ab,37,0)
+element(ab,34,0)
+element(ab,31,0)
+element(ab,28,0)
+element(ab,25,0)
+element(ab,22,0)
+element(ab,19,0)
+element(ab,18,0)
+element(ab,16,0)
+element(ab,13,0)
+element(ab,10,0)
+element(ab,8,0)
+element(ab,5,0)
+element(ab,2,0)
+watched-or({element(ab,0,0),element(ab,60,0)})
+watched-or({element(ab,0,0),element(ab,56,0)})
+watched-or({element(ab,0,0),element(ab,53,0)})
+watched-or({element(ab,0,0),element(ab,50,0)})
+watched-or({element(ab,0,0),element(ab,47,0)})
+watched-or({element(ab,0,0),element(ab,44,0)})
+watched-or({element(ab,0,0),element(ab,41,0)})
+watched-or({element(ab,0,0),element(ab,38,0)})
+watched-or({element(ab,0,0),element(ab,35,0)})
+watched-or({element(ab,0,0),element(ab,32,0)})
+watched-or({element(ab,0,0),element(ab,29,0)})
+watched-or({element(ab,0,0),element(ab,26,0)})
+watched-or({element(ab,0,0),element(ab,24,0)})
+watched-or({element(ab,0,0),element(ab,21,0)})
+watched-or({element(ab,0,0),element(ab,15,0)})
+watched-or({element(ab,0,0),element(ab,12,0)})
+watched-or({element(ab,0,0),element(ab,7,0)})
+watched-or({element(ab,0,0),element(ab,4,0)})
+watched-or({element(ab,0,0),element(ab,1,0)})
+**EOF**

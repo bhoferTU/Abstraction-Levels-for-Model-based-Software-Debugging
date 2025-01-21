@@ -76,38 +76,40 @@ We conducted two experiments:
 ### Raw results data 
 
 The raw results data of our main experiments  can be found in the ```.cvs``` files in the  [results](results) folder:
-* Experiment 1:
-  * [Artificial spreadsheets RUN1](results/min_diagnoses_artificial_RUN1.csv), ..., [Artificial spreadsheets RUN10](results/min_diagnoses_artificial_RUN10.csv)
-  * [Integer corpus RUN1](results/min_diagnoses_integer_RUN1.csv), ..., [Integer corpus RUN10](results/min_diagnoses_integer_RUN10.csv)
-* Experiment 2: 
-  * [Artificial spreadsheets](results/all_diagnoses_artificial.csv)
-  * [Integer corpus](results/all_diagnoses_integer.csv)
+* [Artificial spreadsheets](results/raw_results___artificial_spreadsheets.csv)
+* [Integer corpus](results/raw_results___integer_spreadsheets.csv)
 
-  
 
 Each ```.cvs``` file contains the following columns:
 
-1. ```Properties file```	- indicates the examined spreadsheet 
-
-2. ```VBM diagnosis size=1```, ```VBM diagnosis amount (size=1)```, ```VBM diagnosis size=2```, ```VBM diagnosis amount (size=2)```,  ```VBM diagnosis size=3```, ```VBM diagnosis amount (size=3)``` - list the set of *all the minimal diagnoses (Experiments 1) OR all diagnoses (Experiments 2)* of cardinality one/two/three, respectively, and the number of them for the value-based model 
- 
-3. ```DBM diagnosis size=1```, ```DBM diagnosis amount (size=1)```, ```DBM diagnosis size=2```, ```DBM diagnosis amount (size=2)```, ```DBM diagnosis size=3, DBM diagnosis amount (size=3)```- list the set of *all the minimal diagnoses (Experiments 1) OR all diagnoses (Experiments 2)* of cardinality one/two/three, respectively, and the number of the diagnoses for the functional dependency model	
-
-4. ```CBM diagnosis size=1```, ```CBM diagnosis amount (size=1)```, ```CBM diagnosis size=2```, ```CBM diagnosis amount (size=2)```, ```CBM diagnosis size=3, CBM diagnosis amount (size=3)``` - list the set of *all the minimal diagnoses (Experiments 1) OR all diagnoses (Experiments 2)* of cardinality one/two/three, respectively, and the number of them for the qualitative deviation model
-
-5. ```diag VBM```, ```diag DBM```, ```diag CBM``` - list *the total number of minimal diagnoses (Experiments 1) OR all diagnoses (Experiments 2)* up to cardinality three for the value-based model, the functional dependency model, and the qualitative deviation model	
-
-6. ```All VBM containd in DBM```, ```All VBM containd in CBM``` - TRUE/FALSE, answer the question if *all the minimal diagnoses(Experiments 1) OR all diagnoses (Experiments 2)* generated for VBM are among the minimal diagnoses obtained for DBM and CBM, respectively
-
-7. ```True fault in VBM```, ```True fault in DBM```, ```True fault in CBM``` - indicates if the real fault is actually found for each model  
-
-8. ```VBM time [ms] (diagnosis size=1)```, ```VBM time [ms] (diagnosis size=2)```, ```VBM time [ms] (diagnosis size=3)```, ```DBM time [ms] (diagnosis size=1)```, ```DBM time [ms] (diagnosis size=2)```, ```DBM time [ms] (diagnosis size=3)```, ```CBM time [ms] (diagnosis size=1)```, ```CBM time [ms] (diagnosis size=2)```, ```CBM time [ms] (diagnosis size=3)``` - state the Minion's runtime in milliseconds or ```timeout``` if the Minion's solving process exceeded a time limit of 20 minutes	
-
-9. ```Incorrect Output cells``` - states the number of output cells which have a wrong value	
-
-10. ```Correct Output cells``` - states the number of  output cells whose value is correct
-
-11. ```Faulty cells``` - states the number of faulty cells
+* ```File```	- indicates the examined spreadsheet 
+* ```Formulas``` - number of formulas
+* ```Input cells ``` - number of input cells
+* ```Output cells``` - number of output cells
+* VBM number of diagnosis (size=1)
+* VBM number of diagnosis (size=2)
+* VBM number of diagnosis (size=3)
+* FDM number of diagnoses (size=1)
+* FDM number of diagnoses (size=2)
+* FDM number of diagnoses (size=3)
+* QDM number of diagnoses (size=1)
+* QDM number of diagnoses (size=2)
+* QDM number of diagnoses (size=3)
+* VBM cumulated number of diagnoses (sizes 1, 2, 3)
+* FDM cumulated number of diagnoses (sizes 1, 2, 3)
+* QDM cumulated number of diagnoses (sizes 1, 2, 3)
+* VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
+* VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
+* VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
+* FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
+* FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
+* FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
+* QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
+* QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
+* QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
+* ```Incorrect Output cells``` - number of output cells which have a wrong value	
+* ```Correct Output cells``` - number of  output cells whose value is correct
+* ```Faulty cells``` - number of faulty cells
 
 
 

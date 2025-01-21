@@ -1,0 +1,498 @@
+MINION 3
+# Modeling the domain = > <
+# Values: 0 < / 1 = / 2 >
+
+**VARIABLES**
+DISCRETE Sheet1_C12 {0..2}
+DISCRETE Sheet1_C2 {0..2}
+DISCRETE Sheet1_C3 {0..2}
+DISCRETE Sheet1_C4 {0..2}
+DISCRETE Sheet1_C5 {0..2}
+DISCRETE Sheet1_C6 {0..2}
+DISCRETE Sheet1_C7 {0..2}
+DISCRETE Sheet1_C8 {0..2}
+DISCRETE Sheet1_D2 {0..2}
+DISCRETE Sheet1_D3 {0..2}
+DISCRETE Sheet1_D4 {0..2}
+DISCRETE Sheet1_D5 {0..2}
+DISCRETE Sheet1_D6 {0..2}
+DISCRETE Sheet1_D7 {0..2}
+DISCRETE Sheet1_D8 {0..2}
+DISCRETE Sheet1_E2 {0..2}
+BOOL ab[14]
+BOOL tmp0
+DISCRETE tmp1 {0..2}
+BOOL tmp10
+DISCRETE tmp11 {0..2}
+BOOL tmp13
+DISCRETE tmp14 {0..2}
+BOOL tmp16
+DISCRETE tmp17 {0..2}
+BOOL tmp19
+BOOL tmp21
+DISCRETE tmp22 {0..2}
+BOOL tmp24
+DISCRETE tmp25 {0..2}
+BOOL tmp27
+DISCRETE tmp28 {0..2}
+BOOL tmp30
+DISCRETE tmp31 {0..2}
+BOOL tmp33
+DISCRETE tmp34 {0..2}
+BOOL tmp36
+DISCRETE tmp37 {0..2}
+BOOL tmp4
+DISCRETE tmp5 {0..2}
+BOOL tmp7
+DISCRETE tmp8 {0..2}
+
+**TUPLELIST**
+plusFunction  40 4
+0 1 1 1
+0 2 1 2
+0 1 2 2
+0 2 2 2
+0 0 1 0
+0 1 0 0
+0 0 0 0
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 2 0 0
+0 2 0 1
+0 2 0 2
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+multFunction 52 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 1 1
+0 0 1 2
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 1 0 0
+0 1 0 1
+0 1 0 2
+0 1 1 1
+0 1 2 2
+0 1 2 0
+0 1 2 1
+0 2 0 0
+0 2 0 1
+0 2 0 2
+0 2 1 2
+0 2 1 0
+0 2 1 1
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+minusFunction 40 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 2 0
+0 1 0 2
+0 1 1 1
+0 1 2 0
+0 2 0 2
+0 2 1 2
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+divFunction 50 4
+0 0 0 0
+0 0 0 1
+0 0 0 2
+0 0 1 0
+0 0 1 2
+0 0 2 0
+0 0 2 1
+0 0 2 2
+0 1 0 0
+0 1 0 1
+0 1 0 2
+0 1 1 1
+0 1 2 2
+0 1 2 0
+0 1 2 1
+0 2 0 0
+0 2 0 1
+0 2 0 2
+0 2 1 2
+0 2 1 0
+0 2 2 2
+0 2 2 0
+0 2 2 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+equalityFunction 12 3 
+0 0 0
+0 1 1
+0 2 2
+1 0 0
+1 0 1
+1 0 2
+1 1 0
+1 1 1
+1 1 2
+1 2 0
+1 2 1
+1 2 2
+
+relationalOPFunction  35 4 
+0 1 1 1 
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+0 0 2 0 
+0 0 2 1 
+0 2 0 0 
+0 2 0 1 
+0 1 2 0 
+0 1 2 1 
+0 2 1 0 
+0 2 1 1 
+0 2 2 0 
+0 2 2 1 
+1 1 1 0 
+1 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+1 0 2 0 
+1 0 2 1 
+1 2 0 0 
+1 2 0 1 
+1 1 2 0 
+1 1 2 1 
+1 2 1 0 
+1 2 1 1 
+1 2 2 0 
+1 2 2 1 
+
+ifFunction  92 5 
+0 1 1 1 1 
+0 1 2 1 2 
+0 1 2 1 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 2 2 
+0 1 1 2 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 2 2 2 
+0 1 0 0 0 
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 0 2 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 0 1 2 
+0 0 0 2 0 
+0 0 0 2 1 
+0 0 0 2 2 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 0 2 
+0 0 1 1 0 
+0 0 1 1 1 
+0 0 1 1 2 
+0 0 1 2 0 
+0 0 1 2 1 
+0 0 1 2 2 
+0 0 2 0 0 
+0 0 2 0 1 
+0 0 2 0 2 
+0 0 2 1 0 
+0 0 2 1 1 
+0 0 2 1 2 
+0 0 2 2 0 
+0 0 2 2 1 
+0 0 2 2 2 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 0 2 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 0 1 2 
+1 0 0 2 0 
+1 0 0 2 1 
+1 0 0 2 2 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 0 2 
+1 0 1 1 0 
+1 0 1 1 1 
+1 0 1 1 2 
+1 0 1 2 0 
+1 0 1 2 1 
+1 0 1 2 2 
+1 0 2 0 0 
+1 0 2 0 1 
+1 0 2 0 2 
+1 0 2 1 0 
+1 0 2 1 1 
+1 0 2 1 2 
+1 0 2 2 0 
+1 0 2 2 1 
+1 0 2 2 2 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 0 2 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 0 1 2 
+1 1 0 2 0 
+1 1 0 2 1 
+1 1 0 2 2 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 0 2 
+1 1 1 1 0 
+1 1 1 1 1 
+1 1 1 1 2 
+1 1 1 2 0 
+1 1 1 2 1 
+1 1 1 2 2 
+1 1 2 0 0 
+1 1 2 0 1 
+1 1 2 0 2 
+1 1 2 1 0 
+1 1 2 1 1 
+1 1 2 1 2 
+1 1 2 2 0 
+1 1 2 2 1 
+1 1 2 2 2 
+
+minMaxFunction 44 4
+0 1 1 1
+0 2 1 2
+0 2 1 1
+0 1 2 2
+0 1 2 1
+0 2 2 2
+0 0 1 1
+0 0 1 0
+0 1 0 1
+0 1 0 0
+0 0 0 0
+0 0 2 2
+0 0 2 0
+0 0 2 1
+0 2 0 2
+0 2 0 0
+0 2 0 1
+1 0 0 0
+1 0 0 1
+1 0 0 2
+1 1 0 0
+1 1 0 1
+1 1 0 2
+1 2 0 0
+1 2 0 1
+1 2 0 2
+1 0 1 0
+1 0 1 1
+1 0 1 2
+1 0 2 0
+1 0 2 1
+1 0 2 2
+1 1 1 0
+1 1 1 1
+1 1 1 2
+1 2 1 0
+1 2 1 1
+1 2 1 2
+1 2 2 0
+1 2 2 1
+1 2 2 2
+1 1 2 0
+1 1 2 1
+1 1 2 2
+
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+table([ab[3],Sheet1_C2,Sheet1_D2,tmp8], minusFunction)
+table([ab[0],Sheet1_D4,Sheet1_C4,tmp0], relationalOPFunction)
+table([ab[7],tmp19,Sheet1_C8,1,Sheet1_C12], ifFunction)
+table([ab[4],tmp10,tmp11,Sheet1_D6,Sheet1_D7], ifFunction)
+table([ab[7],Sheet1_C8,Sheet1_D8,tmp19], relationalOPFunction)
+table([ab[11],Sheet1_C6,Sheet1_D6,tmp30], relationalOPFunction)
+table([ab[10],Sheet1_E2,Sheet1_C2,tmp27], relationalOPFunction)
+table([ab[3],tmp7,tmp8,Sheet1_C2,Sheet1_C3], ifFunction)
+table([ab[9],Sheet1_C5,Sheet1_D5,tmp25], minusFunction)
+table([ab[2],Sheet1_D5,Sheet1_C5,tmp5], minusFunction)
+table([ab[5],tmp13,tmp14,Sheet1_C3,Sheet1_C4], ifFunction)
+table([ab[12],Sheet1_D3,Sheet1_C3,tmp34], minusFunction)
+table([ab[5],Sheet1_C3,Sheet1_D3,tmp13], relationalOPFunction)
+table([ab[10],Sheet1_E2,Sheet1_C2,tmp28], minusFunction)
+table([ab[4],Sheet1_D6,Sheet1_C6,tmp10], relationalOPFunction)
+table([ab[8],Sheet1_C4,Sheet1_D4,tmp21], relationalOPFunction)
+table([ab[3],Sheet1_C2,Sheet1_D2,tmp7], relationalOPFunction)
+table([ab[13],Sheet1_C7,Sheet1_D7,tmp37], minusFunction)
+table([ab[0],Sheet1_D4,Sheet1_C4,tmp1], minusFunction)
+table([ab[2],Sheet1_D5,Sheet1_C5,tmp4], relationalOPFunction)
+table([ab[6],Sheet1_D7,Sheet1_C7,tmp16], relationalOPFunction)
+table([ab[11],Sheet1_C6,Sheet1_D6,tmp31], minusFunction)
+table([ab[12],tmp33,tmp34,Sheet1_D3,Sheet1_D4], ifFunction)
+table([ab[9],Sheet1_C5,Sheet1_D5,tmp24], relationalOPFunction)
+table([ab[6],Sheet1_D7,Sheet1_C7,tmp17], minusFunction)
+table([ab[9],tmp24,tmp25,Sheet1_C5,Sheet1_C6], ifFunction)
+table([ab[0],tmp0,tmp1,Sheet1_D4,Sheet1_D5], ifFunction)
+table([ab[5],Sheet1_C3,Sheet1_D3,tmp14], minusFunction)
+table([ab[8],Sheet1_C4,Sheet1_D4,tmp22], minusFunction)
+table([ab[8],tmp21,tmp22,Sheet1_C4,Sheet1_C5], ifFunction)
+table([ab[6],tmp16,tmp17,Sheet1_D7,Sheet1_D8], ifFunction)
+table([ab[10],tmp27,tmp28,Sheet1_E2,Sheet1_D3], ifFunction)
+table([ab[12],Sheet1_D3,Sheet1_C3,tmp33], relationalOPFunction)
+table([ab[13],Sheet1_C7,Sheet1_D7,tmp36], relationalOPFunction)
+table([ab[2],tmp4,tmp5,Sheet1_D5,Sheet1_D6], ifFunction)
+table([ab[4],Sheet1_D6,Sheet1_C6,tmp11], minusFunction)
+table([ab[11],tmp30,tmp31,Sheet1_C6,Sheet1_C7], ifFunction)
+eq(1,Sheet1_E2)
+table([ab[13],tmp36,tmp37,Sheet1_C7,Sheet1_C8], ifFunction)
+
+# TEST CASE / Observations
+eq(Sheet1_C12,2)
+eq(Sheet1_C2,1)
+eq(Sheet1_D2,1)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+element(ab,13,0)
+element(ab,12,0)
+element(ab,11,0)
+element(ab,10,0)
+element(ab,9,0)
+element(ab,8,0)
+element(ab,7,0)
+element(ab,6,0)
+element(ab,5,0)
+element(ab,4,0)
+element(ab,3,0)
+element(ab,2,0)
+element(ab,0,0)
+**EOF**

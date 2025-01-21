@@ -1,0 +1,213 @@
+MINION 3
+**VARIABLES**
+DISCRETE Sheet1_B10 {-2000..50000}
+DISCRETE Sheet1_B11 {-2000..50000}
+DISCRETE Sheet1_B12 {-2000..50000}
+DISCRETE Sheet1_B13 {-2000..50000}
+DISCRETE Sheet1_B14 {-2000..50000}
+DISCRETE Sheet1_B15 {-2000..50000}
+DISCRETE Sheet1_B16 {-2000..50000}
+DISCRETE Sheet1_B17 {-2000..50000}
+DISCRETE Sheet1_B18 {-2000..50000}
+DISCRETE Sheet1_B3 {-2000..50000}
+DISCRETE Sheet1_B4 {-2000..50000}
+DISCRETE Sheet1_B5 {-2000..50000}
+DISCRETE Sheet1_B6 {-2000..50000}
+DISCRETE Sheet1_B7 {-2000..50000}
+DISCRETE Sheet1_B8 {-2000..50000}
+DISCRETE Sheet1_B9 {-2000..50000}
+DISCRETE Sheet1_D3 {-2000..50000}
+DISCRETE Sheet1_D4 {-2000..50000}
+DISCRETE Sheet1_D5 {-2000..50000}
+DISCRETE Sheet1_D6 {-2000..50000}
+DISCRETE Sheet1_F3 {-2000..50000}
+DISCRETE Sheet1_F4 {-2000..50000}
+DISCRETE Sheet1_G3 {-2000..50000}
+DISCRETE Sheet1_H3 {-2000..50000}
+BOOL ab[7]
+DISCRETE tmp0 {-2000..50000}
+DISCRETE tmp1 {-2000..50000}
+DISCRETE tmp10 {-2000..50000}
+BOOL tmp11
+DISCRETE tmp12 {-2000..50000}
+DISCRETE tmp13 {-2000..50000}
+BOOL tmp14
+BOOL tmp16
+DISCRETE tmp17 {-2000..50000}
+DISCRETE tmp18 {-2000..50000}
+BOOL tmp19
+BOOL tmp2
+DISCRETE tmp20 {-2000..50000}
+DISCRETE tmp21 {-2000..50000}
+BOOL tmp23
+DISCRETE tmp24 {-2000..50000}
+DISCRETE tmp25 {-2000..50000}
+BOOL tmp26
+DISCRETE tmp27 {-2000..50000}
+DISCRETE tmp28 {-2000..50000}
+DISCRETE tmp29 {-2000..50000}
+DISCRETE tmp3 {-2000..50000}
+BOOL tmp30
+DISCRETE tmp31 {-2000..50000}
+BOOL tmp32
+BOOL tmp34
+DISCRETE tmp35 {-2000..50000}
+DISCRETE tmp36 {-2000..50000}
+BOOL tmp37
+DISCRETE tmp38 {-2000..50000}
+DISCRETE tmp39 {-2000..50000}
+BOOL tmp4
+BOOL tmp41
+DISCRETE tmp42 {-2000..50000}
+DISCRETE tmp43 {-2000..50000}
+BOOL tmp44
+DISCRETE tmp45 {-2000..50000}
+DISCRETE tmp46 {-2000..50000}
+BOOL tmp48
+BOOL tmp49
+BOOL tmp5
+BOOL tmp50
+DISCRETE tmp51 {-2000..50000}
+BOOL tmp52
+BOOL tmp54
+DISCRETE tmp55 {-2000..50000}
+DISCRETE tmp56 {-2000..50000}
+BOOL tmp57
+DISCRETE tmp58 {-2000..50000}
+DISCRETE tmp59 {-2000..50000}
+DISCRETE tmp6 {-2000..50000}
+BOOL tmp61
+BOOL tmp7
+DISCRETE tmp8 {-2000..50000}
+BOOL tmp9
+**SEARCH**
+VARORDER [ab]
+PRINT [ab]
+
+**CONSTRAINTS**
+# System description
+watched-or({element(ab,2,1), sumleq([Sheet1_B11,Sheet1_B12],tmp24)})
+watched-or({element(ab,5,1), reify(ineq(Sheet1_B4,Sheet1_B3,-1),tmp49)})
+watched-or({element(ab,3,1), reify(ineq(tmp35,tmp36,-1),tmp37)})
+watched-or({element(ab,2,1), sumgeq([Sheet1_B17,Sheet1_B18],tmp29)})
+watched-or({element(ab,2,1), reify(ineq(tmp24,tmp25,-1),tmp26)})
+watched-or({element(ab,6,1), sumleq([Sheet1_B11,Sheet1_D6],tmp59)})
+watched-or({element(ab,0,1), weightedsumgeq([1,-1],[Sheet1_D5,Sheet1_G3],tmp10)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp13,tmp12),tmp11)})
+watched-or({element(ab,2,1), reifyimply(eq(Sheet1_D6,tmp31),tmp34)})
+watched-or({element(ab,4,1), weightedsumgeq([1,-1],[Sheet1_B9,Sheet1_B10],tmp46)})
+watched-or({element(ab,5,1), reifyimply(eq(tmp51,Sheet1_B6),tmp50)})
+watched-or({element(ab,6,1), sumleq([Sheet1_B7,Sheet1_D5],tmp58)})
+watched-or({element(ab,0,1), weightedsumleq([1,-1],[Sheet1_F3,Sheet1_D3],tmp0)})
+watched-or({element(ab,1,1), sumgeq([Sheet1_B14,Sheet1_B13],tmp20)})
+watched-or({element(ab,0,1), weightedsumgeq([1,-1],[Sheet1_D5,Sheet1_B5],tmp3)})
+watched-or({element(ab,3,1), sumgeq([Sheet1_B15,Sheet1_D4],tmp39)})
+watched-or({element(ab,1,1), sumleq([Sheet1_B14,Sheet1_B13],tmp20)})
+watched-or({element(ab,2,1), diseq(tmp30,tmp32)})
+watched-or({element(ab,3,1), diseq(tmp37,tmp41)})
+watched-or({element(ab,4,1), reifyimply(eq(Sheet1_D3,tmp45),tmp44)})
+watched-or({element(ab,0,1), reify(ineq(tmp1,tmp0,-1),tmp2)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp6,Sheet1_B7),tmp5)})
+watched-or({element(ab,5,1), reifyimply(eq(Sheet1_D5,Sheet1_B8),tmp54)})
+watched-or({element(ab,1,1), sumleq([Sheet1_B16,Sheet1_B15],tmp18)})
+watched-or({element(ab,4,1), sumleq([Sheet1_B7,Sheet1_B8],tmp45)})
+watched-or({element(ab,3,1), sumleq([Sheet1_B15,Sheet1_D4],tmp39)})
+watched-or({element(ab,2,1), diseq(tmp26,tmp34)})
+watched-or({element(ab,0,1), reify(ineq(Sheet1_B9,tmp3,-1),tmp4)})
+watched-or({element(ab,2,1), sumgeq([Sheet1_B15,Sheet1_B16],tmp28)})
+watched-or({element(ab,5,1), reifyimply(eq(Sheet1_D5,tmp51),tmp49)})
+watched-or({element(ab,0,1), weightedsumleq([1,-1],[Sheet1_D5,Sheet1_B5],tmp3)})
+watched-or({element(ab,6,1), sumleq([Sheet1_B4,Sheet1_D4],tmp56)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp6,Sheet1_B10),tmp7)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp13,Sheet1_D4),tmp14)})
+watched-or({element(ab,6,1), sumgeq([Sheet1_B4,Sheet1_D4],tmp56)})
+watched-or({element(ab,2,1), reify(ineq(tmp28,tmp29,-1),tmp30)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp8,Sheet1_F4),tmp9)})
+watched-or({element(ab,6,1), sumleq([Sheet1_B3,Sheet1_D3],tmp55)})
+watched-or({element(ab,2,1), sumleq([Sheet1_B17,Sheet1_B18],tmp29)})
+watched-or({element(ab,2,1), reifyimply(eq(tmp31,Sheet1_B3),tmp30)})
+watched-or({element(ab,0,1), reifyimply(eq(Sheet1_H3,tmp8),tmp2)})
+watched-or({element(ab,0,1), diseq(tmp11,tmp14)})
+watched-or({element(ab,2,1), sumleq([Sheet1_B15,Sheet1_B16],tmp28)})
+watched-or({element(ab,0,1), weightedsumleq([1,-1],[Sheet1_D5,Sheet1_G3],tmp10)})
+watched-or({element(ab,4,1), sumleq([Sheet1_B5,Sheet1_B6],tmp43)})
+watched-or({element(ab,0,1), reifyimply(eq(Sheet1_H3,tmp13),tmp16)})
+watched-or({element(ab,1,1), sumleq([341,Sheet1_B17],tmp17)})
+watched-or({element(ab,5,1), reifyimply(eq(tmp51,Sheet1_B7),tmp52)})
+watched-or({element(ab,4,1), reifyimply(eq(Sheet1_D3,tmp46),tmp48)})
+watched-or({element(ab,1,1), reify(ineq(tmp18,tmp17,-1),tmp19)})
+watched-or({element(ab,0,1), reifyimply(eq(tmp8,tmp6),tmp4)})
+watched-or({element(ab,4,1), reify(ineq(tmp43,tmp42,-1),tmp44)})
+watched-or({element(ab,6,1), sumgeq([Sheet1_B11,Sheet1_D6],tmp59)})
+watched-or({element(ab,4,1), sumgeq([Sheet1_B5,Sheet1_B6],tmp43)})
+watched-or({element(ab,6,1), diseq(tmp57,tmp61)})
+watched-or({element(ab,4,1), weightedsumleq([1,-1],[Sheet1_B9,Sheet1_B10],tmp46)})
+watched-or({element(ab,0,1), diseq(tmp4,tmp9)})
+watched-or({element(ab,2,1), sumgeq([Sheet1_B11,Sheet1_B12],tmp24)})
+watched-or({element(ab,0,1), weightedsumgeq([1,-1],[Sheet1_F3,Sheet1_B6],tmp12)})
+watched-or({element(ab,4,1), sumleq([Sheet1_B3,Sheet1_B4],tmp42)})
+watched-or({element(ab,2,1), reifyimply(eq(Sheet1_D6,tmp27),tmp26)})
+watched-or({element(ab,6,1), reify(ineq(tmp56,tmp55,-1),tmp57)})
+watched-or({element(ab,2,1), sumgeq([Sheet1_B13,Sheet1_B14],tmp25)})
+watched-or({element(ab,0,1), diseq(tmp5,tmp7)})
+watched-or({element(ab,1,1), sumgeq([Sheet1_B16,Sheet1_B15],tmp18)})
+watched-or({element(ab,4,1), diseq(tmp44,tmp48)})
+watched-or({element(ab,1,1), sumgeq([341,Sheet1_B17],tmp17)})
+watched-or({element(ab,2,1), sumleq([Sheet1_B13,Sheet1_B14],tmp25)})
+watched-or({element(ab,0,1), weightedsumgeq([1,-1],[Sheet1_F3,Sheet1_D3],tmp0)})
+watched-or({element(ab,3,1), sumgeq([Sheet1_D5,Sheet1_B5],tmp35)})
+watched-or({element(ab,6,1), sumgeq([Sheet1_B3,Sheet1_D3],tmp55)})
+watched-or({element(ab,5,1), reify(ineq(Sheet1_B5,Sheet1_B4,-1),tmp50)})
+watched-or({element(ab,2,1), sumgeq([Sheet1_B9,Sheet1_B10],tmp27)})
+watched-or({element(ab,0,1), weightedsumleq([1,-1],[Sheet1_F3,Sheet1_B6],tmp12)})
+watched-or({element(ab,3,1), sumleq([Sheet1_D6,Sheet1_B6],tmp36)})
+watched-or({element(ab,0,1), weightedsumgeq([1,-1],[Sheet1_F4,Sheet1_D4],tmp1)})
+watched-or({element(ab,3,1), sumleq([Sheet1_B9,Sheet1_D3],tmp38)})
+watched-or({element(ab,4,1), sumgeq([Sheet1_B7,Sheet1_B8],tmp45)})
+watched-or({element(ab,1,1), sumleq([Sheet1_B12,Sheet1_B11],tmp21)})
+watched-or({element(ab,1,1), reifyimply(eq(Sheet1_D4,tmp21),tmp23)})
+watched-or({element(ab,3,1), sumgeq([Sheet1_B9,Sheet1_D3],tmp38)})
+watched-or({element(ab,0,1), reify(ineq(Sheet1_F4,Sheet1_D6,-1),tmp5)})
+watched-or({element(ab,6,1), reifyimply(eq(Sheet1_F3,tmp58),tmp57)})
+watched-or({element(ab,5,1), diseq(tmp49,tmp54)})
+watched-or({element(ab,1,1), reifyimply(eq(Sheet1_D4,tmp20),tmp19)})
+watched-or({element(ab,3,1), reifyimply(eq(Sheet1_F4,tmp38),tmp37)})
+watched-or({element(ab,2,1), sumleq([Sheet1_B9,Sheet1_B10],tmp27)})
+watched-or({element(ab,3,1), sumgeq([Sheet1_D6,Sheet1_B6],tmp36)})
+watched-or({element(ab,3,1), sumleq([Sheet1_D5,Sheet1_B5],tmp35)})
+watched-or({element(ab,3,1), reifyimply(eq(Sheet1_F4,tmp39),tmp41)})
+watched-or({element(ab,1,1), sumgeq([Sheet1_B12,Sheet1_B11],tmp21)})
+watched-or({element(ab,0,1), reify(ineq(Sheet1_F4,tmp10,-1),tmp11)})
+watched-or({element(ab,5,1), diseq(tmp50,tmp52)})
+watched-or({element(ab,4,1), sumgeq([Sheet1_B3,Sheet1_B4],tmp42)})
+watched-or({element(ab,6,1), sumgeq([Sheet1_B7,Sheet1_D5],tmp58)})
+watched-or({element(ab,6,1), reifyimply(eq(Sheet1_F3,tmp59),tmp61)})
+watched-or({element(ab,0,1), weightedsumleq([1,-1],[Sheet1_F4,Sheet1_D4],tmp1)})
+watched-or({element(ab,0,1), diseq(tmp2,tmp16)})
+watched-or({element(ab,2,1), reifyimply(eq(tmp31,Sheet1_B4),tmp32)})
+watched-or({element(ab,1,1), diseq(tmp19,tmp23)})
+
+# TEST CASE / Observations
+eq(Sheet1_B10,6)
+eq(Sheet1_B11,13)
+eq(Sheet1_B12,0)
+eq(Sheet1_B13,2)
+eq(Sheet1_B14,-1)
+eq(Sheet1_B15,11)
+eq(Sheet1_B16,4)
+eq(Sheet1_B17,8)
+eq(Sheet1_B18,5)
+eq(Sheet1_B3,1)
+eq(Sheet1_B4,3)
+eq(Sheet1_B5,7)
+eq(Sheet1_B6,9)
+eq(Sheet1_B7,2)
+eq(Sheet1_B8,5)
+eq(Sheet1_B9,17)
+eq(Sheet1_G3,0)
+eq(Sheet1_H3,13)
+
+#SIZE OF SOLUTION
+watchsumgeq(ab,3)
+watchsumleq(ab,3)
+**EOF**
