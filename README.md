@@ -62,26 +62,12 @@ We conducted two experiments:
 * Experiment 1 computes 5 times all minimal diagnoses up to cardinality 3.
   * [Artificial spreadsheets](min_diagnoses_artificial_5RUNS.bat)
   * [Integer corpus](min_diagnoses_integer_5RUNS.bat)
-* Experiments 2 (Further analysis)
-
-  Based on the results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
-
-  The [ExperimentsInfo](src/at/tugraz/ist/debugging/spreadsheets/datastructures/cells/ExperimentsInfo.java) class is the main class responsible for running the experimental analysis for both datasets. 
-  The desired functionality can be changed in the code:
-  + you can choose the log file:
-     ```File logFile = new File("experiments\\logFiles\\experiment2_integer.log");```
-  + you can choose the file to put the new analysis results in:
-     ```csvFile = "results\\superSets_integer.csv```
-  + you have to specify the spreadsheets to be analyzed:
-    ```files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));```
-  + you have to specify the Excel file containing the results of *Experiments 1*:
-    ```FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_integer.xlsx"));```
-
-One can easily rerun these experiments for the [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets) by executing [superSets_artificial.jar](superSets_artificial.jar). For the [Integer spreadsheet corpus](Benchmarks/INTEGER), the experiments can be reproduced by running [superSets_integer.jar](superSets_integer.jar).
+* Experiment 2 (Further analysis) - based on the results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
+  * [Artificial spreadsheets](all_diagnoses_artificial.bat)
+  * [Integer corpus](all_diagnoses_integer.bat)
     
 
-
-
+ 
 ## Results
 
 
@@ -94,7 +80,7 @@ The raw results data of our experiments can be found in the ```.cvs``` files in 
 
 Each ```.cvs``` file contains the following columns:
 
-* ```File```	- the examined spreadsheet 
+* ```File```	- examined spreadsheet 
 * ```Formulas``` - number of formulas
 * ```Input cells ``` - number of input cells
 * ```Output cells``` - number of output cells
@@ -110,15 +96,15 @@ Each ```.cvs``` file contains the following columns:
 * ```VBM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for the value-based model
 * ```FDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for functional dependency model
 * ```QDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for qualitative deviation model
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the value-based model
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the value-based model
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the value-based model
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the functional dependency model
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the functional dependency model
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the functional dependency model
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the qualitative deviation model
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the qualitative deviation model
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the qualitative deviation model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the value-based model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the functional dependency model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the qualitative deviation model
 * ```Incorrect Output cells``` - number of output cells which have a wrong value	
 * ```Correct Output cells``` - number of  output cells whose value is correct
 * ```Faulty cells``` - number of faulty cells
