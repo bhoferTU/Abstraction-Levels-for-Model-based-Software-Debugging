@@ -59,54 +59,52 @@ Before running the experiments, you have to
 * adjust the paths in the batch files.
 
 We conducted two experiments:
-* Experiment 1 computes 10 times all minimal diagnoses up to cardinality 3.
-  * [Artificial spreadsheets](min_diagnoses_artificial_10RUNS.bat)
-  * [Integer corpus](min_diagnoses_integer_10RUNS.bat)
-* Experiment 2 computes all diagnoses (i.e. minimal diagnoses and their supersets) up to cardinality 3.
+* Experiment 1 computes 5 times all minimal diagnoses up to cardinality 3.
+  * [Artificial spreadsheets](min_diagnoses_artificial_5RUNS.bat)
+  * [Integer corpus](min_diagnoses_integer_5RUNS.bat)
+* Experiment 2 (Further analysis) - based on the results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
   * [Artificial spreadsheets](all_diagnoses_artificial.bat)
   * [Integer corpus](all_diagnoses_integer.bat)
-
     
 
-
-
+ 
 ## Results
 
 
 ### Raw results data 
 
-The raw results data of our main experiments  can be found in the ```.cvs``` files in the  [results](results) folder:
+The raw results data of our experiments can be found in the ```.cvs``` files in the  [results](results) folder:
 * [Artificial spreadsheets](results/raw_results___artificial_spreadsheets.csv)
 * [Integer corpus](results/raw_results___integer_spreadsheets.csv)
 
 
 Each ```.cvs``` file contains the following columns:
 
-* ```File```	- indicates the examined spreadsheet 
+* ```File```	- examined spreadsheet 
 * ```Formulas``` - number of formulas
 * ```Input cells ``` - number of input cells
 * ```Output cells``` - number of output cells
-* VBM number of diagnosis (size=1)
-* VBM number of diagnosis (size=2)
-* VBM number of diagnosis (size=3)
-* FDM number of diagnoses (size=1)
-* FDM number of diagnoses (size=2)
-* FDM number of diagnoses (size=3)
-* QDM number of diagnoses (size=1)
-* QDM number of diagnoses (size=2)
-* QDM number of diagnoses (size=3)
-* VBM cumulated number of diagnoses (sizes 1, 2, 3)
-* FDM cumulated number of diagnoses (sizes 1, 2, 3)
-* QDM cumulated number of diagnoses (sizes 1, 2, 3)
-* VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
+* ```VBM number of diagnosis (size=1)``` - number of single-fault diagnoses for the value-based model
+* ```VBM number of diagnosis (size=2)``` - number of double-fault diagnoses for the value-based model
+* ```VBM number of diagnosis (size=3)``` - number of triple-fault diagnoses for the value-based model
+* ```FDM number of diagnoses (size=1)``` - number of single-fault diagnoses for the functional dependency model
+* ```FDM number of diagnoses (size=2)``` - number of double-fault diagnoses for the functional dependency model
+* ```FDM number of diagnoses (size=3)``` - number of triple-fault diagnoses for the functional dependency model
+* ```QDM number of diagnoses (size=1)``` - number of single-fault diagnoses for the qualitative deviation model
+* ```QDM number of diagnoses (size=2)``` - number of double-fault diagnoses for the qualitative deviation model
+* ```QDM number of diagnoses (size=3)``` - number of triple-fault diagnoses for the qualitative deviation model
+* ```VBM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for the value-based model
+* ```FDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for functional dependency model
+* ```QDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for qualitative deviation model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the value-based model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the functional dependency model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - average time for computing the minimal single-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - average time for computing the minimal double-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - average time for computing the minimal triple-fault diagnoses for the qualitative deviation model
 * ```Incorrect Output cells``` - number of output cells which have a wrong value	
 * ```Correct Output cells``` - number of  output cells whose value is correct
 * ```Faulty cells``` - number of faulty cells

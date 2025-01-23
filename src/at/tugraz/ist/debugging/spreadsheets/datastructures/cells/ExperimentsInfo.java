@@ -30,7 +30,7 @@ public class ExperimentsInfo {
 	public static void main(String[] args) {
 		
 		try {
-			File logFile = new File("NewQuickTest.log");
+			File logFile = new File("experiments\\logFiles\\experiment2_artificial.log");
 			if (!logFile.exists())
 				logFile.createNewFile();
 			PrintStream log = new PrintStream(logFile);
@@ -41,8 +41,11 @@ public class ExperimentsInfo {
 		}
 		
 		// *1) the file to put the new analysis results in
-	    String csvFile = "NewAnalysisIC.csv";
-	    //String csvFile = "NewAnalysisAS.csv";
+	   
+		
+		//* final supersets analysis 2024
+	   
+		String csvFile = "results\\superSets_artificial.csv";
 		File f = new File(csvFile);
 
 		if (f.exists()) {
@@ -62,21 +65,24 @@ public class ExperimentsInfo {
 		List<String> files = new ArrayList<String>();
 		
 		// *2) get the set of spreadsheets to be analyzed
-		files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));
-		//files.addAll(Directory.getFiles("Benchmarks\\ArtifSpreadsheets\\SEEDED\\ExcelFiles",".xlsx"));
+		
+		//files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));
+		
+		files.addAll(Directory.getFiles("Benchmarks\\ArtifSpreadsheets\\SEEDED\\ExcelFiles",".xlsx"));
+		
 		
 		
 			/** NEW 2022: 
 			 * 
-			 (1) Unter den computed k (2,3)-cardinality diagnoses fuer QDM und FDM, wieviele diagnoses sind unter den k-fault diagnoses fuer VBM?
+			 (1) Among the computed k (2,3)-cardinality diagnoses for QDM and FDM, how many diagnoses are among the k-fault diagnoses for VBM?
 			 
 			**/
 
 			try {
 		   
 				// *3) get the Excel file containing the results of Experiments1  
-				FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsIC.xlsx"));
-		        //FileInputStream rfile = new FileInputStream( new File("Experiments1ResultsAS.xlsx"));
+				FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_artificial.xlsx"));
+		        //FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_artificial.xlsx"));
 				
 		        // Create Workbook instance holding reference to // .xlsx file
 				XSSFWorkbook workbook = new XSSFWorkbook(rfile);
@@ -122,7 +128,7 @@ public class ExperimentsInfo {
 				  }
 				  String filefromResults=row.getCell(0).toString();
 				  String temp=filefromResults.substring(filefromResults.lastIndexOf(' ')+1)+".xlsx";
-				  
+				 
 				  for (String file : files) {
 					    
 					    if(file.endsWith(temp)) {
@@ -140,6 +146,12 @@ public class ExperimentsInfo {
 						 break;
 					    }
 					}
+				 
+				  
+				  
+				  
+				  
+				  
 				  /** size 2: 
 				   * 
 				   * (I) QDMdiags=VBMdiags 
@@ -150,6 +162,7 @@ public class ExperimentsInfo {
 				   * 
 				   * */
 				  //*   (I) QDMdiags=VBMdiags --- get the Strings for vbmDiag2 and qdmDiag2
+				  
 				  
 				  vbmDiag2=row.getCell(3).toString();
 				  //*  all k-fault diagnoses for VBM = SuperSet[SET_diags(k-1)] + SET_diags(k) 
@@ -183,7 +196,7 @@ public class ExperimentsInfo {
                 	  setVBM2=new SuperSet(sSetVBM1,vbmDiag2, 2);
                 	  result.addData("AMOUNT of all (minimal and not minimal) VBMdiags (size2)", setVBM2.lenght );
                   }
-				  
+		
 				// ** col 16 get the amount of QDMdiags (size2) from Results
 				  result.addData("AMOUNT of all minimal QDMdiags (size2)", row.getCell(16).toString() );
 				  qdmDiag2=row.getCell(15).toString();
@@ -322,8 +335,8 @@ public class ExperimentsInfo {
 				   * **/
 				  
 				  
-				/**  (2) a) Wieviele k-supersets von (k-1)-fault diagnoses fuer QDM und FDM gibt es fuer jedes k? 
-				 *       b) Und wieviele davon sind nicht unter den k-fault diagnoses fuer VBM?     
+				/**  (2) a) How many k-supersets of (k-1)-fault diagnoses for QDM and FDM are there for each k?
+                  *      b) And how many of them are not among the k-fault diagnoses for VBM?     
 				  */
 				  
 				  // a) for k=2 
@@ -464,7 +477,6 @@ public class ExperimentsInfo {
 						  result.addData("FDM: 3-supersets NOT in VBM diags3", "- (no 3-fault VBMdiags)");
 				  
 				 
-				  
 				  writeToFile(result);
 				  
 				 
