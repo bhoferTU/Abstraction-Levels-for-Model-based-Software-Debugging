@@ -107,18 +107,18 @@ Each ```.cvs``` file contains the following columns:
 * ```QDM number of diagnoses (size=1)``` - number of single-fault diagnoses for the qualitative deviation model
 * ```QDM number of diagnoses (size=2)``` - number of double-fault diagnoses for the qualitative deviation model
 * ```QDM number of diagnoses (size=3)``` - number of triple-fault diagnoses for the qualitative deviation model
-* ```VBM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
-* ```FDM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
-* ```QDM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
-* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
-* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
-* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
+* ```VBM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for the value-based model
+* ```FDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for functional dependency model
+* ```QDM cumulated number of diagnoses (sizes 1, 2, 3)``` - number of all diagnoses up to cardinaliy 3 for qualitative deviation model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the value-based model
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the value-based model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the functional dependency model
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the functional dependency model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)``` - the average time for computing the minimal single-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)``` - the average time for computing the minimal double-fault diagnoses for the qualitative deviation model
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)``` - the average time for computing the minimal triple-fault diagnoses for the qualitative deviation model
 * ```Incorrect Output cells``` - number of output cells which have a wrong value	
 * ```Correct Output cells``` - number of  output cells whose value is correct
 * ```Faulty cells``` - number of faulty cells
