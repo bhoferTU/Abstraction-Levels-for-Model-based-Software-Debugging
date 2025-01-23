@@ -148,7 +148,7 @@ In order to obtain the diagnoses of a certain cardinality the ```#SIZE OF SOLUTI
 
 
 ## Run your own experiments
-* [Download](https://constraintmodelling.org/sdm_downloads/minion-1-8-windows-version/) the executable of the Minion constraint solver and place it in the project's main folder.
+* [Download](https://sourceforge.net/projects/minion/files/minion/1.8/) the executable of the Minion constraint solver and place it in the project's main folder.
 * Adjust the experiment settings in the [config](config) file. The parameters are explained in the file.
 * Run the [jar file](MBDebugger.jar): ````java -jar MBDebugger.jar config````
 
