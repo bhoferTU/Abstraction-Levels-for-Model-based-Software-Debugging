@@ -59,13 +59,25 @@ Before running the experiments, you have to
 * adjust the paths in the batch files.
 
 We conducted two experiments:
-* Experiment 1 computes 10 times all minimal diagnoses up to cardinality 3.
+* Experiment 1 computes 5 times all minimal diagnoses up to cardinality 3.
   * [Artificial spreadsheets](min_diagnoses_artificial_10RUNS.bat)
   * [Integer corpus](min_diagnoses_integer_10RUNS.bat)
-* Experiment 2 computes all diagnoses (i.e. minimal diagnoses and their supersets) up to cardinality 3.
-  * [Artificial spreadsheets](all_diagnoses_artificial.bat)
-  * [Integer corpus](all_diagnoses_integer.bat)
+* Experiments 2 (Further analysis)
 
+Based on the raw results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
+
+The [ExperimentsInfo](src/at/tugraz/ist/debugging/spreadsheets/datastructures/cells/ExperimentsInfo.java) class is the main class responsible for running the experimental analysis for both datasets. 
+The desired functionality can be changed in the code:
++ you can choose the log file:
+```File logFile = new File("experiments\\logFiles\\experiment2_integer.log");```
++ you can choose the file to put the new analysis results in:
+```csvFile = "results\\superSets_integer.csv```
++ you have to specify the spreadsheets to be analyzed:
+```files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));```
++ you have to specify the Excel file containing the results of *Experiments 1*:
+```FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_integer.xlsx"));```
+
+One can easily rerun these experiments for the [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets) by executing [superSets_artificial.jar](superSets_artificial.jar). For the [Integer spreadsheet corpus](Benchmarks/INTEGER), the experiments can be reproduced by running [superSets_integer.jar](superSets_integer.jar). A detailed description of the experimental results can be found in *Further analysis data*.
     
 
 
