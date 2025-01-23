@@ -60,8 +60,8 @@ Before running the experiments, you have to
 
 We conducted two experiments:
 * Experiment 1 computes 5 times all minimal diagnoses up to cardinality 3.
-  * [Artificial spreadsheets](min_diagnoses_artificial_10RUNS.bat)
-  * [Integer corpus](min_diagnoses_integer_10RUNS.bat)
+  * [Artificial spreadsheets](min_diagnoses_artificial_5RUNS.bat)
+  * [Integer corpus](min_diagnoses_integer_5RUNS.bat)
 * Experiments 2 (Further analysis)
 
 Based on the raw results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
