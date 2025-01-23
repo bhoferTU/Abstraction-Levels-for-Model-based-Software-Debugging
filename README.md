@@ -55,7 +55,7 @@ A detailed description of the file format can be found [here](https://spreadshee
 **Note:** We ran the experiments on *Windows*. If you want to rerun the experiments on another OS you might have to modify the code that calls the Minion solver and recompile the code.
 
 Before running the experiments, you have to
-* [download](https://constraintmodelling.org/sdm_downloads/minion-1-8-windows-version/) the executable of the Minion constraint solver and place it in the project's main folder and
+* [download](https://sourceforge.net/projects/minion/files/minion/1.8/) the executable of the Minion constraint solver and place it in the project's main folder and
 * adjust the paths in the batch files.
 
 We conducted two experiments:
