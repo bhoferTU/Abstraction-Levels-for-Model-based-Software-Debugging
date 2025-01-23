@@ -64,20 +64,20 @@ We conducted two experiments:
   * [Integer corpus](min_diagnoses_integer_5RUNS.bat)
 * Experiments 2 (Further analysis)
 
-Based on the raw results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
+  Based on the results obtained from *Experiment 1*, we further analysed the three models wrt. their diagnosis accuracy. Details on the examined aspects can be found in the paper (subsection *6.4. Evaluation Results*). 
 
-The [ExperimentsInfo](src/at/tugraz/ist/debugging/spreadsheets/datastructures/cells/ExperimentsInfo.java) class is the main class responsible for running the experimental analysis for both datasets. 
-The desired functionality can be changed in the code:
-+ you can choose the log file:
-```File logFile = new File("experiments\\logFiles\\experiment2_integer.log");```
-+ you can choose the file to put the new analysis results in:
-```csvFile = "results\\superSets_integer.csv```
-+ you have to specify the spreadsheets to be analyzed:
-```files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));```
-+ you have to specify the Excel file containing the results of *Experiments 1*:
-```FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_integer.xlsx"));```
+  The [ExperimentsInfo](src/at/tugraz/ist/debugging/spreadsheets/datastructures/cells/ExperimentsInfo.java) class is the main class responsible for running the experimental analysis for both datasets. 
+  The desired functionality can be changed in the code:
+  + you can choose the log file:
+     ```File logFile = new File("experiments\\logFiles\\experiment2_integer.log");```
+  + you can choose the file to put the new analysis results in:
+     ```csvFile = "results\\superSets_integer.csv```
+  + you have to specify the spreadsheets to be analyzed:
+    ```files.addAll(Directory.getFiles("Benchmarks\\INTEGER\\spreadsheets\\fromAFW\\SEEDED",".xlsx"));```
+  + you have to specify the Excel file containing the results of *Experiments 1*:
+    ```FileInputStream rfile = new FileInputStream( new File("experiments\\experiment1_results_integer.xlsx"));```
 
-One can easily rerun these experiments for the [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets) by executing [superSets_artificial.jar](superSets_artificial.jar). For the [Integer spreadsheet corpus](Benchmarks/INTEGER), the experiments can be reproduced by running [superSets_integer.jar](superSets_integer.jar). A detailed description of the experimental results can be found in *Further analysis data*.
+One can easily rerun these experiments for the [artificially created spreadsheets](Benchmarks/ArtifSpreadsheets) by executing [superSets_artificial.jar](superSets_artificial.jar). For the [Integer spreadsheet corpus](Benchmarks/INTEGER), the experiments can be reproduced by running [superSets_integer.jar](superSets_integer.jar).
     
 
 
@@ -87,38 +87,38 @@ One can easily rerun these experiments for the [artificially created spreadsheet
 
 ### Raw results data 
 
-The raw results data of our main experiments  can be found in the ```.cvs``` files in the  [results](results) folder:
+The raw results data of our experiments can be found in the ```.cvs``` files in the  [results](results) folder:
 * [Artificial spreadsheets](results/raw_results___artificial_spreadsheets.csv)
 * [Integer corpus](results/raw_results___integer_spreadsheets.csv)
 
 
 Each ```.cvs``` file contains the following columns:
 
-* ```File```	- indicates the examined spreadsheet 
+* ```File```	- the examined spreadsheet 
 * ```Formulas``` - number of formulas
 * ```Input cells ``` - number of input cells
 * ```Output cells``` - number of output cells
-* VBM number of diagnosis (size=1)
-* VBM number of diagnosis (size=2)
-* VBM number of diagnosis (size=3)
-* FDM number of diagnoses (size=1)
-* FDM number of diagnoses (size=2)
-* FDM number of diagnoses (size=3)
-* QDM number of diagnoses (size=1)
-* QDM number of diagnoses (size=2)
-* QDM number of diagnoses (size=3)
-* VBM cumulated number of diagnoses (sizes 1, 2, 3)
-* FDM cumulated number of diagnoses (sizes 1, 2, 3)
-* QDM cumulated number of diagnoses (sizes 1, 2, 3)
-* VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 10 runs)
-* QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 10 runs)
+* ```VBM number of diagnosis (size=1)``` - number of single-fault diagnoses for the value-based model
+* ```VBM number of diagnosis (size=2)``` - number of double-fault diagnoses for the value-based model
+* ```VBM number of diagnosis (size=3)``` - number of triple-fault diagnoses for the value-based model
+* ```FDM number of diagnoses (size=1)``` - number of single-fault diagnoses for the functional dependency model
+* ```FDM number of diagnoses (size=2)``` - number of double-fault diagnoses for the functional dependency model
+* ```FDM number of diagnoses (size=3)``` - number of triple-fault diagnoses for the functional dependency model
+* ```QDM number of diagnoses (size=1)``` - number of single-fault diagnoses for the qualitative deviation model
+* ```QDM number of diagnoses (size=2)``` - number of double-fault diagnoses for the qualitative deviation model
+* ```QDM number of diagnoses (size=3)``` - number of triple-fault diagnoses for the qualitative deviation model
+* ```VBM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
+* ```FDM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
+* ```QDM cumulated number of diagnoses (sizes 1, 2, 3)``` - 
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
+* ```VBM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
+* ```FDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=1, avg over 5 runs)```
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=2, avg over 5 runs)```
+* ```QDM time for computing min diagnoses [ms] (diagnosis size=3, avg over 5 runs)```
 * ```Incorrect Output cells``` - number of output cells which have a wrong value	
 * ```Correct Output cells``` - number of  output cells whose value is correct
 * ```Faulty cells``` - number of faulty cells
